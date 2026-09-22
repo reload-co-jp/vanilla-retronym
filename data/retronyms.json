@@ -1,0 +1,370 @@
+[
+  {
+    "id": "fixed-phone",
+    "name": "固定電話",
+    "originalName": "電話",
+    "trigger": "携帯電話",
+    "description": "携帯電話が普及したことで、それまで単に「電話」と呼ばれていた電話機を区別するために使われるようになった名称。加入電話・家電（いえでん）と呼ばれることもある。",
+    "tags": ["通信", "電話", "テクノロジー", "日常生活"],
+    "language": "ja",
+    "period": "20世紀後半",
+    "status": "confirmed",
+    "relatedIds": ["feature-phone"],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム"
+      }
+    ]
+  },
+  {
+    "id": "film-camera",
+    "name": "フィルムカメラ",
+    "originalName": "カメラ",
+    "trigger": "デジタルカメラ",
+    "description": "デジタルカメラとの区別が必要になったことで、それまで一般にカメラと呼ばれていた銀塩式のカメラをフィルムカメラと呼ぶようになった。銀塩カメラとも呼ばれる。",
+    "tags": ["写真", "カメラ", "アナログ", "テクノロジー"],
+    "language": "ja",
+    "period": "20世紀末以降",
+    "status": "confirmed",
+    "relatedIds": ["analog-record"],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム"
+      }
+    ]
+  },
+  {
+    "id": "feature-phone",
+    "name": "フィーチャーフォン",
+    "originalName": "携帯電話",
+    "trigger": "スマートフォン",
+    "description": "スマートフォンの普及により、それ以前の携帯電話を区別して呼ぶために使われるようになった名称。日本では折りたたみ型の形状から「ガラケー」「ガラパゴスケータイ」とも呼ばれる。",
+    "tags": ["通信", "電話", "テクノロジー"],
+    "language": "ja",
+    "period": "2000年代後半",
+    "status": "confirmed",
+    "relatedIds": ["fixed-phone"],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム"
+      }
+    ]
+  },
+  {
+    "id": "analog-record",
+    "name": "アナログレコード",
+    "originalName": "レコード",
+    "trigger": "コンパクトディスク（CD）",
+    "description": "CDをはじめとするデジタル媒体が音楽メディアの主流になったことで、円盤に溝を刻む従来のレコードを区別して呼ぶようになった名称。",
+    "tags": ["音楽", "アナログ", "テクノロジー"],
+    "language": "ja",
+    "period": "1980年代以降",
+    "status": "confirmed",
+    "relatedIds": ["film-camera", "acoustic-guitar"],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム"
+      }
+    ]
+  },
+  {
+    "id": "acoustic-guitar",
+    "name": "アコースティックギター",
+    "originalName": "ギター",
+    "trigger": "エレキギター",
+    "description": "電気的に音を増幅するエレキギターが登場したことで、胴の共鳴だけで音を出す従来のギターを区別して呼ぶようになった名称。",
+    "tags": ["音楽", "アナログ", "楽器"],
+    "language": "ja",
+    "period": "20世紀中頃",
+    "status": "confirmed",
+    "relatedIds": ["acoustic-piano", "analog-record"],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム"
+      }
+    ]
+  },
+  {
+    "id": "acoustic-piano",
+    "name": "アコースティックピアノ",
+    "originalName": "ピアノ",
+    "trigger": "電子ピアノ",
+    "description": "電子ピアノやシンセサイザーが普及したことで、弦をハンマーで叩いて発音する従来のピアノを区別して呼ぶようになった名称。生ピアノとも呼ばれる。",
+    "tags": ["音楽", "アナログ", "楽器"],
+    "language": "ja",
+    "period": "20世紀後半",
+    "status": "confirmed",
+    "relatedIds": ["acoustic-guitar"],
+    "sources": []
+  },
+  {
+    "id": "silent-film",
+    "name": "サイレント映画",
+    "originalName": "映画",
+    "trigger": "トーキー（発声映画）",
+    "description": "音声付きの映画（トーキー）が登場したことで、それまでの音声を持たない映画を区別して呼ぶようになった名称。無声映画とも呼ばれる。",
+    "tags": ["映画", "映像", "エンターテインメント"],
+    "language": "ja",
+    "period": "1920年代後半",
+    "status": "confirmed",
+    "relatedIds": ["live-action"],
+    "sources": []
+  },
+  {
+    "id": "black-and-white-tv",
+    "name": "白黒テレビ",
+    "originalName": "テレビ",
+    "trigger": "カラーテレビ",
+    "description": "カラー放送とカラーテレビ受像機が普及したことで、それまで単にテレビと呼ばれていたモノクロ受像機を区別して呼ぶようになった名称。",
+    "tags": ["テレビ", "映像", "テクノロジー"],
+    "language": "ja",
+    "period": "1960年代",
+    "status": "confirmed",
+    "relatedIds": ["silent-film"],
+    "sources": []
+  },
+  {
+    "id": "live-action",
+    "name": "実写",
+    "originalName": "映画",
+    "trigger": "アニメーション",
+    "description": "アニメーションという表現形式が確立したことで、実在の人物や風景をカメラで撮影した映像を区別して呼ぶようになった名称。",
+    "tags": ["映画", "映像", "エンターテインメント"],
+    "language": "ja",
+    "period": "20世紀前半",
+    "status": "disputed",
+    "relatedIds": ["silent-film"],
+    "sources": []
+  },
+  {
+    "id": "paper-book",
+    "name": "紙の本",
+    "originalName": "本",
+    "trigger": "電子書籍",
+    "description": "電子書籍が流通するようになったことで、それまで単に本と呼ばれていた印刷・製本された書籍を区別して呼ぶようになった言い方。紙媒体・紙版とも言う。",
+    "tags": ["出版", "書籍", "アナログ", "日常生活"],
+    "language": "ja",
+    "period": "2000年代以降",
+    "status": "confirmed",
+    "relatedIds": ["paper-dictionary", "printed-newspaper"],
+    "sources": []
+  },
+  {
+    "id": "paper-dictionary",
+    "name": "紙の辞書",
+    "originalName": "辞書",
+    "trigger": "電子辞書・オンライン辞書",
+    "description": "電子辞書やオンライン辞書が普及したことで、冊子として出版された従来の辞書を区別して呼ぶようになった言い方。",
+    "tags": ["出版", "書籍", "言語", "アナログ"],
+    "language": "ja",
+    "period": "1990年代以降",
+    "status": "confirmed",
+    "relatedIds": ["paper-book"],
+    "sources": []
+  },
+  {
+    "id": "printed-newspaper",
+    "name": "紙の新聞",
+    "originalName": "新聞",
+    "trigger": "新聞の電子版",
+    "description": "各紙が電子版を提供するようになったことで、印刷され配達される従来の新聞を区別して呼ぶようになった言い方。",
+    "tags": ["出版", "社会", "アナログ"],
+    "language": "ja",
+    "period": "2010年代以降",
+    "status": "confirmed",
+    "relatedIds": ["paper-book"],
+    "sources": []
+  },
+  {
+    "id": "desktop-computer",
+    "name": "デスクトップパソコン",
+    "originalName": "パソコン",
+    "trigger": "ノートパソコン",
+    "description": "持ち運べるノートパソコンが普及したことで、机上に据え置いて使う従来のパソコンを区別して呼ぶようになった名称。",
+    "tags": ["コンピューター", "テクノロジー"],
+    "language": "ja",
+    "period": "1990年代",
+    "status": "confirmed",
+    "relatedIds": ["native-app"],
+    "sources": []
+  },
+  {
+    "id": "wired-earphone",
+    "name": "有線イヤホン",
+    "originalName": "イヤホン",
+    "trigger": "ワイヤレスイヤホン",
+    "description": "Bluetooth接続のワイヤレスイヤホンが普及したことで、ケーブルで接続する従来のイヤホンを区別して呼ぶようになった名称。",
+    "tags": ["音楽", "テクノロジー", "日常生活"],
+    "language": "ja",
+    "period": "2010年代後半",
+    "status": "confirmed",
+    "relatedIds": ["desktop-computer"],
+    "sources": []
+  },
+  {
+    "id": "analog-clock",
+    "name": "アナログ時計",
+    "originalName": "時計",
+    "trigger": "デジタル時計",
+    "description": "数字で時刻を表示するデジタル時計が普及したことで、針で時刻を示す従来の時計を区別して呼ぶようになった名称。",
+    "tags": ["日常生活", "アナログ", "技術"],
+    "language": "ja",
+    "period": "1970年代以降",
+    "status": "confirmed",
+    "relatedIds": ["film-camera"],
+    "sources": []
+  },
+  {
+    "id": "manual-transmission-car",
+    "name": "マニュアル車",
+    "originalName": "自動車",
+    "trigger": "オートマチック車（AT車）",
+    "description": "自動変速機を備えたAT車が主流になったことで、運転者が変速操作を行う従来の自動車を区別して呼ぶようになった名称。MT車とも表記する。",
+    "tags": ["交通", "自動車", "技術"],
+    "language": "ja",
+    "period": "20世紀後半",
+    "status": "confirmed",
+    "relatedIds": ["gasoline-car"],
+    "sources": []
+  },
+  {
+    "id": "gasoline-car",
+    "name": "ガソリン車",
+    "originalName": "自動車",
+    "trigger": "電気自動車（EV）",
+    "description": "電気自動車やハイブリッド車が広まったことで、ガソリンエンジンで走る従来の自動車を区別して呼ぶようになった名称。内燃機関車とも呼ばれる。",
+    "tags": ["交通", "自動車", "社会"],
+    "language": "ja",
+    "period": "2000年代以降",
+    "status": "confirmed",
+    "relatedIds": ["manual-transmission-car"],
+    "sources": []
+  },
+  {
+    "id": "physical-store",
+    "name": "実店舗",
+    "originalName": "店",
+    "trigger": "オンラインショップ",
+    "description": "ネット通販が一般化したことで、建物を構えて対面で販売する従来の店舗を区別して呼ぶようになった名称。リアル店舗とも呼ばれる。",
+    "tags": ["社会", "日常生活"],
+    "language": "ja",
+    "period": "2000年代以降",
+    "status": "confirmed",
+    "relatedIds": ["in-person-meeting"],
+    "sources": []
+  },
+  {
+    "id": "in-person-meeting",
+    "name": "対面会議",
+    "originalName": "会議",
+    "trigger": "オンライン会議",
+    "description": "ビデオ会議が一般化したことで、同じ場所に集まって行う従来の会議を区別して呼ぶようになった言い方。リアル開催・オフライン開催とも言う。",
+    "tags": ["社会", "日常生活", "テクノロジー"],
+    "language": "ja",
+    "period": "2020年代",
+    "status": "confirmed",
+    "relatedIds": ["physical-store"],
+    "sources": []
+  },
+  {
+    "id": "staffed-checkout",
+    "name": "有人レジ",
+    "originalName": "レジ",
+    "trigger": "セルフレジ",
+    "description": "客自身が精算するセルフレジが導入されたことで、店員が対応する従来のレジを区別して呼ぶようになった名称。",
+    "tags": ["社会", "日常生活"],
+    "language": "ja",
+    "period": "2010年代以降",
+    "status": "confirmed",
+    "relatedIds": ["physical-store"],
+    "sources": []
+  },
+  {
+    "id": "day-game",
+    "name": "デーゲーム",
+    "originalName": "野球の試合",
+    "trigger": "ナイター（ナイトゲーム）",
+    "description": "照明設備の普及で夜間開催のナイターが一般化したことで、昼間に行われる従来の試合を区別して呼ぶようになった名称。",
+    "tags": ["スポーツ", "エンターテインメント"],
+    "language": "ja",
+    "period": "20世紀中頃",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": []
+  },
+  {
+    "id": "natural-language",
+    "name": "自然言語",
+    "originalName": "言語",
+    "trigger": "人工言語・プログラミング言語",
+    "description": "人工的に設計された言語が登場したことで、人が日常的に用いる従来の言語を区別して呼ぶようになった名称。",
+    "tags": ["言語", "科学", "コンピューター"],
+    "language": "ja",
+    "period": "20世紀",
+    "status": "confirmed",
+    "relatedIds": ["native-app"],
+    "sources": []
+  },
+  {
+    "id": "native-app",
+    "name": "ネイティブアプリ",
+    "originalName": "アプリ",
+    "trigger": "Webアプリ",
+    "description": "ブラウザ上で動作するWebアプリが一般化したことで、端末にインストールして動かす従来のアプリケーションを区別して呼ぶようになった名称。",
+    "tags": ["ソフトウェア", "コンピューター", "テクノロジー"],
+    "language": "ja",
+    "period": "2000年代以降",
+    "status": "confirmed",
+    "relatedIds": ["desktop-computer", "natural-language"],
+    "sources": []
+  },
+  {
+    "id": "world-war-one",
+    "name": "第一次世界大戦",
+    "originalName": "世界大戦（大戦）",
+    "trigger": "第二次世界大戦",
+    "description": "二度目の大戦が起きたことで、それまで単に「世界大戦」「大戦」と呼ばれていた1914年からの戦争を第一次と番号を付けて呼ぶようになった。",
+    "tags": ["社会", "歴史"],
+    "language": "ja",
+    "period": "1939年以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム"
+      }
+    ]
+  },
+  {
+    "id": "snail-mail",
+    "name": "Snail mail",
+    "originalName": "Mail",
+    "trigger": "Email",
+    "description": "電子メールが普及したことで、配達に時間のかかる従来の郵便を、かたつむり（snail）に例えて区別するようになった英語圏の呼び方。",
+    "tags": ["通信", "言語", "社会"],
+    "language": "en",
+    "period": "1980年代以降",
+    "status": "confirmed",
+    "relatedIds": ["printed-newspaper"],
+    "sources": []
+  },
+  {
+    "id": "whole-milk",
+    "name": "普通牛乳",
+    "originalName": "牛乳",
+    "trigger": "低脂肪乳・加工乳",
+    "description": "成分を調整した乳製品が並ぶようになったことで、成分無調整の従来の牛乳を区別して呼ぶようになった言い方。",
+    "tags": ["食", "日常生活"],
+    "language": "ja",
+    "period": "20世紀後半",
+    "status": "candidate",
+    "relatedIds": [],
+    "sources": []
+  }
+]

@@ -1,0 +1,173 @@
+"use client"
+
+import { RetronymCardList } from "@/components/retronym/card"
+import { Tag, TagList } from "@/components/retronym/tag"
+import {
+  filterRetronyms,
+  getTags,
+  Retronym,
+  SortOrder,
+  sortOrderLabels,
+  sortRetronyms,
+} from "@/lib/retronyms"
+import { theme } from "@/lib/theme"
+import { useSearchParams } from "next/navigation"
+import { FC, useMemo, useState } from "react"
+
+const sortOrders: SortOrder[] = ["name", "newest", "random"]
+
+export const RetronymSearch: FC<{ retronyms: Retronym[] }> = ({
+  retronyms,
+}) => {
+  const [query, setQuery] = useState("")
+  // 未操作のうちは /retronyms/?tag=写真 のようなクエリをタグ選択として引き継ぐ。
+  const [pickedTags, setPickedTags] = useState<string[] | null>(null)
+  const [order, setOrder] = useState<SortOrder>("name")
+  const [seed, setSeed] = useState(0)
+
+  const tagParam = useSearchParams().get("tag")
+  const selectedTags = useMemo(
+    () => pickedTags ?? (tagParam ? [tagParam] : []),
+    [pickedTags, tagParam]
+  )
+
+  const tags = useMemo(() => getTags(retronyms), [retronyms])
+
+  const results = useMemo(
+    () =>
+      sortRetronyms(
+        filterRetronyms(retronyms, { query, tags: selectedTags }),
+        order,
+        seed
+      ),
+    [retronyms, query, selectedTags, order, seed]
+  )
+
+  const toggleTag = (tag: string) =>
+    setPickedTags(
+      selectedTags.includes(tag)
+        ? selectedTags.filter((selected) => selected !== tag)
+        : [...selectedTags, tag]
+    )
+
+  const changeOrder = (next: SortOrder) => {
+    setOrder(next)
+    // ランダムを選び直すたびに並びが変わるようにseedを進める。
+    if (next === "random") setSeed((current) => current + 1)
+  }
+
+  return (
+    <div style={{ display: "grid", gap: "1.25rem" }}>
+      <div style={{ display: "grid", gap: ".75rem" }}>
+        <label style={{ display: "grid", gap: ".25rem" }}>
+          <span style={{ fontSize: ".8125rem", color: theme.muted }}>
+            レトロニムを検索
+          </span>
+          <input
+            type="search"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="名前・元の名称・きっかけ・説明・タグ"
+            style={{
+              backgroundColor: theme.surface,
+              border: `1px solid ${theme.border}`,
+              borderRadius: ".125rem",
+              fontSize: "1rem",
+              padding: ".55rem .75rem",
+              width: "100%",
+            }}
+          />
+        </label>
+
+        <div style={{ display: "grid", gap: ".35rem" }}>
+          <span style={{ fontSize: ".8125rem", color: theme.muted }}>
+            タグで絞り込む（複数選択でAND検索）
+          </span>
+          <TagList>
+            {tags.map(({ name, count }) => {
+              const selected = selectedTags.includes(name)
+              return (
+                <button
+                  key={name}
+                  type="button"
+                  aria-pressed={selected}
+                  onClick={() => toggleTag(name)}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    cursor: "pointer",
+                    padding: 0,
+                  }}
+                >
+                  <Tag selected={selected}>
+                    {name} {count}
+                  </Tag>
+                </button>
+              )
+            })}
+          </TagList>
+        </div>
+
+        <div
+          style={{
+            alignItems: "center",
+            display: "flex",
+            flexWrap: "wrap",
+            gap: ".5rem",
+          }}
+        >
+          <span style={{ fontSize: ".8125rem", color: theme.muted }}>
+            並び順
+          </span>
+          {sortOrders.map((sortOrder) => (
+            <button
+              key={sortOrder}
+              type="button"
+              aria-pressed={order === sortOrder}
+              onClick={() => changeOrder(sortOrder)}
+              style={{
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                padding: 0,
+              }}
+            >
+              <Tag selected={order === sortOrder}>
+                {sortOrderLabels[sortOrder]}
+              </Tag>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <p style={{ color: theme.muted, fontSize: ".8125rem" }}>
+        {results.length}件
+        {selectedTags.length > 0 && `（${selectedTags.join(" / ")}）`}
+        {(query !== "" || selectedTags.length > 0) && (
+          <button
+            type="button"
+            onClick={() => {
+              setQuery("")
+              setPickedTags([])
+            }}
+            style={{
+              background: "none",
+              border: "none",
+              color: theme.accent,
+              cursor: "pointer",
+              padding: "0 .5rem",
+            }}
+          >
+            条件をクリア
+          </button>
+        )}
+      </p>
+
+      {results.length > 0 ? (
+        <RetronymCardList retronyms={results} />
+      ) : (
+        <p style={{ color: theme.muted }}>該当するレトロニムがない。</p>
+      )}
+    </div>
+  )
+}

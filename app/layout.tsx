@@ -1,21 +1,93 @@
-import { Footer, Header, Main, Title } from "@/components/elements/layout"
+import { Footer, Header, Main } from "@/components/elements/layout"
+import { site } from "@/lib/site"
+import { theme } from "@/lib/theme"
+import type { Metadata } from "next"
+import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google"
+import Link from "next/link"
 import "./reset.css"
 
-export const metadata = {
-  title: "Page title",
-  description: "Page description",
+const notoSerifJP = Noto_Serif_JP({
+  subsets: ["latin"],
+  weight: ["500", "700"],
+  variable: "--font-serif",
+  display: "swap",
+})
+
+const notoSansJP = Noto_Sans_JP({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-sans",
+  display: "swap",
+})
+
+export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
+  title: {
+    default: `${site.name} - レトロニム図鑑`,
+    template: `%s | ${site.name}`,
+  },
+  description: site.description,
+  openGraph: {
+    type: "website",
+    siteName: site.name,
+    title: `${site.name} - レトロニム図鑑`,
+    description: site.description,
+    url: site.url,
+    locale: "ja_JP",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
+  alternates: {
+    canonical: "/",
+  },
 }
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html lang="ja">
+    <html lang="ja" className={`${notoSerifJP.variable} ${notoSansJP.variable}`}>
       <body>
         <Header>
-          <Title>Page title</Title>
+          <nav
+            style={{
+              alignItems: "baseline",
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "1rem",
+            }}
+          >
+            <Link
+              href="/"
+              style={{
+                fontFamily: "var(--font-serif)",
+                fontSize: "1.0625rem",
+                fontWeight: 700,
+                letterSpacing: ".01em",
+                textDecoration: "none",
+              }}
+            >
+              {site.name}
+            </Link>
+            <Link
+              href="/retronyms/"
+              style={{
+                color: theme.muted,
+                fontSize: ".8125rem",
+                letterSpacing: ".02em",
+                textDecoration: "none",
+              }}
+            >
+              一覧・検索
+            </Link>
+          </nav>
         </Header>
         <Main>{children}</Main>
         <Footer>
-          <p>&copy; My organization</p>
+          <p>
+            {site.name} — 後から名前が付いたものを集める図鑑。
+            <br />
+            &copy; Reload
+          </p>
         </Footer>
       </body>
     </html>

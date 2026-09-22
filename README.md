@@ -1,94 +1,518 @@
-# Next.js Static Site Template
+# Vanilla retronym 仕様書
 
-Next.js 16 + React 19 + TypeScript を使用した静的サイト生成のテンプレートリポジトリです。GitHub Pages へのデプロイが自動化されています。
+## 1. 概要
 
-## 技術スタック
+**Vanilla retronym** は、レトロニム（retronym）を収集・整理し、検索・閲覧できる静的Webサイト。
 
-- **Next.js** 16 - App Router / Static Export
-- **React** 19
-- **TypeScript** 5
-- **ESLint** 9 - Flat Config
-- **Prettier** 3
+新しい概念や製品が登場したことで、それまで単独で呼ばれていたものを区別するために後から付けられた名称を「レトロニム」として収集する。
 
-## このテンプレートの使い方
+例：
 
-1. **「Use this template」ボタン**をクリックして新しいリポジトリを作成
-2. リポジトリをクローン
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-   cd YOUR_REPO
-   ```
-3. 依存関係をインストール
-   ```bash
-   pnpm install
-   ```
-4. 開発サーバーを起動
-   ```bash
-   pnpm dev
-   ```
+- 電話 → 固定電話
+- カメラ → フィルムカメラ
+- 携帯電話 → フィーチャーフォン
+- レコード → アナログレコード
 
-## セットアップ後にやること
+サイト上のデータはJSONファイルとして管理し、ビルド時に読み込んで静的HTMLとして生成する。
 
-### 1. `next.config.js` の修正
+### サイト情報
 
-`basePath` をリポジトリ名に変更してください：
+- サイト名：**Vanilla retronym**
+- URL：**https://vrn.reload.co.jp**
 
-```js
-basePath: process.env.NODE_ENV === "production" ? "/YOUR_REPO_NAME" : "",
+---
+
+# 2. 目的
+
+- レトロニムを一覧・検索できるようにする
+- レトロニムが生まれた背景を簡潔に紹介する
+- レトロニム同士の関連性を閲覧できるようにする
+- 「こんなものにも後から名前が付いていた」という発見を促す
+- 検索エンジンから個々のレトロニムへアクセスできる構造にする
+
+---
+
+# 3. 基本方針
+
+### データ
+
+- JSONファイルを唯一のデータソースとする
+- DBは使用しない
+- CMSは使用しない
+- サーバーサイドAPIは使用しない
+- GitでJSONを管理する
+- ビルド時にJSONを読み込む
+
+### サイト
+
+- 完全静的サイトとして生成する
+- JavaScriptによるクライアントサイド検索も可能とする
+- 各レトロニムに固有URLを持たせる
+- モバイル表示に対応する
+
+---
+
+# 4. データ構造
+
+## 4.1 レトロニム
+
+`data/retronyms.json`
+
+```json
+[
+  {
+    "id": "fixed-phone",
+    "name": "固定電話",
+    "originalName": "電話",
+    "trigger": "携帯電話",
+    "description": "携帯電話が普及したことで、それまで単に「電話」と呼ばれていた電話機を区別するために使われるようになった名称。",
+    "tags": ["通信", "テクノロジー"],
+    "language": "ja",
+    "period": "20世紀後半",
+    "status": "confirmed",
+    "relatedIds": ["mobile-phone"],
+    "sources": [
+      {
+        "title": "出典1",
+        "url": "https://example.com/1"
+      },
+      {
+        "title": "出典2",
+        "url": "https://example.com/2"
+      }
+    ]
+  }
+]
 ```
 
-### 2. `app/layout.tsx` の修正
+---
 
-メタデータとサイト情報を更新してください：
+## 4.2 フィールド仕様
 
-```tsx
-export const metadata: Metadata = {
-  title: "Your Site Title",
-  description: "Your site description",
+| フィールド     | 型       | 必須 | 内容                                   |
+| -------------- | -------- | ---: | -------------------------------------- |
+| `id`           | string   |    ○ | URLに使用する一意なID                  |
+| `name`         | string   |    ○ | レトロニム                             |
+| `originalName` | string   |    ○ | 元々使われていた名称                   |
+| `trigger`      | string   |    ○ | 新しく登場した概念・製品など           |
+| `description`  | string   |    ○ | レトロニムになった経緯                 |
+| `tags`         | string[] |    ○ | レトロニムに付与するタグ。複数指定可能 |
+| `language`     | string   |    ○ | 主に使われる言語                       |
+| `period`       | string   |    - | 成立・普及した時期                     |
+| `status`       | enum     |    ○ | レトロニムとしての確度                 |
+| `relatedIds`   | string[] |    - | 関連するレトロニム                     |
+| `sources`      | Source[] |    - | 出典。複数指定可能                     |
+
+---
+
+## 4.3 tags
+
+`tags` はレトロニムを分類・検索するためのタグ。
+
+1つのレトロニムに複数のタグを設定できる。
+
+例：
+
+```json
+"tags": [
+  "通信",
+  "電話",
+  "テクノロジー",
+  "日常生活"
+]
+```
+
+タグは固定カテゴリーではなく、データの内容に応じて柔軟に追加できる。
+
+想定されるタグの例：
+
+```text
+通信
+電話
+インターネット
+コンピューター
+ソフトウェア
+写真
+カメラ
+音楽
+映像
+映画
+テレビ
+出版
+書籍
+交通
+自動車
+鉄道
+食
+スポーツ
+医療
+科学
+ゲーム
+エンターテインメント
+日常生活
+社会
+言語
+技術
+アナログ
+デジタル
+```
+
+タグの追加にあたって、あらかじめすべてのタグを `categories.json` のような別ファイルで定義する必要はない。
+
+---
+
+## 4.4 status
+
+```text
+confirmed
+disputed
+candidate
+```
+
+### confirmed
+
+レトロニムとして扱う根拠が十分にあるもの。
+
+### disputed
+
+レトロニムと呼べるかについて議論があるもの。
+
+### candidate
+
+候補として収集したが、まだ十分な確認ができていないもの。
+
+---
+
+## 4.5 Source
+
+1つのレトロニムに複数の出典を登録できる。
+
+```json
+"sources": [
+  {
+    "title": "Wikipedia - Retronym",
+    "url": "https://example.com/retronym"
+  },
+  {
+    "title": "Dictionary",
+    "url": "https://example.com/dictionary"
+  }
+]
+```
+
+| フィールド | 型     | 必須 |
+| ---------- | ------ | ---: |
+| `title`    | string |    ○ |
+| `url`      | string |    ○ |
+
+出典が複数ある場合は、すべて `sources` 配列に追加する。
+
+---
+
+# 5. ページ構成
+
+## 5.1 トップページ
+
+URL：
+
+```text
+/
+```
+
+表示内容：
+
+1. サイトタイトル「Vanilla retronym」
+2. レトロニムとは何か
+3. ランダムなレトロニム
+4. 新着・注目レトロニム
+5. タグ一覧
+6. レトロニム一覧・検索へのリンク
+
+---
+
+## 5.2 レトロニム一覧・検索
+
+URL：
+
+```text
+/retronyms/
+```
+
+レトロニムの一覧表示と検索を1ページに統合する。
+
+### 表示項目
+
+- レトロニム名
+- 元の名称
+- きっかけとなった新しいもの
+- タグ
+- ステータス
+
+### 検索
+
+検索フォームからレトロニムを絞り込む。
+
+検索対象：
+
+- `name`
+- `originalName`
+- `trigger`
+- `description`
+- `tags`
+
+部分一致で検索する。
+
+検索処理はクライアントサイドで実装し、APIは作成しない。
+
+### タグによる絞り込み
+
+タグを選択して該当するレトロニムを絞り込めるようにする。
+
+複数タグを選択した場合の条件はAND検索とする。
+
+例：
+
+```text
+[写真] [アナログ]
+```
+
+→ 「写真」かつ「アナログ」のタグを持つレトロニムのみ表示。
+
+### 並び順
+
+以下を切り替え可能とする。
+
+- 名前順
+- 新しい順
+- ランダム
+
+---
+
+## 5.3 レトロニム詳細
+
+URL：
+
+```text
+/retronyms/{id}/
+```
+
+例：
+
+```text
+/retronyms/fixed-phone/
+```
+
+表示内容：
+
+```text
+固定電話
+
+もともとは「電話」と呼ばれていた。
+
+新しく登場したもの
+携帯電話
+
+元の名称
+電話
+
+タグ
+通信 / 電話 / テクノロジー
+
+成立時期
+20世紀後半
+
+概要
+...
+```
+
+### 出典
+
+複数の出典を一覧表示する。
+
+```text
+出典
+
+- Wikipedia - Retronym
+- Dictionary
+```
+
+各出典は元ページへのリンクとする。
+
+---
+
+# 6. 関係性の表示
+
+レトロニムは「新しいものが登場した結果、古いものに名前が付く」という関係を持つ。
+
+そのため、詳細ページでは以下のような関係を表示する。
+
+```text
+電話
+ ↓
+携帯電話の登場
+ ↓
+固定電話
+```
+
+データ上では、
+
+```json
+{
+  "id": "fixed-phone",
+  "originalName": "電話",
+  "trigger": "携帯電話"
 }
 ```
 
-### 3. GitHub Pages の設定
+として保持する。
 
-1. リポジトリの **Settings** → **Pages** へ移動
-2. **Source** を「GitHub Actions」に設定
+関連するレトロニムがある場合は、`relatedIds` を使用して相互にリンクする。
 
-## ディレクトリ構成
+---
 
+# 7. UI
+
+## トーン
+
+「辞典」よりも「図鑑」に近い、軽く眺められるUIとする。
+
+重厚なWikipedia風デザインにはしない。
+
+### 基本要素
+
+- 白または明るい背景
+- 大きめのタイトル
+- カード型の一覧
+- タグ表示
+- シンプルな検索
+- スマートフォン対応
+
+---
+
+# 8. SEO
+
+各レトロニムを独立した静的ページとして生成する。
+
+例：
+
+```text
+/retronyms/fixed-phone/
+/retronyms/film-camera/
+/retronyms/feature-phone/
 ```
+
+各ページについて以下を生成する。
+
+- `<title>`
+- `description`
+- OGP
+- canonical URL
+- JSON-LD
+
+JSON-LDは `DefinedTerm` または適切なSchema.org形式を利用する。
+
+---
+
+# 9. サイトマップ
+
+ビルド時に以下を生成する。
+
+```text
+sitemap.xml
+robots.txt
+```
+
+サイトマップには以下を含める。
+
+```text
+/
+/retronyms/
+/retronyms/{id}/
+```
+
+---
+
+# 10. 静的生成
+
+ビルド時にJSONを読み込み、以下のページを生成する。
+
+```text
+/
+/retronyms/
+/retronyms/{id}/
+```
+
+`/retronyms/` は静的に生成された全レトロニムデータを利用し、ブラウザ上で検索・タグによる絞り込みを行う。
+
+レトロニムを追加する場合はJSONを編集して再ビルドする。
+
+---
+
+# 11. ディレクトリ構成
+
+```text
 .
 ├── app/
-│   ├── layout.tsx      # ルートレイアウト
-│   ├── page.tsx        # ホームページ
-│   └── reset.css       # CSSリセット
-├── .github/
-│   └── workflows/
-│       ├── lint.yml    # リント自動実行
-│       └── deploy.yml  # GitHub Pages 自動デプロイ
-├── next.config.js      # Next.js 設定
-├── tsconfig.json       # TypeScript 設定
-├── eslint.config.mjs   # ESLint 設定
-└── .prettierrc.json    # Prettier 設定
+│   ├── page.tsx
+│   └── retronyms/
+│       ├── page.tsx
+│       └── [id]/
+│           └── page.tsx
+│
+├── data/
+│   └── retronyms.json
+│
+├── public/
+│   └── ...
+│
+└── ...
 ```
 
-## スクリプト
+---
 
-| コマンド | 説明 |
-|---------|------|
-| `pnpm dev` | 開発サーバーを起動 |
-| `pnpm build` | 静的サイトをビルド（`/out` に出力） |
-| `pnpm lint` | ESLint を実行 |
-| `pnpm format` | Prettier でコードをフォーマット |
-| `pnpm typecheck` | TypeScript の型チェック |
+# 12. データ追加
 
-## 機能
+新しいレトロニムは `retronyms.json` に追加する。
 
-- **静的サイト生成** - `next build` で `/out` に HTML を出力
-- **自動デプロイ** - main ブランチへの push で GitHub Pages に自動デプロイ
-- **自動リント** - push 時に ESLint / Prettier チェックを実行
-- **依存関係の自動更新** - Dependabot による週次チェック
-- **エディタ設定** - VS Code での自動フォーマット設定済み
+例：
 
-## ライセンス
+```json
+{
+  "id": "film-camera",
+  "name": "フィルムカメラ",
+  "originalName": "カメラ",
+  "trigger": "デジタルカメラ",
+  "description": "デジタルカメラとの区別が必要になったことで、それまで一般にカメラと呼ばれていたものをフィルムカメラと呼ぶようになった。",
+  "tags": ["写真", "カメラ", "アナログ", "テクノロジー"],
+  "language": "ja",
+  "period": "20世紀末以降",
+  "status": "confirmed",
+  "relatedIds": [],
+  "sources": [
+    {
+      "title": "出典1",
+      "url": "https://example.com/1"
+    },
+    {
+      "title": "出典2",
+      "url": "https://example.com/2"
+    }
+  ]
+}
+```
 
-ISC
+---
+
+# 13. データ品質
+
+レトロニムであるかどうかが曖昧なものを無理に断定しない。
+
+特に以下を区別する。
+
+- 本当に後から付けられた名称
+- 単なる新旧の区別
+- 商品名・ブランド名
+- 元々存在していた名称
+- 後世の人が便宜的に付けた名称
+
+判断が難しいものは `disputed` または `candidate` とする。
