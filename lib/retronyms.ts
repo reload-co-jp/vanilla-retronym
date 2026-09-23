@@ -78,18 +78,16 @@ export const filterRetronyms = (
     (retronym) => matchesQuery(retronym, query) && matchesTags(retronym, tags)
   )
 
-export type SortOrder = "name" | "newest" | "random"
+export type SortOrder = "name" | "newest"
 
 export const sortOrderLabels: Record<SortOrder, string> = {
   name: "名前順",
   newest: "新しい順",
-  random: "ランダム",
 }
 
 export const sortRetronyms = (
   items: Retronym[],
-  order: SortOrder,
-  seed = 0
+  order: SortOrder
 ): Retronym[] => {
   const sorted = [...items]
   switch (order) {
@@ -97,21 +95,7 @@ export const sortRetronyms = (
       return sorted.sort((a, b) => a.name.localeCompare(b.name, "ja"))
     case "newest":
       return sorted.reverse()
-    case "random":
-      return sorted
-        .map((retronym, index) => ({
-          retronym,
-          key: pseudoRandom(seed + index),
-        }))
-        .sort((a, b) => a.key - b.key)
-        .map(({ retronym }) => retronym)
   }
-}
-
-/** seedから決まる0〜1の値。同じseedなら描画結果が変わらない。 */
-export const pseudoRandom = (seed: number): number => {
-  const value = Math.sin(seed * 12.9898 + 78.233) * 43758.5453
-  return value - Math.floor(value)
 }
 
 export const newestRetronyms = (count: number): Retronym[] =>

@@ -1,13 +1,7 @@
 import { Section, Title } from "@/components/elements/layout"
 import { RetronymCardList } from "@/components/retronym/card"
-import { RandomRetronym } from "@/components/retronym/random"
 import { TagLink, TagList } from "@/components/retronym/tag"
-import {
-  getTags,
-  newestRetronyms,
-  pseudoRandom,
-  retronyms,
-} from "@/lib/retronyms"
+import { getTags, newestRetronyms, retronyms } from "@/lib/retronyms"
 import { site } from "@/lib/site"
 import { theme } from "@/lib/theme"
 import Link from "next/link"
@@ -16,10 +10,6 @@ import { FC } from "react"
 const Page: FC = () => {
   const tags = getTags()
   const newest = newestRetronyms(5)
-  // ビルド時の初期表示はデータから決まる。以降はボタンで引き直す。
-  const initialRandom = Math.floor(
-    pseudoRandom(retronyms.length) * retronyms.length
-  )
 
   return (
     <div style={{ display: "grid", gap: "3rem" }}>
@@ -38,10 +28,6 @@ const Page: FC = () => {
           電話 → 固定電話 / カメラ → フィルムカメラ / 携帯電話 →
           フィーチャーフォン
         </p>
-      </Section>
-
-      <Section heading="ランダムなレトロニム">
-        <RandomRetronym retronyms={retronyms} initial={initialRandom} />
       </Section>
 
       <Section heading="新着">

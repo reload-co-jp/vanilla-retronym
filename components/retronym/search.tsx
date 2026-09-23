@@ -14,7 +14,7 @@ import { theme } from "@/lib/theme"
 import { useSearchParams } from "next/navigation"
 import { FC, useMemo, useState } from "react"
 
-const sortOrders: SortOrder[] = ["name", "newest", "random"]
+const sortOrders: SortOrder[] = ["name", "newest"]
 
 export const RetronymSearch: FC<{ retronyms: Retronym[] }> = ({
   retronyms,
@@ -23,7 +23,6 @@ export const RetronymSearch: FC<{ retronyms: Retronym[] }> = ({
   // 未操作のうちは /retronyms/?tag=写真 のようなクエリをタグ選択として引き継ぐ。
   const [pickedTags, setPickedTags] = useState<string[] | null>(null)
   const [order, setOrder] = useState<SortOrder>("name")
-  const [seed, setSeed] = useState(0)
 
   const tagParam = useSearchParams().get("tag")
   const selectedTags = useMemo(
@@ -37,10 +36,9 @@ export const RetronymSearch: FC<{ retronyms: Retronym[] }> = ({
     () =>
       sortRetronyms(
         filterRetronyms(retronyms, { query, tags: selectedTags }),
-        order,
-        seed
+        order
       ),
-    [retronyms, query, selectedTags, order, seed]
+    [retronyms, query, selectedTags, order]
   )
 
   const toggleTag = (tag: string) =>
@@ -49,12 +47,6 @@ export const RetronymSearch: FC<{ retronyms: Retronym[] }> = ({
         ? selectedTags.filter((selected) => selected !== tag)
         : [...selectedTags, tag]
     )
-
-  const changeOrder = (next: SortOrder) => {
-    setOrder(next)
-    // ランダムを選び直すたびに並びが変わるようにseedを進める。
-    if (next === "random") setSeed((current) => current + 1)
-  }
 
   return (
     <div style={{ display: "grid", gap: "1.25rem" }}>
@@ -111,7 +103,7 @@ export const RetronymSearch: FC<{ retronyms: Retronym[] }> = ({
             <TagToggle
               key={sortOrder}
               selected={order === sortOrder}
-              onClick={() => changeOrder(sortOrder)}
+              onClick={() => setOrder(sortOrder)}
             >
               {sortOrderLabels[sortOrder]}
             </TagToggle>

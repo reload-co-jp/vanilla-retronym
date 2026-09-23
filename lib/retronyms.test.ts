@@ -124,14 +124,6 @@ describe("sortRetronyms", () => {
     ])
   })
 
-  it("ランダムでも件数は変わらない", () => {
-    const result = sortRetronyms(sample, "random", 7)
-    expect(result).toHaveLength(sample.length)
-    expect(new Set(result.map(({ id }) => id))).toEqual(
-      new Set(sample.map(({ id }) => id))
-    )
-  })
-
   it("元の配列を変更しない", () => {
     sortRetronyms(sample, "name")
     expect(sample.map(({ id }) => id)).toEqual(["a", "b", "c"])
