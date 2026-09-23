@@ -3803,5 +3803,221 @@
         "url": "https://es.wikipedia.org/wiki/Liberalismo_cl%C3%A1sico"
       }
     ]
+  },
+  {
+    "id": "2d-drucker",
+    "name": "2D-Drucker",
+    "originalName": "Drucker",
+    "trigger": "3D-Drucker",
+    "description": "3Dプリンターが普及したことで、紙に印刷する従来のプリンターを区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "紙などの平面に文字や画像を印刷する、従来型のプリンターのこと。日本語の「2Dプリンター」に相当する。",
+      "history": "プリンター（Drucker）はもともと紙に二次元で印刷するものしか存在しなかった。積層造形によって立体物を作る3Dプリンターが2010年代に一般にも広まると、従来のプリンターを「2D-Drucker」と呼び分けるようになった。",
+      "usage": "3Dプリンターとの対比が必要な文脈で使われる。日常的には現在も単に「Drucker」と呼ぶのが一般的。"
+    },
+    "tags": ["技術", "コンピューター"],
+    "language": "de",
+    "period": "2010年代以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - Retronym",
+        "url": "https://de.wikipedia.org/wiki/Retronym"
+      },
+      {
+        "title": "Wikipedia - 3D-Drucker",
+        "url": "https://de.wikipedia.org/wiki/3D-Drucker"
+      }
+    ]
+  },
+  {
+    "id": "erste-internationale",
+    "name": "Erste Internationale",
+    "originalName": "Internationale Arbeiterassoziation",
+    "trigger": "Zweite Internationale",
+    "description": "第二インターナショナルが結成されたことで、それ以前の国際労働者協会を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "1864年にロンドンで結成された国際労働者協会（Internationale Arbeiterassoziation）のこと。日本語の「第一インターナショナル」に相当する。",
+      "history": "国際労働者協会はマルクスらも参加した労働者の国際組織で、当時は単に「インターナショナル」と呼ばれた。1876年に解散した後、1889年に新たな国際組織（第二インターナショナル）が結成されると、先の組織は「Erste Internationale」と呼ばれるようになった。",
+      "usage": "歴史学や社会運動史の文脈で、第二・第三インターナショナルと対比して使われる。"
+    },
+    "tags": ["歴史", "社会"],
+    "language": "de",
+    "period": "1889年以降",
+    "status": "confirmed",
+    "relatedIds": ["world-war-one"],
+    "sources": [
+      {
+        "title": "Wikipedia - Retronym",
+        "url": "https://de.wikipedia.org/wiki/Retronym"
+      },
+      {
+        "title": "Wikipedia - Internationale Arbeiterassoziation",
+        "url": "https://de.wikipedia.org/wiki/Internationale_Arbeiterassoziation"
+      }
+    ]
+  },
+  {
+    "id": "hoerfunk",
+    "name": "Hörfunk",
+    "originalName": "Rundfunk",
+    "trigger": "Fernsehfunk（テレビ放送）",
+    "description": "テレビ放送が始まったことで、音声だけの放送を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "音声のみを送る放送、すなわちラジオ放送のこと。「hören」はドイツ語で「聞く」を意味する。",
+      "history": "放送（Rundfunk）はかつてラジオ放送しか存在せず、単に「Rundfunk」と呼ばれていた。テレビ放送（Fernsehfunk）が始まり、「Rundfunk」がテレビも含む放送全般を指すようになると、音声放送は「Hörfunk」と呼び分けられるようになった。",
+      "usage": "放送行政や公共放送の文脈で、テレビ（Fernsehen）と対比して使われる。日常会話では「Radio」と呼ぶことも多い。"
+    },
+    "tags": ["放送", "通信"],
+    "language": "de",
+    "period": "20世紀中頃以降",
+    "status": "confirmed",
+    "relatedIds": ["am-radio", "terrestrial-television"],
+    "sources": [
+      {
+        "title": "Wikipedia - Retronym",
+        "url": "https://de.wikipedia.org/wiki/Retronym"
+      },
+      {
+        "title": "Wikipedia - Hörfunk",
+        "url": "https://de.wikipedia.org/wiki/H%C3%B6rfunk"
+      }
+    ]
+  },
+  {
+    "id": "impulswahlverfahren",
+    "name": "Impulswählverfahren",
+    "originalName": "Wählverfahren",
+    "trigger": "Mehrfrequenzwahlverfahren（トーン信号）",
+    "description": "トーン信号によるダイヤル方式が導入されたことで、従来のパルス信号によるダイヤル方式を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "電話番号を電流の断続（パルス）で交換機に伝える方式のこと。日本語の「パルス回線（ダイヤル回線）」に相当する。",
+      "history": "自動電話交換の登場以来、番号を伝える方式はパルス式しかなかったため、区別の必要はなかった。多周波信号で番号を伝える方式（MFV、トーン式）が導入されると、従来の方式は「Impulswählverfahren」と呼び分けられるようになった。",
+      "usage": "電話機や交換機の設定、通信技術の文脈でトーン式と対比して使われる。"
+    },
+    "tags": ["電話", "通信"],
+    "language": "de",
+    "period": "1970年代以降",
+    "status": "confirmed",
+    "relatedIds": ["rotary-phone", "fixed-phone"],
+    "sources": [
+      {
+        "title": "Wikipedia - Retronym",
+        "url": "https://de.wikipedia.org/wiki/Retronym"
+      },
+      {
+        "title": "Wikipedia - Impulswahlverfahren",
+        "url": "https://de.wikipedia.org/wiki/Impulswahlverfahren"
+      }
+    ]
+  },
+  {
+    "id": "lateinamerika",
+    "name": "Lateinamerika",
+    "originalName": "Amerika",
+    "trigger": "Amerika（アメリカ合衆国の意味）",
+    "description": "「Amerika」がアメリカ合衆国を指す言葉として定着したことで、スペイン語・ポルトガル語圏の国々を区別して呼ぶようになったとされる名称。",
+    "details": {
+      "meaning": "中南米のスペイン語・ポルトガル語圏の国々からなる地域のこと。日本語の「ラテンアメリカ」に相当する。",
+      "history": "「Amerika」はもともと新大陸全体を指す名称だった。やがて「Amerika」がアメリカ合衆国を指す語として広く使われるようになると、ラテン系言語圏の国々は「Lateinamerika」と呼ばれるようになった。ただし「ラテンアメリカ」という呼称は19世紀のフランスで生まれたもので、レトロニムとみなすかには異論もある。",
+      "usage": "地理・政治・文化の文脈で、北アメリカ（特にアメリカ合衆国）と対比して使われる。"
+    },
+    "tags": ["地理", "言語"],
+    "language": "de",
+    "period": "19世紀以降",
+    "status": "disputed",
+    "relatedIds": ["old-world", "contiguous-united-states"],
+    "sources": [
+      {
+        "title": "Wikipedia - Retronym",
+        "url": "https://de.wikipedia.org/wiki/Retronym"
+      },
+      {
+        "title": "Wikipedia - Lateinamerika",
+        "url": "https://de.wikipedia.org/wiki/Lateinamerika"
+      }
+    ]
+  },
+  {
+    "id": "planfilm",
+    "name": "Planfilm",
+    "originalName": "Film",
+    "trigger": "Rollfilm",
+    "description": "ロールフィルムが登場したことで、1枚ずつのシート状のフィルムを区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "1枚ずつ切り分けられたシート状の写真フィルムのこと。日本語の「シートフィルム」に相当する。",
+      "history": "写真の感光材料はもともとガラス乾板が主流で、それと区別してシート状のものが「Film」と呼ばれていた。巻き取り式のロールフィルムが普及すると、従来のシート状フィルムは「Planfilm」と呼び分けられるようになった。",
+      "usage": "大判カメラなどの写真技術の文脈で、ロールフィルムと対比して使われる。"
+    },
+    "tags": ["写真", "カメラ"],
+    "language": "de",
+    "period": "19世紀末以降",
+    "status": "confirmed",
+    "relatedIds": ["film-camera"],
+    "sources": [
+      {
+        "title": "Wikipedia - Retronym",
+        "url": "https://de.wikipedia.org/wiki/Retronym"
+      },
+      {
+        "title": "Wikipedia - Planfilm",
+        "url": "https://de.wikipedia.org/wiki/Planfilm"
+      }
+    ]
+  },
+  {
+    "id": "parallel-ata",
+    "name": "Parallel ATA",
+    "originalName": "ATA",
+    "trigger": "Serial ATA",
+    "description": "シリアルATAが登場したことで、従来のパラレル伝送のATAを区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "ハードディスクや光学ドライブをコンピューターに接続するための、パラレル伝送方式のインターフェース規格のこと。略称は「PATA」。",
+      "history": "ATA（IDEとも呼ばれる）はもともとパラレル伝送の規格しか存在しなかった。2000年代初頭にシリアル伝送のSerial ATA（SATA）が導入されると、従来の規格は「Parallel ATA（PATA）」と呼び分けられるようになった。",
+      "usage": "PCのストレージ接続規格の文脈で、SATAと対比して使われる。"
+    },
+    "tags": ["コンピューター", "技術"],
+    "language": "de",
+    "period": "2000年代以降",
+    "status": "confirmed",
+    "relatedIds": ["hard-disk"],
+    "sources": [
+      {
+        "title": "Wikipedia - Retronym",
+        "url": "https://de.wikipedia.org/wiki/Retronym"
+      },
+      {
+        "title": "Wikipedia - Advanced Technology Attachment",
+        "url": "https://de.wikipedia.org/wiki/Advanced_Technology_Attachment"
+      }
+    ]
+  },
+  {
+    "id": "batterieelektrisches-fahrzeug",
+    "name": "Batterieelektrisches Fahrzeug",
+    "originalName": "Elektrofahrzeug",
+    "trigger": "Brennstoffzellenfahrzeug",
+    "description": "燃料電池車など蓄電池以外から電気を得る電動車が登場したことで、バッテリーで走る電気自動車を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "車載の蓄電池（バッテリー）に蓄えた電力だけでモーターを動かして走る車両のこと。英語の「BEV（Battery Electric Vehicle）」に相当する。",
+      "history": "電気自動車（Elektrofahrzeug）といえば、かつてはバッテリーで走るものを指していた。燃料電池車など、走行中に電気を生み出す方式の電動車が登場すると、バッテリー式のものは「batterieelektrisch」と形容して呼び分けられるようになった。",
+      "usage": "電動モビリティの文脈で、燃料電池車（Brennstoffzellenfahrzeug）やハイブリッド車と対比して使われる。"
+    },
+    "tags": ["自動車", "技術"],
+    "language": "de",
+    "period": "2000年代以降",
+    "status": "confirmed",
+    "relatedIds": ["gasoline-car"],
+    "sources": [
+      {
+        "title": "Wikipedia - Retronym",
+        "url": "https://de.wikipedia.org/wiki/Retronym"
+      },
+      {
+        "title": "Wikipedia - Elektroauto",
+        "url": "https://de.wikipedia.org/wiki/Elektroauto"
+      }
+    ]
   }
 ]
