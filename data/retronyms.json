@@ -366,5 +366,815 @@
     "status": "candidate",
     "relatedIds": [],
     "sources": []
+  },
+  {
+    "id": "am-radio",
+    "name": "AMラジオ",
+    "originalName": "ラジオ",
+    "trigger": "FMラジオ",
+    "description": "FM放送が始まるまでラジオ放送といえば中波のAM放送のことだった。FMラジオの登場で、従来の放送をAMラジオと区別して呼ぶようになった。",
+    "tags": ["通信", "放送", "テクノロジー"],
+    "language": "ja",
+    "period": "20世紀中頃",
+    "status": "confirmed",
+    "relatedIds": ["terrestrial-television"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "rotary-phone",
+    "name": "ダイヤル式電話",
+    "originalName": "電話",
+    "trigger": "プッシュ式電話",
+    "description": "回転ダイヤルで番号を入力する電話機は、プッシュボタン式の電話機が普及したことで「ダイヤル式」「回転ダイヤル式」と区別して呼ばれるようになった。",
+    "tags": ["通信", "電話", "テクノロジー"],
+    "language": "ja",
+    "period": "1970年代以降",
+    "status": "confirmed",
+    "relatedIds": ["fixed-phone"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "cloth-diaper",
+    "name": "布おむつ",
+    "originalName": "おむつ",
+    "trigger": "紙おむつ",
+    "description": "使い捨ての紙おむつが普及するまで、おむつといえば布製のものだった。紙おむつの登場で布おむつと呼び分けられるようになった。",
+    "tags": ["日常生活", "育児"],
+    "language": "ja",
+    "period": "20世紀後半",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "traditional-animation",
+    "name": "手描きアニメ",
+    "originalName": "アニメーション",
+    "trigger": "3DCGアニメーション",
+    "description": "コンピューターグラフィックスによるアニメーションが一般化したことで、セル画など手で描いた絵によるアニメーションを手描きアニメと呼ぶようになった。",
+    "tags": ["映像", "エンターテインメント", "アナログ"],
+    "language": "ja",
+    "period": "1990年代以降",
+    "status": "confirmed",
+    "relatedIds": ["live-action"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "traditional-chinese",
+    "name": "繁体字",
+    "originalName": "漢字",
+    "trigger": "簡体字",
+    "description": "中華人民共和国で簡略化された簡体字が制定されたことで、それまでの伝統的な字体を繁体字（正体字）と呼んで区別するようになった。",
+    "tags": ["言語", "文字", "社会"],
+    "language": "ja",
+    "period": "1950年代以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "bar-soap",
+    "name": "固形石鹸",
+    "originalName": "石鹸",
+    "trigger": "液体石鹸・ボディソープ",
+    "description": "液体石鹸やボディソープが普及するまで石鹸といえば固形のものだった。液体タイプとの区別のため固形石鹸と呼ばれるようになった。",
+    "tags": ["日常生活"],
+    "language": "ja",
+    "period": "20世紀後半",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "mechanical-watch",
+    "name": "機械式時計",
+    "originalName": "腕時計",
+    "trigger": "クオーツ時計",
+    "description": "クオーツ時計が登場するまで、腕時計はゼンマイと歯車で動くのが当たり前だった。クオーツ式と区別して機械式時計と呼ぶようになった。",
+    "tags": ["技術", "アナログ", "日常生活"],
+    "language": "ja",
+    "period": "1970年代以降",
+    "status": "confirmed",
+    "relatedIds": ["analog-clock"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "crt-tv",
+    "name": "ブラウン管テレビ",
+    "originalName": "テレビ",
+    "trigger": "液晶・プラズマテレビ",
+    "description": "薄型の液晶テレビやプラズマテレビが普及したことで、それまでのテレビをブラウン管テレビ（CRTテレビ）と呼んで区別するようになった。",
+    "tags": ["テレビ", "映像", "テクノロジー"],
+    "language": "ja",
+    "period": "2000年代以降",
+    "status": "confirmed",
+    "relatedIds": ["black-and-white-tv"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "terrestrial-television",
+    "name": "地上波テレビ",
+    "originalName": "テレビ",
+    "trigger": "衛星放送・ケーブルテレビ",
+    "description": "衛星放送やケーブルテレビ、ネット配信が登場したことで、地上の送信所から電波で届く従来のテレビ放送を地上波と呼ぶようになった。",
+    "tags": ["テレビ", "放送", "テクノロジー"],
+    "language": "ja",
+    "period": "1980年代以降",
+    "status": "confirmed",
+    "relatedIds": ["am-radio"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "plain-text",
+    "name": "プレーンテキスト",
+    "originalName": "テキスト",
+    "trigger": "リッチテキスト",
+    "description": "文字の装飾や書式を含むリッチテキストやワープロ文書が登場したことで、文字だけのデータをプレーンテキストと呼ぶようになった。",
+    "tags": ["コンピューター", "ソフトウェア"],
+    "language": "ja",
+    "period": "1980年代以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "monaural",
+    "name": "モノラル",
+    "originalName": "録音・再生",
+    "trigger": "ステレオ",
+    "description": "ステレオ録音・再生が一般化したことで、1つのチャンネルで記録・再生する従来の方式をモノラルと呼ぶようになった。",
+    "tags": ["音楽", "テクノロジー"],
+    "language": "ja",
+    "period": "1950年代以降",
+    "status": "confirmed",
+    "relatedIds": ["sp-record"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "sp-record",
+    "name": "SPレコード",
+    "originalName": "レコード",
+    "trigger": "LPレコード",
+    "description": "毎分78回転のシェラック盤は単にレコードと呼ばれていたが、LP盤やEP盤の登場で「SP（Standard Playing）」と呼ばれるようになった。",
+    "tags": ["音楽", "アナログ", "テクノロジー"],
+    "language": "ja",
+    "period": "1950年代以降",
+    "status": "confirmed",
+    "relatedIds": ["analog-record"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "natural-satellite",
+    "name": "自然衛星",
+    "originalName": "衛星",
+    "trigger": "人工衛星",
+    "description": "月のように惑星を回る天体は単に衛星と呼ばれていたが、人工衛星の打ち上げ以降、自然衛星と呼んで区別するようになった。",
+    "tags": ["科学", "宇宙"],
+    "language": "ja",
+    "period": "1950年代以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "natural-rubber",
+    "name": "天然ゴム",
+    "originalName": "ゴム",
+    "trigger": "合成ゴム",
+    "description": "合成ゴムが工業化されたことで、ゴムの木の樹液から作られる従来のゴムを天然ゴムと呼ぶようになった。",
+    "tags": ["科学", "素材"],
+    "language": "ja",
+    "period": "20世紀前半",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "organic-farming",
+    "name": "有機農業",
+    "originalName": "農業",
+    "trigger": "化学肥料・化学農薬",
+    "description": "化学肥料や化学農薬を使う農業が主流になったことで、それ以前からの化学物質に頼らない農業を有機農業と呼ぶようになった。",
+    "tags": ["食", "社会"],
+    "language": "ja",
+    "period": "20世紀中頃",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "field-hockey",
+    "name": "フィールドホッケー",
+    "originalName": "ホッケー",
+    "trigger": "アイスホッケー",
+    "description": "アイスホッケーの普及、特に北米で「ホッケー」がアイスホッケーを指すようになったことで、芝生などで行う元のホッケーをフィールドホッケーと呼ぶようになった。",
+    "tags": ["スポーツ"],
+    "language": "ja",
+    "period": "20世紀",
+    "status": "confirmed",
+    "relatedIds": ["day-game"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "wet-signature",
+    "name": "手書き署名",
+    "originalName": "署名",
+    "trigger": "電子署名",
+    "description": "電子署名が導入されたことで、紙にペンで書く従来の署名を手書き署名（ウェットサイン）と呼んで区別するようになった。",
+    "tags": ["社会", "アナログ", "テクノロジー"],
+    "language": "ja",
+    "period": "2000年代以降",
+    "status": "confirmed",
+    "relatedIds": ["handwritten-letter"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "handwritten-letter",
+    "name": "手書きの手紙",
+    "originalName": "手紙",
+    "trigger": "ワープロ・電子メール",
+    "description": "ワープロや電子メールの普及により、手で書いた手紙をわざわざ「手書き」と断るようになった。",
+    "tags": ["通信", "アナログ", "日常生活"],
+    "language": "ja",
+    "period": "1980年代以降",
+    "status": "confirmed",
+    "relatedIds": ["snail-mail"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "ball-mouse",
+    "name": "ボールマウス",
+    "originalName": "マウス",
+    "trigger": "光学式マウス",
+    "description": "光学式・レーザー式のマウスが普及したことで、底面のボールの回転で動きを検出する従来のマウスをボールマウス（機械式マウス）と呼ぶようになった。",
+    "tags": ["コンピューター", "テクノロジー"],
+    "language": "ja",
+    "period": "2000年代以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "prime-lens",
+    "name": "単焦点レンズ",
+    "originalName": "レンズ",
+    "trigger": "ズームレンズ",
+    "description": "焦点距離を変えられるズームレンズが普及したことで、焦点距離が固定された従来のレンズを単焦点レンズと呼ぶようになった。",
+    "tags": ["写真", "カメラ", "技術"],
+    "language": "ja",
+    "period": "20世紀後半",
+    "status": "confirmed",
+    "relatedIds": ["film-camera"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "live-music",
+    "name": "生演奏",
+    "originalName": "演奏",
+    "trigger": "録音・再生技術",
+    "description": "レコードやラジオで録音された音楽を聴けるようになったことで、その場で演奏される音楽を生演奏（ライブ）と呼ぶようになった。",
+    "tags": ["音楽", "エンターテインメント"],
+    "language": "ja",
+    "period": "20世紀前半",
+    "status": "confirmed",
+    "relatedIds": ["studio-album"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "studio-album",
+    "name": "スタジオアルバム",
+    "originalName": "アルバム",
+    "trigger": "ライブアルバム",
+    "description": "ライブ録音やベスト盤などが発売されるようになったことで、スタジオで録音されたオリジナルのアルバムをスタジオアルバムと呼ぶようになった。",
+    "tags": ["音楽", "エンターテインメント"],
+    "language": "ja",
+    "period": "1960年代以降",
+    "status": "confirmed",
+    "relatedIds": ["live-music"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "special-relativity",
+    "name": "特殊相対性理論",
+    "originalName": "相対性理論",
+    "trigger": "一般相対性理論",
+    "description": "アインシュタインが1915年に重力を含む一般相対性理論を発表したことで、1905年の相対性理論を特殊相対性理論と呼ぶようになった。",
+    "tags": ["科学"],
+    "language": "ja",
+    "period": "1910年代",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "real-number",
+    "name": "実数",
+    "originalName": "数",
+    "trigger": "虚数・複素数",
+    "description": "虚数の概念が導入されたことで、それまでの数を「実在する数」として実数と呼んで区別するようになった。",
+    "tags": ["科学", "数学"],
+    "language": "ja",
+    "period": "17世紀",
+    "status": "confirmed",
+    "relatedIds": ["natural-language"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "star-wars-episode-4",
+    "name": "スター・ウォーズ エピソード4/新たなる希望",
+    "originalName": "スター・ウォーズ",
+    "trigger": "続編・前日譚の公開",
+    "description": "1977年の公開時のタイトルは単に「スター・ウォーズ」だったが、続編の製作に伴いエピソード番号と副題が付けられた。",
+    "tags": ["映画", "エンターテインメント"],
+    "language": "ja",
+    "period": "1980年代",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "playstation-1",
+    "name": "初代プレイステーション",
+    "originalName": "プレイステーション",
+    "trigger": "プレイステーション2",
+    "description": "後継機のプレイステーション2が発売されたことで、元のプレイステーションは初代PS・PS1と呼ばれるようになった。",
+    "tags": ["ゲーム", "エンターテインメント", "テクノロジー"],
+    "language": "ja",
+    "period": "2000年代",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "old-testament",
+    "name": "旧約聖書",
+    "originalName": "聖書",
+    "trigger": "新約聖書",
+    "description": "キリスト教が成立し新約聖書が編まれたことで、ユダヤ教の聖典はキリスト教側から旧約聖書と呼ばれるようになった。",
+    "tags": ["宗教", "歴史"],
+    "language": "ja",
+    "period": "2世紀以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "byzantine-empire",
+    "name": "ビザンツ帝国",
+    "originalName": "ローマ帝国",
+    "trigger": "後世の歴史学",
+    "description": "当時の人々は自らをローマ帝国と称していたが、後世の歴史家が西ローマ帝国滅亡後の東ローマ帝国を区別するためにビザンツ帝国と呼ぶようになった。",
+    "tags": ["歴史"],
+    "language": "ja",
+    "period": "16世紀以降",
+    "status": "confirmed",
+    "relatedIds": ["world-war-one"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "web-1-0",
+    "name": "Web 1.0",
+    "originalName": "ウェブ",
+    "trigger": "Web 2.0",
+    "description": "ユーザー参加型のWeb 2.0という言葉が広まったことで、静的なページ中心だったそれ以前のウェブをWeb 1.0と呼ぶようになった。",
+    "tags": ["コンピューター", "テクノロジー", "社会"],
+    "language": "ja",
+    "period": "2000年代中頃",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "british-english",
+    "name": "イギリス英語",
+    "originalName": "英語",
+    "trigger": "アメリカ英語",
+    "description": "北米の英語とイギリスの英語が分かれていったことで、イギリスで話される英語をイギリス英語と呼んで区別するようになった。",
+    "tags": ["言語"],
+    "language": "ja",
+    "period": "19世紀以降",
+    "status": "confirmed",
+    "relatedIds": ["snail-mail"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "primary-cell",
+    "name": "一次電池",
+    "originalName": "電池",
+    "trigger": "二次電池（充電池）",
+    "description": "充電して繰り返し使える二次電池が登場したことで、使い切りの従来の電池を一次電池と呼ぶようになった。",
+    "tags": ["科学", "技術", "日常生活"],
+    "language": "ja",
+    "period": "19世紀後半以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "physical-media",
+    "name": "物理メディア",
+    "originalName": "メディア",
+    "trigger": "ダウンロード・ストリーミング配信",
+    "description": "音楽や映像、ゲームがダウンロードやストリーミングで配信されるようになったことで、CD・DVD・ゲームソフトなど形のある媒体を物理メディア（パッケージ版）と呼ぶようになった。",
+    "tags": ["音楽", "映像", "テクノロジー"],
+    "language": "ja",
+    "period": "2000年代以降",
+    "status": "confirmed",
+    "relatedIds": ["paper-book", "analog-record"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "opposite-sex-marriage",
+    "name": "異性婚",
+    "originalName": "結婚",
+    "trigger": "同性婚",
+    "description": "同性婚が法的に認められる国が現れたことで、男女間の結婚を異性婚と呼んで区別するようになった。",
+    "tags": ["社会"],
+    "language": "ja",
+    "period": "2000年代以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "natural-person",
+    "name": "自然人",
+    "originalName": "人",
+    "trigger": "法人",
+    "description": "法律上、権利・義務の主体となれる法人の概念が確立したことで、生身の人間を自然人と呼んで区別するようになった。",
+    "tags": ["社会", "法律"],
+    "language": "ja",
+    "period": "近代",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "naturally-aspirated-engine",
+    "name": "自然吸気エンジン",
+    "originalName": "エンジン",
+    "trigger": "ターボ・スーパーチャージャー",
+    "description": "過給機付きエンジンが普及したことで、過給機を持たない従来のエンジンを自然吸気（NA）エンジンと呼ぶようになった。",
+    "tags": ["交通", "自動車", "技術"],
+    "language": "ja",
+    "period": "20世紀後半",
+    "status": "confirmed",
+    "relatedIds": ["gasoline-car"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "conventional-weapon",
+    "name": "通常兵器",
+    "originalName": "兵器",
+    "trigger": "核兵器",
+    "description": "核兵器が登場したことで、それ以外の兵器を通常兵器、核を使わない戦争を通常戦争と呼ぶようになった。",
+    "tags": ["社会", "歴史"],
+    "language": "ja",
+    "period": "1950年代以降",
+    "status": "confirmed",
+    "relatedIds": ["world-war-one"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "dumb-bomb",
+    "name": "無誘導爆弾",
+    "originalName": "爆弾",
+    "trigger": "誘導爆弾（スマート爆弾）",
+    "description": "誘導装置を持つスマート爆弾が登場したことで、落下するだけの従来の爆弾を無誘導爆弾（ダム爆弾）と呼ぶようになった。",
+    "tags": ["歴史", "技術"],
+    "language": "ja",
+    "period": "1970年代以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "analog-synthesizer",
+    "name": "アナログシンセサイザー",
+    "originalName": "シンセサイザー",
+    "trigger": "デジタルシンセサイザー",
+    "description": "デジタル回路で音を作るシンセサイザーが登場したことで、アナログ回路で音を作る従来の機種をアナログシンセと呼ぶようになった。",
+    "tags": ["音楽", "アナログ", "楽器"],
+    "language": "ja",
+    "period": "1980年代以降",
+    "status": "confirmed",
+    "relatedIds": ["acoustic-piano"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "pipe-organ",
+    "name": "パイプオルガン",
+    "originalName": "オルガン",
+    "trigger": "電子オルガン・リードオルガン",
+    "description": "リードオルガンや電子オルガンが登場したことで、パイプに空気を送って鳴らす従来のオルガンをパイプオルガンと呼ぶようになった。",
+    "tags": ["音楽", "楽器"],
+    "language": "ja",
+    "period": "19世紀以降",
+    "status": "confirmed",
+    "relatedIds": ["acoustic-piano"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "reel-to-reel",
+    "name": "オープンリール",
+    "originalName": "テープレコーダー",
+    "trigger": "カセットテープ",
+    "description": "カセットテープが普及したことで、リールがむき出しになった従来の磁気テープをオープンリールと呼ぶようになった。",
+    "tags": ["音楽", "アナログ", "テクノロジー"],
+    "language": "ja",
+    "period": "1960年代以降",
+    "status": "confirmed",
+    "relatedIds": ["analog-record"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "whole-wheat-flour",
+    "name": "全粒粉",
+    "originalName": "小麦粉",
+    "trigger": "精製小麦粉",
+    "description": "製粉技術の発達で胚芽やふすまを取り除いた白い小麦粉が主流になり、丸ごと挽いた従来の粉を全粒粉と呼ぶようになった。",
+    "tags": ["食"],
+    "language": "ja",
+    "period": "19世紀以降",
+    "status": "confirmed",
+    "relatedIds": ["whole-milk"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "tabletop-game",
+    "name": "アナログゲーム",
+    "originalName": "ゲーム",
+    "trigger": "ビデオゲーム",
+    "description": "ビデオゲームの普及により、ボードゲームやカードゲーム、TRPGなどコンピューターを使わない遊びをアナログゲーム（テーブルトップゲーム）と呼ぶようになった。",
+    "tags": ["ゲーム", "アナログ", "エンターテインメント"],
+    "language": "ja",
+    "period": "2000年代以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "offline-meeting",
+    "name": "オフ会",
+    "originalName": "集まり",
+    "trigger": "オンラインコミュニティ",
+    "description": "インターネット上で知り合う人が増えたことで、実際に顔を合わせて会うことを「オフライン」の会、オフ会と呼ぶようになった。",
+    "tags": ["社会", "コンピューター", "日常生活"],
+    "language": "ja",
+    "period": "1990年代以降",
+    "status": "confirmed",
+    "relatedIds": ["in-person-meeting"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "sneakernet",
+    "name": "Sneakernet",
+    "originalName": "Data transfer",
+    "trigger": "Computer network",
+    "description": "ネットワークでのデータ転送が当たり前になったことで、記憶媒体を人が持ち歩いてデータを運ぶ方法を、スニーカーで歩くことにかけてこう呼ぶようになった英語圏の俗語。",
+    "tags": ["コンピューター", "言語"],
+    "language": "en",
+    "period": "1980年代以降",
+    "status": "confirmed",
+    "relatedIds": ["snail-mail"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
+  },
+  {
+    "id": "vanilla",
+    "name": "Vanilla",
+    "originalName": "Plain",
+    "trigger": "Flavored / customized versions",
+    "description": "アイスクリームの基本の味から転じて、改造や拡張を加えていない素の状態を指すようになった言葉。ソフトウェアでは「バニラJavaScript」のようにフレームワークなどを使わない状態を表す。",
+    "tags": ["ソフトウェア", "言語"],
+    "language": "en",
+    "period": "1980年代以降",
+    "status": "confirmed",
+    "relatedIds": ["native-app"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      }
+    ]
   }
 ]
