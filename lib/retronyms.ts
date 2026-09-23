@@ -13,6 +13,7 @@ export type Retronym = {
   originalName: string
   trigger: string
   description: string
+  details?: string[]
   tags: string[]
   language: string
   period?: string

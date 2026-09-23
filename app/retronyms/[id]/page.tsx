@@ -116,7 +116,12 @@ const Page = async ({ params }: Params) => {
       </Section>
 
       <Section compact heading="概要">
-        <p>{retronym.description}</p>
+        <div style={{ display: "grid", gap: ".875rem", lineHeight: 1.9 }}>
+          <p>{retronym.description}</p>
+          {retronym.details?.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
       </Section>
 
       {related.length > 0 && (
