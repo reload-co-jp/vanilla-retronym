@@ -5,6 +5,7 @@ import { GoogleAnalytics } from "@next/third-parties/google"
 import type { Metadata } from "next"
 import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google"
 import Link from "next/link"
+import Script from "next/script"
 import "./reset.css"
 
 const notoSerifJP = Noto_Serif_JP({
@@ -114,6 +115,12 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         </Footer>
       </body>
       <GoogleAnalytics gaId="G-QX44CQXJVG" />
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542845006087970"
+        crossOrigin="anonymous"
+        strategy="afterInteractive"
+      />
     </html>
   )
 }
