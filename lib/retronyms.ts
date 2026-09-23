@@ -45,6 +45,12 @@ export const statusLabels: Record<RetronymStatus, string> = {
   candidate: "候補",
 }
 
+export const statusSymbols: Record<RetronymStatus, string> = {
+  confirmed: "◎",
+  disputed: "△",
+  candidate: "？",
+}
+
 /** JSONの記載順を「登録順」とみなし、後ろにあるものほど新しい。 */
 export const retronyms: Retronym[] = data as Retronym[]
 

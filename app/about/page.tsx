@@ -7,6 +7,7 @@ import {
   Retronym,
   RetronymStatus,
   retronyms,
+  statusLabels,
 } from "@/lib/retronyms"
 import { openGraphBase, site } from "@/lib/site"
 import { theme } from "@/lib/theme"
@@ -309,11 +310,11 @@ const Page: FC = () => (
               alignItems: "baseline",
               display: "grid",
               gap: ".75rem",
-              gridTemplateColumns: "5rem 1fr",
+              gridTemplateColumns: "7rem 1fr",
             }}
           >
             <dt>
-              <StatusBadge status={status} />
+              <StatusBadge status={status} /> {statusLabels[status]}
             </dt>
             <dd style={{ margin: 0 }}>{statusDescriptions[status]}</dd>
           </div>
