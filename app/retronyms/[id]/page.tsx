@@ -2,7 +2,13 @@ import { Section, Title } from "@/components/elements/layout"
 import { RetronymCardList } from "@/components/retronym/card"
 import { StatusBadge } from "@/components/retronym/status-badge"
 import { TagLink, TagList } from "@/components/retronym/tag"
-import { getRelated, getRetronym, retronyms } from "@/lib/retronyms"
+import {
+  detailLabels,
+  getRelated,
+  getRetronym,
+  RetronymDetails,
+  retronyms,
+} from "@/lib/retronyms"
 import { site } from "@/lib/site"
 import { theme } from "@/lib/theme"
 import type { Metadata } from "next"
@@ -118,9 +124,17 @@ const Page = async ({ params }: Params) => {
       <Section compact heading="概要">
         <div style={{ display: "grid", gap: ".875rem", lineHeight: 1.9 }}>
           <p>{retronym.description}</p>
-          {retronym.details?.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
+          {retronym.details &&
+            (Object.keys(detailLabels) as (keyof RetronymDetails)[]).map(
+              (key) => (
+                <section key={key} style={{ display: "grid", gap: ".25rem" }}>
+                  <h3 style={{ fontSize: ".875rem", margin: 0 }}>
+                    {detailLabels[key]}
+                  </h3>
+                  <p>{retronym.details?.[key]}</p>
+                </section>
+              )
+            )}
         </div>
       </Section>
 

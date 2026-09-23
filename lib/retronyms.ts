@@ -7,13 +7,28 @@ export type Source = {
   url: string
 }
 
+export type RetronymDetails = {
+  /** 単語の意味・語構成 */
+  meaning: string
+  /** 成立の歴史・経緯・背景 */
+  history: string
+  /** 用法・使われる場面 */
+  usage: string
+}
+
+export const detailLabels: Record<keyof RetronymDetails, string> = {
+  meaning: "意味",
+  history: "歴史・経緯",
+  usage: "用法",
+}
+
 export type Retronym = {
   id: string
   name: string
   originalName: string
   trigger: string
   description: string
-  details?: string[]
+  details?: RetronymDetails
   tags: string[]
   language: string
   period?: string
