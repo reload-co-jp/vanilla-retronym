@@ -3344,5 +3344,302 @@
         "url": "https://en.wikipedia.org/wiki/Slash_(punctuation)"
       }
     ]
+  },
+  {
+    "id": "chocolat-chaud",
+    "name": "Chocolat chaud",
+    "originalName": "Chocolat",
+    "trigger": "Chocolat (solide)",
+    "description": "板チョコなど固形のチョコレートが普及したことで、もともと「chocolat」と呼ばれていた飲み物を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "カカオを溶かして温めた飲み物のこと。「chaud」はフランス語で「温かい」を意味する。",
+      "history": "17世紀にフランスへ伝わったカカオは、長いあいだ飲み物として楽しまれ、「chocolat」といえばこの飲み物を指した。19世紀に固形のチョコレートが作られて広まると、「chocolat」は固形の菓子を指すことが多くなり、飲み物のほうを「chocolat chaud」と呼び分けるようになった。",
+      "usage": "カフェのメニューなどで「chocolat chaud」として使われる。日常会話では今でも単に「un chocolat」と注文することがある。"
+    },
+    "tags": ["食"],
+    "language": "fr",
+    "period": "19世紀以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipédia - Rétronymie",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9tronymie"
+      },
+      {
+        "title": "Wikipédia - Chocolat chaud",
+        "url": "https://fr.wikipedia.org/wiki/Chocolat_chaud"
+      }
+    ]
+  },
+  {
+    "id": "entre-deux-guerres",
+    "name": "Entre-deux-guerres",
+    "originalName": "Après-guerre",
+    "trigger": "Seconde Guerre mondiale",
+    "description": "第二次世界大戦が起きたことで、それまで「戦後（après-guerre）」と呼ばれていた時代を「二つの大戦のあいだ」と呼び直した名称。",
+    "details": {
+      "meaning": "第一次世界大戦の終結（1918年）から第二次世界大戦の開戦（1939年）までの期間のこと。「entre deux guerres」は「二つの戦争のあいだ」を意味する。",
+      "history": "1920〜30年代のフランスでは、第一次世界大戦後の時代を「après-guerre（戦後）」と呼んでいた。第二次世界大戦が始まると、その時代は二度目の戦争の「前」でもあったことになり、「entre-deux-guerres」と呼ばれるようになった。同時に「Grande Guerre（大戦）」も「Première Guerre mondiale（第一次世界大戦）」と呼び直された。",
+      "usage": "歴史・文化の文脈で「la France de l'entre-deux-guerres（戦間期のフランス）」のように使う。日本語の「戦間期」に相当する。"
+    },
+    "tags": ["歴史", "社会"],
+    "language": "fr",
+    "period": "1940年代以降",
+    "status": "confirmed",
+    "relatedIds": ["world-war-one"],
+    "sources": [
+      {
+        "title": "Wikipédia - Rétronymie",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9tronymie"
+      },
+      {
+        "title": "Wikipédia - Entre-deux-guerres",
+        "url": "https://fr.wikipedia.org/wiki/Entre-deux-guerres"
+      }
+    ]
+  },
+  {
+    "id": "franc-francais",
+    "name": "Franc français",
+    "originalName": "Franc",
+    "trigger": "Franc belge, franc suisse, franc CFA など",
+    "description": "ベルギーやスイスなどでも「franc」という通貨が使われるようになったことで、フランスの通貨を区別して呼ぶ名称。",
+    "details": {
+      "meaning": "2002年にユーロへ移行するまでフランスで使われていた通貨のこと。「français」は「フランスの」を意味する。",
+      "history": "フランスでは「franc」といえば自国の通貨だった。19世紀以降、ベルギー・フラン、スイス・フラン、さらに旧植民地のCFAフランなど、同じ名前の通貨が各地に生まれたため、フランスのものを「franc français」と呼んで区別するようになった。",
+      "usage": "他国のフランと比べる場面や、ユーロ導入以前の金額を説明する場面で使われる。国内の日常会話では単に「franc」と言うことが多かった。"
+    },
+    "tags": ["社会", "歴史"],
+    "language": "fr",
+    "period": "19世紀以降",
+    "status": "candidate",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipédia - Rétronymie",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9tronymie"
+      },
+      {
+        "title": "Wikipédia - Franc français",
+        "url": "https://fr.wikipedia.org/wiki/Franc_fran%C3%A7ais"
+      }
+    ]
+  },
+  {
+    "id": "lave-linge",
+    "name": "Lave-linge",
+    "originalName": "Machine à laver",
+    "trigger": "Lave-vaisselle",
+    "description": "食器洗い機（lave-vaisselle）が家庭に広まったことで、「洗う機械（machine à laver）」を衣類用と明示して呼ぶようになった名称。",
+    "details": {
+      "meaning": "衣類を洗う洗濯機のこと。「laver」は「洗う」、「linge」は「衣類・リネン類」を意味する。",
+      "history": "「machine à laver（洗う機械）」は衣類の洗濯機を指していたが、食器洗い機が家庭に普及すると、何を洗う機械なのかがあいまいになった。そこで対になる「lave-vaisselle」にそろえて、洗濯機を「lave-linge」と呼ぶようになった。",
+      "usage": "家電売り場や説明書などでは「lave-linge」が一般的。日常会話では今も「machine à laver」がよく使われる。"
+    },
+    "tags": ["日常生活", "技術"],
+    "language": "fr",
+    "period": "20世紀後半以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipédia - Rétronymie",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9tronymie"
+      },
+      {
+        "title": "Wikipédia - Lave-linge",
+        "url": "https://fr.wikipedia.org/wiki/Lave-linge"
+      }
+    ]
+  },
+  {
+    "id": "montre-de-poche",
+    "name": "Montre de poche",
+    "originalName": "Montre",
+    "trigger": "Montre-bracelet",
+    "description": "腕時計が普及したことで、それまで単に「montre」と呼ばれていた懐中時計を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "ポケットに入れて持ち歩く懐中時計のこと。「poche」は「ポケット」を意味する。チョッキの小さなポケット（gousset）に入れたことから「montre-gousset」とも呼ぶ。",
+      "history": "携帯できる時計といえば長らく懐中時計のことだった。20世紀初め、特に第一次世界大戦を機に腕時計が広まり標準的な「montre」になると、従来の時計を「montre de poche」「montre-gousset」と呼び分けるようになった。",
+      "usage": "アンティークや鉄道時計、懐中時計のコレクションなどの文脈で使われる。"
+    },
+    "tags": ["日常生活", "歴史"],
+    "language": "fr",
+    "period": "20世紀前半以降",
+    "status": "confirmed",
+    "relatedIds": ["analog-clock", "mechanical-watch"],
+    "sources": [
+      {
+        "title": "Wikipédia - Rétronymie",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9tronymie"
+      },
+      {
+        "title": "Wikipédia - Montre (horlogerie)",
+        "url": "https://fr.wikipedia.org/wiki/Montre_(horlogerie)"
+      }
+    ]
+  },
+  {
+    "id": "velo-musculaire",
+    "name": "Vélo musculaire",
+    "originalName": "Vélo",
+    "trigger": "Vélo électrique",
+    "description": "電動アシスト自転車が広まったことで、人の力だけでこぐ普通の自転車を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "モーターを持たず、脚の筋力だけで走らせる自転車のこと。「musculaire」は「筋肉の」を意味する。",
+      "history": "自転車（vélo）は本来すべて人力だったが、2010年代に電動アシスト自転車（vélo à assistance électrique, VAE）が急速に普及したことで、従来の自転車を「vélo musculaire」と呼び分ける必要が生まれた。",
+      "usage": "自転車の統計や交通政策の文脈で使われる。くだけた言い方として、アコースティックギターになぞらえた「vélo acoustique」もある。"
+    },
+    "tags": ["交通"],
+    "language": "fr",
+    "period": "2010年代以降",
+    "status": "confirmed",
+    "relatedIds": ["acoustic-guitar"],
+    "sources": [
+      {
+        "title": "Wikipédia - Rétronymie",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9tronymie"
+      },
+      {
+        "title": "Wikipédia - Vélo musculaire",
+        "url": "https://fr.wikipedia.org/wiki/V%C3%A9lo_musculaire"
+      }
+    ]
+  },
+  {
+    "id": "ordinateur-portable",
+    "name": "Ordinateur portable",
+    "originalName": "Portable",
+    "trigger": "Téléphone portable",
+    "description": "携帯電話が「portable」と呼ばれるようになったことで、持ち運べるコンピューターを「ordinateur portable」と明示して呼ぶようになった名称。",
+    "details": {
+      "meaning": "持ち運びできるノート型のコンピューターのこと。「portable」は「持ち運べる」を意味する。",
+      "history": "持ち運べるコンピューターは「portable」と略して呼ばれることがあったが、1990年代以降に携帯電話（téléphone portable）が爆発的に普及し、単に「portable」と言えば携帯電話を指すようになった。そのためコンピューターのほうは「ordinateur portable」と省略せずに呼ぶ必要が生じた。",
+      "usage": "日常会話で「mon portable」は通常携帯電話を指す。ノートパソコンは「ordinateur portable」または「PC portable」と言う。"
+    },
+    "tags": ["コンピューター", "テクノロジー", "電話"],
+    "language": "fr",
+    "period": "1990年代以降",
+    "status": "candidate",
+    "relatedIds": ["desktop-computer", "fixed-phone"],
+    "sources": [
+      {
+        "title": "Wikipédia - Rétronymie",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9tronymie"
+      },
+      {
+        "title": "Wikipédia - Ordinateur portable",
+        "url": "https://fr.wikipedia.org/wiki/Ordinateur_portable"
+      }
+    ]
+  },
+  {
+    "id": "four-traditionnel",
+    "name": "Four traditionnel",
+    "originalName": "Four",
+    "trigger": "Four à micro-ondes",
+    "description": "電子レンジが家庭に広まったことで、熱で焼く従来のオーブンを区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "電熱やガスの熱で庫内を温めて調理する、昔ながらのオーブンのこと。「traditionnel」は「伝統的な・従来の」を意味する。",
+      "history": "「four」といえば焼くためのオーブンを指していた。電子レンジ（four à micro-ondes）が家庭に普及すると、同じ「four」の名を持つ調理器具が二つになり、従来のものを「four traditionnel」「four conventionnel」と呼び分けるようになった。",
+      "usage": "レシピで「au four traditionnel」と加熱方法を指定する場面などで使われる。日常会話では電子レンジを「micro-ondes」と略すため、単に「four」とも言う。"
+    },
+    "tags": ["日常生活", "食"],
+    "language": "fr",
+    "period": "1980年代以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipédia - Rétronymie",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9tronymie"
+      },
+      {
+        "title": "Wikipédia - Four à micro-ondes",
+        "url": "https://fr.wikipedia.org/wiki/Four_%C3%A0_micro-ondes"
+      }
+    ]
+  },
+  {
+    "id": "tour-conventionnel",
+    "name": "Tour conventionnel",
+    "originalName": "Tour",
+    "trigger": "Tour à commande numérique",
+    "description": "数値制御（CNC）旋盤が普及したことで、人が手で操作する従来の旋盤を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "作業者がハンドルを操作して加工する、数値制御を持たない旋盤のこと。「tour」はここでは工作機械の「旋盤」を意味する。",
+      "history": "旋盤（tour）は長く人の手で操作する機械だった。20世紀後半にコンピューターで刃物の動きを制御する数値制御旋盤が工場の主流になると、従来の旋盤を「tour conventionnel」と呼んで区別するようになった。",
+      "usage": "機械加工の現場や職業訓練で、数値制御旋盤（tour CN）と対比して使われる。"
+    },
+    "tags": ["技術"],
+    "language": "fr",
+    "period": "20世紀後半以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipédia - Rétronymie",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9tronymie"
+      },
+      {
+        "title": "Wikipédia - Tour (outil)",
+        "url": "https://fr.wikipedia.org/wiki/Tour_(outil)"
+      }
+    ]
+  },
+  {
+    "id": "dumas-pere",
+    "name": "Alexandre Dumas père",
+    "originalName": "Alexandre Dumas",
+    "trigger": "Alexandre Dumas fils",
+    "description": "同名の息子も作家として有名になったことで、『三銃士』の作者である父を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "『三銃士』『モンテ・クリスト伯』で知られる作家アレクサンドル・デュマ（1802〜1870）のこと。「père」は「父」を意味し、息子は「fils（息子）」を付けて呼ばれる。",
+      "history": "息子のアレクサンドル・デュマも作家となり、1848年の小説『椿姫（La Dame aux camélias）』で名声を得た。同じ名前の作家が二人になったため、父を「Dumas père」、息子を「Dumas fils」と呼び分けるようになった。",
+      "usage": "文学史や書誌で二人を区別するときに使う。日本語でも「大デュマ」「小デュマ」と呼び分ける。フランス語の人名では「l'Ancien / le Jeune」なども同じ働きをする。"
+    },
+    "tags": ["書籍", "歴史"],
+    "language": "fr",
+    "period": "19世紀半ば以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipédia - Rétronymie",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9tronymie"
+      },
+      {
+        "title": "Wikipédia - Alexandre Dumas",
+        "url": "https://fr.wikipedia.org/wiki/Alexandre_Dumas"
+      }
+    ]
+  },
+  {
+    "id": "ipod-classic",
+    "name": "iPod classic",
+    "originalName": "iPod",
+    "trigger": "iPod mini、iPod nano、iPod touch",
+    "description": "iPodに多くの派生モデルが登場したことで、元のハードディスク搭載モデルに「classic」を付けて呼ぶようになった名称。",
+    "details": {
+      "meaning": "ハードディスクとクリックホイールを備えた、Appleの初代系列の携帯音楽プレーヤーのこと。「classic」は「元祖・従来型」を表す。",
+      "history": "2001年に登場したiPodは、その後iPod mini、iPod nano、iPod shuffleなどの派生モデルが加わり、「iPod」は製品群全体の名前になった。2007年にiPod touchと同時に発表された第6世代から、元の系列が正式に「iPod classic」と名付けられた。2014年に販売終了。",
+      "usage": "製品名として使われ、元の系列の旧世代モデルをまとめて「iPod classic」と呼ぶこともある。PlayStationが「PS one」と呼ばれたのと同様の、製品のレトロニムの例。"
+    },
+    "tags": ["テクノロジー", "音楽"],
+    "language": "en",
+    "period": "2007年以降",
+    "status": "confirmed",
+    "relatedIds": ["playstation-1"],
+    "sources": [
+      {
+        "title": "Wikipédia - Rétronymie",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9tronymie"
+      },
+      {
+        "title": "Wikipédia - iPod classic",
+        "url": "https://fr.wikipedia.org/wiki/IPod_classic"
+      }
+    ]
   }
 ]
