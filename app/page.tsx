@@ -1,7 +1,7 @@
-import { Title } from "@/components/elements/layout"
+import { Section, Title } from "@/components/elements/layout"
 import { RetronymCardList } from "@/components/retronym/card"
 import { RandomRetronym } from "@/components/retronym/random"
-import { Tag, TagList } from "@/components/retronym/tag"
+import { TagLink, TagList } from "@/components/retronym/tag"
 import {
   getTags,
   newestRetronyms,
@@ -11,26 +11,7 @@ import {
 import { site } from "@/lib/site"
 import { theme } from "@/lib/theme"
 import Link from "next/link"
-import { FC, ReactNode } from "react"
-
-const Section: FC<{ heading: string; children: ReactNode }> = ({
-  heading,
-  children,
-}) => (
-  <section style={{ display: "grid", gap: "1rem" }}>
-    <h2
-      style={{
-        borderBottom: `1px solid ${theme.border}`,
-        fontSize: "1.0625rem",
-        margin: 0,
-        paddingBottom: ".5rem",
-      }}
-    >
-      {heading}
-    </h2>
-    {children}
-  </section>
-)
+import { FC } from "react"
 
 const Page: FC = () => {
   const tags = getTags()
@@ -70,15 +51,9 @@ const Page: FC = () => {
       <Section heading="タグ">
         <TagList>
           {tags.map(({ name, count }) => (
-            <Link
-              key={name}
-              href={`/retronyms/?tag=${encodeURIComponent(name)}`}
-              style={{ textDecoration: "none" }}
-            >
-              <Tag>
-                {name} {count}
-              </Tag>
-            </Link>
+            <TagLink key={name} tag={name}>
+              {name} {count}
+            </TagLink>
           ))}
         </TagList>
       </Section>

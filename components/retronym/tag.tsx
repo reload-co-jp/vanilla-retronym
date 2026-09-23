@@ -1,5 +1,6 @@
 import { theme } from "@/lib/theme"
-import { ComponentProps, FC } from "react"
+import Link from "next/link"
+import { ComponentProps, FC, ReactNode } from "react"
 
 const baseStyle = {
   backgroundColor: theme.tag,
@@ -38,7 +39,40 @@ export const Tag: FC<ComponentProps<"span"> & { selected?: boolean }> = ({
   </span>
 )
 
-export const TagList: FC<{ children: React.ReactNode }> = ({ children }) => (
+/** 一覧・検索ページをそのタグで絞り込んだ状態で開く。 */
+export const TagLink: FC<{ tag: string; children?: ReactNode }> = ({
+  tag,
+  children = tag,
+}) => (
+  <Link
+    href={`/retronyms/?tag=${encodeURIComponent(tag)}`}
+    style={{ textDecoration: "none" }}
+  >
+    <Tag>{children}</Tag>
+  </Link>
+)
+
+export const TagToggle: FC<{
+  selected: boolean
+  onClick: () => void
+  children: ReactNode
+}> = ({ selected, onClick, children }) => (
+  <button
+    type="button"
+    aria-pressed={selected}
+    onClick={onClick}
+    style={{
+      background: "none",
+      border: "none",
+      cursor: "pointer",
+      padding: 0,
+    }}
+  >
+    <Tag selected={selected}>{children}</Tag>
+  </button>
+)
+
+export const TagList: FC<{ children: ReactNode }> = ({ children }) => (
   <div style={{ display: "flex", flexWrap: "wrap", gap: ".4rem" }}>
     {children}
   </div>

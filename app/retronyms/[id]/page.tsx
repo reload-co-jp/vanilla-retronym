@@ -1,7 +1,7 @@
-import { Title } from "@/components/elements/layout"
+import { Section, Title } from "@/components/elements/layout"
 import { RetronymCardList } from "@/components/retronym/card"
 import { StatusBadge } from "@/components/retronym/status-badge"
-import { Tag, TagList } from "@/components/retronym/tag"
+import { TagLink, TagList } from "@/components/retronym/tag"
 import { getRelated, getRetronym, retronyms } from "@/lib/retronyms"
 import { site } from "@/lib/site"
 import { theme } from "@/lib/theme"
@@ -45,25 +45,6 @@ const Field: FC<{ label: string; children: ReactNode }> = ({
     <dt style={{ color: theme.muted, fontSize: ".75rem" }}>{label}</dt>
     <dd style={{ margin: 0 }}>{children}</dd>
   </div>
-)
-
-const Section: FC<{ heading: string; children: ReactNode }> = ({
-  heading,
-  children,
-}) => (
-  <section style={{ display: "grid", gap: ".625rem" }}>
-    <h2
-      style={{
-        borderBottom: `1px solid ${theme.border}`,
-        fontSize: ".9375rem",
-        margin: 0,
-        paddingBottom: ".4rem",
-      }}
-    >
-      {heading}
-    </h2>
-    {children}
-  </section>
 )
 
 const Page = async ({ params }: Params) => {
@@ -126,32 +107,26 @@ const Page = async ({ params }: Params) => {
         <Field label="主に使われる言語">{retronym.language}</Field>
       </dl>
 
-      <Section heading="タグ">
+      <Section compact heading="タグ">
         <TagList>
           {retronym.tags.map((tag) => (
-            <Link
-              key={tag}
-              href={`/retronyms/?tag=${encodeURIComponent(tag)}`}
-              style={{ textDecoration: "none" }}
-            >
-              <Tag>{tag}</Tag>
-            </Link>
+            <TagLink key={tag} tag={tag} />
           ))}
         </TagList>
       </Section>
 
-      <Section heading="概要">
+      <Section compact heading="概要">
         <p>{retronym.description}</p>
       </Section>
 
       {related.length > 0 && (
-        <Section heading="関連するレトロニム">
+        <Section compact heading="関連するレトロニム">
           <RetronymCardList retronyms={related} />
         </Section>
       )}
 
       {retronym.sources && retronym.sources.length > 0 && (
-        <Section heading="出典">
+        <Section compact heading="出典">
           <ul style={{ display: "grid", gap: ".25rem" }}>
             {retronym.sources.map((source) => (
               <li key={source.url}>

@@ -1,7 +1,7 @@
 "use client"
 
 import { RetronymCardList } from "@/components/retronym/card"
-import { Tag, TagList } from "@/components/retronym/tag"
+import { TagList, TagToggle } from "@/components/retronym/tag"
 import {
   filterRetronyms,
   getTags,
@@ -84,27 +84,15 @@ export const RetronymSearch: FC<{ retronyms: Retronym[] }> = ({
             タグで絞り込む（複数選択でAND検索）
           </span>
           <TagList>
-            {tags.map(({ name, count }) => {
-              const selected = selectedTags.includes(name)
-              return (
-                <button
-                  key={name}
-                  type="button"
-                  aria-pressed={selected}
-                  onClick={() => toggleTag(name)}
-                  style={{
-                    background: "none",
-                    border: "none",
-                    cursor: "pointer",
-                    padding: 0,
-                  }}
-                >
-                  <Tag selected={selected}>
-                    {name} {count}
-                  </Tag>
-                </button>
-              )
-            })}
+            {tags.map(({ name, count }) => (
+              <TagToggle
+                key={name}
+                selected={selectedTags.includes(name)}
+                onClick={() => toggleTag(name)}
+              >
+                {name} {count}
+              </TagToggle>
+            ))}
           </TagList>
         </div>
 
@@ -120,22 +108,13 @@ export const RetronymSearch: FC<{ retronyms: Retronym[] }> = ({
             並び順
           </span>
           {sortOrders.map((sortOrder) => (
-            <button
+            <TagToggle
               key={sortOrder}
-              type="button"
-              aria-pressed={order === sortOrder}
+              selected={order === sortOrder}
               onClick={() => changeOrder(sortOrder)}
-              style={{
-                background: "none",
-                border: "none",
-                cursor: "pointer",
-                padding: 0,
-              }}
             >
-              <Tag selected={order === sortOrder}>
-                {sortOrderLabels[sortOrder]}
-              </Tag>
-            </button>
+              {sortOrderLabels[sortOrder]}
+            </TagToggle>
           ))}
         </div>
       </div>
