@@ -1967,5 +1967,1382 @@
         "url": "https://en.wikipedia.org/wiki/Vanilla_software"
       }
     ]
+  },
+  {
+    "id": "brown-rice",
+    "name": "Brown rice",
+    "originalName": "Rice",
+    "trigger": "White rice",
+    "description": "精米した白米が主流になったことで、ぬかを残したままの米を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "もみ殻だけを取り除き、ぬか層と胚芽を残した米のこと。「brown」はぬか層の茶色い色を表す。",
+      "history": "19世紀半ばまでは、人々が食べる米の多くは精米の度合いが低い全粒の米だった。精米技術が発達して白米が標準的な「rice」になると、昔ながらの全粒の米を「brown rice」と呼び分けるようになった。",
+      "usage": "健康志向の文脈で「brown rice」「whole grain rice」として白米と対比して使われる。日本語の「玄米」は古くからある語で、英語のようなレトロニムではない。"
+    },
+    "tags": ["食"],
+    "language": "en",
+    "period": "19世紀後半以降",
+    "status": "confirmed",
+    "relatedIds": ["whole-wheat-flour"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Brown rice",
+        "url": "https://en.wikipedia.org/wiki/Brown_rice"
+      }
+    ]
+  },
+  {
+    "id": "black-powder",
+    "name": "Black powder",
+    "originalName": "Gunpowder",
+    "trigger": "Smokeless powder",
+    "description": "無煙火薬が登場したことで、それまで単に「gunpowder」と呼ばれていた黒色火薬を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "硝石・硫黄・木炭を混ぜて作る最も古い火薬のこと。燃えると大量の白煙を出し、黒い粉末であることから「black powder」と呼ばれる。",
+      "history": "何世紀にもわたって火薬といえばこの黒色火薬だけだった。19世紀末に煙の少ない無煙火薬が発明されて軍用・銃用の主流になると、従来の火薬を「black powder」と呼んで区別するようになった。",
+      "usage": "現在は花火、古式銃、前装銃（muzzleloader）の射撃などで使われ、「black powder rifle」のような言い方をする。"
+    },
+    "tags": ["科学", "歴史", "軍事"],
+    "language": "en",
+    "period": "19世紀後半以降",
+    "status": "confirmed",
+    "relatedIds": ["muzzleloader"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Gunpowder",
+        "url": "https://en.wikipedia.org/wiki/Gunpowder"
+      }
+    ]
+  },
+  {
+    "id": "hard-cider",
+    "name": "Hard cider",
+    "originalName": "Cider",
+    "trigger": "Non-alcoholic apple cider",
+    "description": "アメリカで「cider」が無濾過のりんごジュースを指すようになったため、発酵させたアルコール飲料のほうを区別して呼ぶ名称。",
+    "details": {
+      "meaning": "りんご果汁を発酵させて作るアルコール飲料のこと。「hard」はアルコールを含むことを表す。",
+      "history": "ヨーロッパやアジアでは「cider」といえば発酵したアルコール飲料を指す。一方アメリカでは、禁酒法の時代などを経て「cider」「apple cider」が濁ったノンアルコールのりんごジュースを指すことが一般的になり、本来のアルコール入りのものを「hard cider」と呼ぶようになった。",
+      "usage": "主にアメリカ英語で使われる。イギリスでは単に「cider」と言えばアルコール飲料なので、この言い方は必要ない。"
+    },
+    "tags": ["食"],
+    "language": "en",
+    "period": "20世紀",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Cider",
+        "url": "https://en.wikipedia.org/wiki/Cider"
+      }
+    ]
+  },
+  {
+    "id": "hardcover-book",
+    "name": "Hardcover book",
+    "originalName": "Book",
+    "trigger": "Paperback",
+    "description": "ペーパーバックが普及したことで、硬い表紙で製本された従来の本を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "厚紙などの硬い表紙で製本された本のこと。hardback とも言う。",
+      "history": "ペーパーバックが登場する前は、本はすべて硬い表紙で製本されており、単に「book」と呼ばれていた。20世紀にペンギン・ブックスなどの安価なペーパーバックが広まったことで、従来の製本の本を「hardcover」と呼び分けるようになった。",
+      "usage": "出版の文脈では「hardcover edition」「paperback edition」のように版を区別する。新刊はまずハードカバーで出し、後から廉価なペーパーバックを出すという流れが英語圏では一般的。"
+    },
+    "tags": ["出版", "書籍"],
+    "language": "en",
+    "period": "20世紀中頃",
+    "status": "confirmed",
+    "relatedIds": ["paper-book"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Hardcover",
+        "url": "https://en.wikipedia.org/wiki/Hardcover"
+      }
+    ]
+  },
+  {
+    "id": "hard-disk",
+    "name": "Hard disk",
+    "originalName": "Disk",
+    "trigger": "Floppy disk",
+    "description": "フロッピーディスクが登場したことで、硬い円盤を使う従来の磁気ディスクを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "金属やガラスなどの硬い円盤（プラッタ）に磁性体を塗り、データを記録する記憶装置のこと。hard disk drive（HDD）とも言う。",
+      "history": "1956年にIBMが発表した最初の磁気ディスク装置から、ディスクはすべて硬い円盤でできていた。1970年代にやわらかい素材のフロッピーディスクが登場したことで、従来のものを「hard disk」と呼んで区別するようになった。",
+      "usage": "現在はフロッピーディスクがほぼ使われなくなり、代わりにSSDと対比してHDDと呼ぶことが多い。元の区別の相手が消えたあとも名前だけが残っている例といえる。"
+    },
+    "tags": ["コンピューター", "テクノロジー"],
+    "language": "en",
+    "period": "1970年代以降",
+    "status": "confirmed",
+    "relatedIds": ["mainframe-computer"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Hard disk drive",
+        "url": "https://en.wikipedia.org/wiki/Hard_disk_drive"
+      }
+    ]
+  },
+  {
+    "id": "hand-grenade",
+    "name": "Hand grenade",
+    "originalName": "Grenade",
+    "trigger": "Rifle grenade / grenade launcher",
+    "description": "銃で撃ち出す擲弾が登場したことで、手で投げる従来の手榴弾を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "手で投げて使う小型の爆発物のこと。grenade はフランス語でザクロを意味する語に由来する。",
+      "history": "もともと擲弾（grenade）はすべて手で投げるものだった。20世紀に小銃の先に取り付けて発射する小銃擲弾や、専用のグレネードランチャーが登場したことで、手で投げるものを「hand grenade」と呼び分けるようになった。",
+      "usage": "軍事の文脈で使われるほか、「close only counts in horseshoes and hand grenades（惜しいで済むのは蹄鉄投げと手榴弾だけ）」という英語の慣用句にも登場する。"
+    },
+    "tags": ["軍事", "歴史"],
+    "language": "en",
+    "period": "20世紀",
+    "status": "confirmed",
+    "relatedIds": ["dumb-bomb"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Grenade",
+        "url": "https://en.wikipedia.org/wiki/Grenade"
+      }
+    ]
+  },
+  {
+    "id": "horse-cavalry",
+    "name": "Horse cavalry",
+    "originalName": "Cavalry",
+    "trigger": "Armored cavalry",
+    "description": "戦車や装甲車の部隊も「騎兵」と呼ばれるようになったことで、馬に乗る本来の騎兵を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "馬に乗って戦う兵士、またはその部隊のこと。",
+      "history": "騎兵（cavalry）はもともと馬に乗った兵士を指していた。20世紀に軍の機械化が進むと、騎兵部隊が戦車や装甲車に乗り換えても部隊名に「cavalry」が残ったため、馬に乗った騎兵を「horse cavalry」と呼んで区別するようになった。",
+      "usage": "現在は儀礼用の部隊などを除いて馬に乗る騎兵はほとんど残っておらず、主に歴史の文脈で使われる。"
+    },
+    "tags": ["軍事", "歴史"],
+    "language": "en",
+    "period": "20世紀前半",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Cavalry",
+        "url": "https://en.wikipedia.org/wiki/Cavalry"
+      }
+    ]
+  },
+  {
+    "id": "house-call",
+    "name": "House call",
+    "originalName": "Doctor's visit",
+    "trigger": "Office / hospital visits",
+    "description": "患者が医院や病院へ通うのが普通になったことで、医師が患者の家を訪ねて診察することを区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "医師が患者の自宅を訪ねて診察すること。日本語の「往診」にあたる。",
+      "history": "語としては1899年から記録があるが、広く使われるようになったのは1960年代から。かつては医師が患者の家へ出向くのが当たり前だったが、医療が診療所や病院に集約されて往診が減っていく中で、特別なものとして「house call」と呼ばれるようになった。",
+      "usage": "医療以外にも、修理業者などが客の家へ出向くことを指して使われる。「make a house call」のように言う。"
+    },
+    "tags": ["社会", "日常生活"],
+    "language": "en",
+    "period": "1960年代以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - House call",
+        "url": "https://en.wikipedia.org/wiki/House_call"
+      }
+    ]
+  },
+  {
+    "id": "human-computer",
+    "name": "Human computer",
+    "originalName": "Computer",
+    "trigger": "Electronic computer",
+    "description": "電子計算機が「computer」と呼ばれるようになったことで、計算を仕事にしていた人を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "手作業で数値計算を行う人のこと。英語の computer はもともと「計算する人」という意味の語だった。",
+      "history": "「computer」は17世紀中頃から計算をする人を指す語として使われていた。天文学や弾道計算、航空宇宙の分野では、大勢の人がチームを組んで長く単調な計算を分担していた。機械式、そして電子式の計算機が普及して「computer」が機械を指すようになると、人間の計算手を「human computer」と呼んで区別するようになった。",
+      "usage": "NASAで計算を担った女性たちを描いた映画『ドリーム（Hidden Figures）』などで、歴史的な職業としてよく紹介される。"
+    },
+    "tags": ["コンピューター", "歴史"],
+    "language": "en",
+    "period": "20世紀中頃",
+    "status": "confirmed",
+    "relatedIds": ["mainframe-computer"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Computer (occupation)",
+        "url": "https://en.wikipedia.org/wiki/Computer_(occupation)"
+      }
+    ]
+  },
+  {
+    "id": "independent-bookstore",
+    "name": "Independent bookstore",
+    "originalName": "Bookstore",
+    "trigger": "Bookstore chains",
+    "description": "大型の書店チェーンが広まったことで、個人や小さな会社が経営する書店を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "チェーンに属さず、独立して経営される書店のこと。indie bookstore とも言う。",
+      "history": "書店チェーンが登場するまで、本屋はすべて独立した店だった。20世紀後半にアメリカでバーンズ・アンド・ノーブルなどの大型チェーンが広がり、さらにAmazonなどのネット書店が登場したことで、昔ながらの書店を「independent bookstore」と呼ぶようになった。",
+      "usage": "地域の文化を支える存在として語られることが多く、アメリカでは「Independent Bookstore Day」というイベントも開かれている。"
+    },
+    "tags": ["出版", "書籍", "社会"],
+    "language": "en",
+    "period": "20世紀後半",
+    "status": "confirmed",
+    "relatedIds": ["physical-store"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Independent bookstore",
+        "url": "https://en.wikipedia.org/wiki/Independent_bookstore"
+      }
+    ]
+  },
+  {
+    "id": "indoor-volleyball",
+    "name": "Indoor volleyball",
+    "originalName": "Volleyball",
+    "trigger": "Beach volleyball",
+    "description": "ビーチバレーが広く知られるようになったことで、体育館で行う従来のバレーボールを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "屋内のコートで6人ずつのチームが対戦する、一般的なバレーボールのこと。",
+      "history": "バレーボールは1895年にアメリカで考案され、長く屋内競技として行われてきた。砂浜で2人ずつ対戦するビーチバレーが人気を集め、1996年のアトランタオリンピックで正式種目になると、従来の競技を「indoor volleyball」と呼んで区別することが増えた。",
+      "usage": "オリンピックなどの大会で種目を区別するときに使われる。日常会話では今でも単に「volleyball」と言うことが多い。"
+    },
+    "tags": ["スポーツ"],
+    "language": "en",
+    "period": "1990年代以降",
+    "status": "confirmed",
+    "relatedIds": ["artistic-gymnastics"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Volleyball",
+        "url": "https://en.wikipedia.org/wiki/Volleyball"
+      }
+    ]
+  },
+  {
+    "id": "mainframe-computer",
+    "name": "Mainframe computer",
+    "originalName": "Computer",
+    "trigger": "Minicomputer",
+    "description": "ミニコンピューターが登場したことで、大型の筐体に収められた従来のコンピューターを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "企業や官公庁などで基幹業務に使われる大型のコンピューターのこと。「frame」は装置を収めた大きな縦型の棚（キャビネット）を指す。",
+      "history": "初期のコンピューターは、何台もの大きな棚に機器を並べて組み上げる巨大なものだった。1970年代初めに机ほどの大きさのミニコンピューターが登場すると、従来の大型機を、機器を収める「main frame」にちなんで「mainframe」と呼ぶようになった。",
+      "usage": "現在もIBMのメインフレームなどが銀行などの基幹システムで使われている。小型のパソコンやサーバーと対比して「大型汎用機」と訳されることもある。"
+    },
+    "tags": ["コンピューター", "テクノロジー"],
+    "language": "en",
+    "period": "1970年代以降",
+    "status": "confirmed",
+    "relatedIds": ["desktop-computer", "human-computer"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Mainframe computer",
+        "url": "https://en.wikipedia.org/wiki/Mainframe_computer"
+      }
+    ]
+  },
+  {
+    "id": "meatspace",
+    "name": "Meatspace",
+    "originalName": "Reality",
+    "trigger": "Cyberspace",
+    "description": "インターネット上の「サイバースペース」が生まれたことで、肉体のある現実の世界を区別して呼ぶようになった俗語。",
+    "details": {
+      "meaning": "インターネットなどの仮想空間に対して、人が身体を持って暮らす物理的な現実世界のこと。「meat」は肉体を皮肉まじりに表す。",
+      "history": "1990年代にインターネットが広まり「cyberspace」という言葉が一般に使われるようになると、その対になる現実世界を指す言葉が必要になった。「meatspace」はそうした流れの中で、ハッカー文化やネットのスラングから生まれた。",
+      "usage": "「meet in meatspace（リアルで会う）」のように、くだけた文脈で使われる。同じ意味で「real life」やその略の「IRL」もよく使われる。"
+    },
+    "tags": ["言語", "社会", "コンピューター"],
+    "language": "en",
+    "period": "1990年代以降",
+    "status": "confirmed",
+    "relatedIds": ["offline-meeting", "in-person-meeting"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Meatspace",
+        "url": "https://en.wikipedia.org/wiki/Meatspace"
+      }
+    ]
+  },
+  {
+    "id": "muzzleloader",
+    "name": "Muzzleloader",
+    "originalName": "Firearm",
+    "trigger": "Breech-loading firearms",
+    "description": "銃身の後ろから弾を込める元込め式の銃が普及したことで、銃口から弾を込める従来の銃を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "銃口（muzzle）から火薬と弾丸を込める方式の銃のこと。前装銃とも言う。",
+      "history": "何世紀もの間、ほとんどすべての銃は銃口から弾を込めていたため、この特徴を区別する言葉は必要なかった。19世紀に元込め式（breech-loading）の銃が広く採用されたことで、従来の銃を「muzzleloader」と呼ぶようになった。",
+      "usage": "現在は狩猟や歴史再現、古式銃の射撃競技などの文脈で使われる。アメリカでは前装銃だけで狩猟できる「muzzleloader season」を設けている州もある。"
+    },
+    "tags": ["軍事", "歴史"],
+    "language": "en",
+    "period": "19世紀以降",
+    "status": "confirmed",
+    "relatedIds": ["black-powder"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Muzzleloader",
+        "url": "https://en.wikipedia.org/wiki/Muzzleloader"
+      }
+    ]
+  },
+  {
+    "id": "open-captions",
+    "name": "Open captions",
+    "originalName": "Captions",
+    "trigger": "Closed captions",
+    "description": "表示のオン・オフを切り替えられるクローズドキャプションが登場したことで、映像に焼き付けられた従来の字幕を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "映像そのものに合成され、見る人が消すことのできない字幕のこと。",
+      "history": "1980年代初めにアメリカで、専用のデコーダーを使えば字幕を表示できるクローズドキャプションが始まった。1990年代半ばにデコーダーがテレビに標準搭載されるまで、放送局は外国語の番組などでは誰にでも見える字幕を映像に入れていた。こうした字幕を「closed」に対して「open captions」と呼ぶようになった。",
+      "usage": "現在も映画館での字幕付き上映などで「open caption screening」のように使われる。"
+    },
+    "tags": ["テレビ", "映像"],
+    "language": "en",
+    "period": "1980年代以降",
+    "status": "confirmed",
+    "relatedIds": ["silent-film"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Closed captioning",
+        "url": "https://en.wikipedia.org/wiki/Closed_captioning"
+      }
+    ]
+  },
+  {
+    "id": "optical-zoom",
+    "name": "Optical zoom",
+    "originalName": "Zoom",
+    "trigger": "Digital zoom",
+    "description": "画像を拡大処理するデジタルズームが登場したことで、レンズを動かして拡大する従来のズームを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "レンズの組み合わせを動かして焦点距離を変え、画質を落とさずに被写体を大きく写す方法のこと。",
+      "history": "もともとカメラのズームは、すべてレンズの光学系による拡大だった。デジタルカメラや携帯電話のカメラが普及し、撮った画像の一部を切り出して引き伸ばす「digital zoom」が登場したことで、従来の方式を「optical zoom」と呼ぶようになった。",
+      "usage": "カメラやスマートフォンの仕様で「光学3倍ズーム」のように表記される。デジタルズームは画質が落ちるため、性能を比べるときに重視される。"
+    },
+    "tags": ["写真", "カメラ", "技術"],
+    "language": "en",
+    "period": "1990年代以降",
+    "status": "confirmed",
+    "relatedIds": ["prime-lens", "film-camera"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Zoom lens",
+        "url": "https://en.wikipedia.org/wiki/Zoom_lens"
+      }
+    ]
+  },
+  {
+    "id": "over-the-board-chess",
+    "name": "Over-the-board chess",
+    "originalName": "Chess",
+    "trigger": "Computer chess / correspondence chess",
+    "description": "コンピューターやネットでの対局、郵便での通信対局が広まったことで、盤を挟んで向かい合って指すチェスを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "本物のチェス盤を使い、対局者が同じ場所で向かい合ってリアルタイムで指すチェスのこと。OTB chess と略す。",
+      "history": "チェスはもともと盤を挟んで指すものだったが、郵便で一手ずつやりとりする通信チェスや、コンピューター・オンラインでの対局が広まったことで、従来の対局を「over-the-board」と呼んで区別するようになった。",
+      "usage": "チェスの大会やレーティングの文脈で「OTB rating」「OTB tournament」のように使われる。オンライン対局が一般的になった今では、特によく使われる言い方になっている。"
+    },
+    "tags": ["ゲーム"],
+    "language": "en",
+    "period": "20世紀後半",
+    "status": "confirmed",
+    "relatedIds": ["tabletop-game"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Chess",
+        "url": "https://en.wikipedia.org/wiki/Chess"
+      }
+    ]
+  },
+  {
+    "id": "hard-copy",
+    "name": "Hard copy",
+    "originalName": "Copy",
+    "trigger": "Electronic files",
+    "description": "文書を電子ファイルでやりとりするようになったことで、紙に印刷された文書を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "紙に印刷した文書のこと。paper copy とも言い、画面上のデータ（soft copy）と対比される。",
+      "history": "コンピューターが普及する前は、文書の写しといえば紙のものしかなかった。電子ファイルで文書を扱うことが増えると、紙の写しを「hard copy」「paper copy」と呼んで区別するようになった。冗談めかして「dead-tree copy」と言うこともある。",
+      "usage": "「Please send me a hard copy.」のように、印刷した書類を求めるときに使われる。日本語でも「ハードコピー」という言い方がある。"
+    },
+    "tags": ["コンピューター", "日常生活"],
+    "language": "en",
+    "period": "1960年代以降",
+    "status": "confirmed",
+    "relatedIds": ["wet-signature", "paper-book"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Hard copy",
+        "url": "https://en.wikipedia.org/wiki/Hard_copy"
+      }
+    ]
+  },
+  {
+    "id": "raw-milk",
+    "name": "Raw milk",
+    "originalName": "Milk",
+    "trigger": "Pasteurized milk",
+    "description": "低温殺菌が標準になったことで、加熱処理をしていない牛乳を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "殺菌のための加熱処理をしていない生の乳のこと。fresh milk とも言う。",
+      "history": "牛乳はもともと搾ったままの状態で飲まれていた。19世紀にパスツールが低温殺菌法を考案し、殺菌した牛乳が標準になると、加熱していない牛乳を「raw milk」と呼んで区別するようになった。",
+      "usage": "食品衛生の観点から販売が規制されている国や地域も多く、その是非をめぐって「raw milk」という言葉がよく話題になる。"
+    },
+    "tags": ["食", "科学"],
+    "language": "en",
+    "period": "19世紀後半以降",
+    "status": "confirmed",
+    "relatedIds": ["whole-milk", "dairy-milk"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Raw milk",
+        "url": "https://en.wikipedia.org/wiki/Raw_milk"
+      }
+    ]
+  },
+  {
+    "id": "real-tennis",
+    "name": "Real tennis",
+    "originalName": "Tennis",
+    "trigger": "Lawn tennis",
+    "description": "芝生で行うローンテニスが考案されたことで、屋内の専用コートで行う元祖のテニスを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "中世ヨーロッパから続く、壁や屋根のある屋内の専用コートで行うテニスのこと。アメリカでは court tennis、フランスでは jeu de paume と呼ばれる。",
+      "history": "かつては単に「tennis」と呼ばれていたが、1874年に屋外の芝生で行うローンテニスが考案されて広まると、19世紀末から元祖のテニスを「real tennis」と呼んで区別するようになった。今では一般に「tennis」と言えばローンテニスを指す。",
+      "usage": "イギリスやオーストラリアなど、競技が今も続く一部の地域で使われる。元の名前が新しいものに奪われ、古いものにはレトロニムだけが残った例といえる。"
+    },
+    "tags": ["スポーツ", "歴史"],
+    "language": "en",
+    "period": "19世紀後半以降",
+    "status": "confirmed",
+    "relatedIds": ["field-hockey"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Real tennis",
+        "url": "https://en.wikipedia.org/wiki/Real_tennis"
+      }
+    ]
+  },
+  {
+    "id": "rugby-union",
+    "name": "Rugby union",
+    "originalName": "Rugby",
+    "trigger": "Rugby league",
+    "description": "ラグビーリーグが分かれて誕生したことで、もとのラグビーを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "1チーム15人で行うラグビーのこと。「union」は統括団体であるラグビー・フットボール・ユニオン（RFU）に由来する。",
+      "history": "1895年、イングランド北部のクラブが選手への休業補償をめぐって協会と対立し、独自の団体を作って分裂した。これが後に13人制のラグビーリーグとなり、もとの競技は「rugby union」と呼ばれるようになった。",
+      "usage": "リーグ・ユニオンの両方が盛んなオーストラリアやイギリスでは区別が重要になる。日本では単に「ラグビー」と言えば通常はラグビーユニオンを指す。"
+    },
+    "tags": ["スポーツ", "歴史"],
+    "language": "en",
+    "period": "19世紀後半以降",
+    "status": "confirmed",
+    "relatedIds": ["field-hockey"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Rugby union",
+        "url": "https://en.wikipedia.org/wiki/Rugby_union"
+      }
+    ]
+  },
+  {
+    "id": "sit-down-restaurant",
+    "name": "Sit-down restaurant",
+    "originalName": "Restaurant",
+    "trigger": "Fast food / take-out",
+    "description": "ファストフード店や持ち帰りの店が増えたことで、席について給仕を受ける従来のレストランを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "客が席につき、店員が注文を取って料理を運んでくる形式のレストランのこと。",
+      "history": "アメリカでファストフードや持ち帰りの店が広まり、それらも「restaurant」と呼ばれるようになると、標準的だった給仕付きの店を「sit-down restaurant」と呼んで区別するようになった。",
+      "usage": "主にアメリカ英語の言い方。イギリスではファストフード店や持ち帰りの店を「restaurant」とは普通呼ばないため、この区別は必要とされない。"
+    },
+    "tags": ["食", "日常生活"],
+    "language": "en",
+    "period": "20世紀後半",
+    "status": "confirmed",
+    "relatedIds": ["staffed-checkout"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Restaurant",
+        "url": "https://en.wikipedia.org/wiki/Restaurant"
+      }
+    ]
+  },
+  {
+    "id": "snow-skiing",
+    "name": "Snow skiing",
+    "originalName": "Skiing",
+    "trigger": "Water skiing",
+    "description": "水上スキーが登場したことで、雪の上で行う従来のスキーを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "雪の上をスキー板で滑ること。",
+      "history": "1922年にアメリカで水上スキーが考案されて広まると、雪の上でのスキーを「snow skiing」と呼び分けることがあるようになった。",
+      "usage": "雪山と大きな湖や海の両方が身近にある地域で使われる。アルプス地方など水上スキーをあまりしない地域では、単に「skiing」で十分なので使われない。"
+    },
+    "tags": ["スポーツ"],
+    "language": "en",
+    "period": "20世紀中頃",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Skiing",
+        "url": "https://en.wikipedia.org/wiki/Skiing"
+      }
+    ]
+  },
+  {
+    "id": "sourdough",
+    "name": "Sourdough",
+    "originalName": "Bread dough",
+    "trigger": "Commercial yeast",
+    "description": "市販のパン酵母が普及したことで、自然の酵母と乳酸菌で発酵させる従来のパン種を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "小麦粉やライ麦粉と水を混ぜ、自然に住みつく酵母と乳酸菌で発酵させたパン種、またはそれで焼いたパンのこと。乳酸菌による酸味があることから「sour」と呼ばれる。",
+      "history": "パンを膨らませる方法がほかになかった時代には、パン生地はすべて多かれ少なかれ「酸っぱい」ものだった。19世紀に純粋培養したパン酵母（イースト）が工業的に作られるようになると、従来の方法で作る生地を「sourdough」と呼んで区別するようになった。",
+      "usage": "「sourdough bread」「sourdough starter」のように使われる。サンフランシスコのサワードウブレッドが有名。"
+    },
+    "tags": ["食"],
+    "language": "en",
+    "period": "19世紀以降",
+    "status": "confirmed",
+    "relatedIds": ["whole-wheat-flour"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Sourdough",
+        "url": "https://en.wikipedia.org/wiki/Sourdough"
+      }
+    ]
+  },
+  {
+    "id": "steam-train",
+    "name": "Steam train",
+    "originalName": "Train",
+    "trigger": "Electric / diesel trains",
+    "description": "電車やディーゼル機関車が登場したことで、蒸気機関車が引く列車を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "蒸気機関車が引く列車のこと。",
+      "history": "19世紀には列車といえば蒸気機関車が引くものだけで、単に「train」と呼ばれていた。19世紀末から20世紀にかけて電気やディーゼルで走る列車が登場し、やがて主流になると、従来の列車を「steam train」と呼んで区別するようになった。",
+      "usage": "現在は観光用の保存鉄道などで走る列車を指して使われることが多い。日本語でも「SL（Steam Locomotive）」という略称で親しまれている。"
+    },
+    "tags": ["交通", "歴史"],
+    "language": "en",
+    "period": "20世紀前半",
+    "status": "confirmed",
+    "relatedIds": ["gasoline-car"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Steam locomotive",
+        "url": "https://en.wikipedia.org/wiki/Steam_locomotive"
+      }
+    ]
+  },
+  {
+    "id": "surface-mail",
+    "name": "Surface mail",
+    "originalName": "Mail",
+    "trigger": "Airmail",
+    "description": "航空郵便が登場したことで、陸路や船で運ぶ従来の郵便を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "道路、鉄道、船など地上や海上の交通手段で運ばれる郵便のこと。日本語の「船便」「陸便」にあたる。",
+      "history": "郵便はもともと地上や海上の手段で運ばれるものだった。20世紀に入って飛行機で郵便を運ぶ航空郵便が始まると、従来の郵便を「surface mail」と呼んで区別するようになった。",
+      "usage": "国際郵便の料金区分などで使われる。安いが時間がかかる送り方として、航空便（airmail）と対比される。電子メールに対する「snail mail」とは区別の相手が異なる。"
+    },
+    "tags": ["通信", "交通"],
+    "language": "en",
+    "period": "20世紀前半",
+    "status": "confirmed",
+    "relatedIds": ["snail-mail"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Surface mail",
+        "url": "https://en.wikipedia.org/wiki/Surface_mail"
+      }
+    ]
+  },
+  {
+    "id": "tube-amplifier",
+    "name": "Tube amplifier",
+    "originalName": "Amplifier",
+    "trigger": "Transistor amplifier",
+    "description": "トランジスタを使ったアンプが普及したことで、真空管を使う従来のアンプを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "真空管（vacuum tube、イギリスでは valve）を使って音声信号を増幅するアンプのこと。",
+      "history": "初期のアンプはすべて真空管を使っていた。1960年代から1970年代にかけて、楽器用アンプの多くがトランジスタ（ソリッドステート）式に置き換わったことで、従来のものを「tube amplifier」と呼び分けるようになった。",
+      "usage": "真空管特有の温かみのある音やひずみを好むギタリストやオーディオ愛好家の間で、今も根強い人気がある。「tube amp」と略すことが多い。"
+    },
+    "tags": ["音楽", "楽器", "技術"],
+    "language": "en",
+    "period": "1960年代以降",
+    "status": "confirmed",
+    "relatedIds": ["analog-synthesizer", "acoustic-guitar"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Valve amplifier",
+        "url": "https://en.wikipedia.org/wiki/Valve_amplifier"
+      }
+    ]
+  },
+  {
+    "id": "upright-bicycle",
+    "name": "Upright bicycle",
+    "originalName": "Bicycle",
+    "trigger": "Recumbent bicycle",
+    "description": "寝そべった姿勢で乗るリカンベント自転車が登場したことで、またがって乗る普通の自転車を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "サドルにまたがり、上体を起こした姿勢で乗る一般的な自転車のこと。",
+      "history": "自転車はもともとまたがって乗るものだった。背もたれのある座席に寝そべるような姿勢で乗るリカンベント自転車が登場すると、両者を比べるときに一般的な自転車を「upright bicycle」と呼ぶ必要が生じた。",
+      "usage": "リカンベント自転車と比較する文脈で主に使われる。日常会話では単に「bicycle」「bike」と言う。"
+    },
+    "tags": ["交通"],
+    "language": "en",
+    "period": "20世紀",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Recumbent bicycle",
+        "url": "https://en.wikipedia.org/wiki/Recumbent_bicycle"
+      }
+    ]
+  },
+  {
+    "id": "visible-light",
+    "name": "Visible light",
+    "originalName": "Light",
+    "trigger": "Invisible electromagnetic radiation",
+    "description": "赤外線や紫外線などの目に見えない光が発見されたことで、人の目に見える光を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "人の目で見ることのできる波長（およそ380〜780ナノメートル）の電磁波のこと。可視光線とも言う。",
+      "history": "光とはもともと目に見えるもののことだった。1800年にハーシェルが赤外線を、1801年にリッターが紫外線を発見し、さらに電磁波の研究が進んで目に見えない「光」の存在が明らかになったことで、目に見える光を「visible light」と呼んで区別するようになった。",
+      "usage": "物理学や天文学の文脈で、電磁波のスペクトルの一部として説明するときに使われる。"
+    },
+    "tags": ["科学"],
+    "language": "en",
+    "period": "19世紀以降",
+    "status": "confirmed",
+    "relatedIds": ["natural-satellite"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Light",
+        "url": "https://en.wikipedia.org/wiki/Light"
+      }
+    ]
+  },
+  {
+    "id": "corn-on-the-cob",
+    "name": "Corn on the cob",
+    "originalName": "Corn",
+    "trigger": "Canned corn",
+    "description": "缶詰のコーンが広く出回るようになったことで、芯についたままのトウモロコシを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "芯（cob）についたままのトウモロコシ、またはそれを茹でたり焼いたりした料理のこと。",
+      "history": "缶詰のトウモロコシが広く手に入るようになる前は、食べるトウモロコシといえば芯についたものだったので、単に「corn」と呼ばれていた。粒だけを取り出した缶詰や冷凍のコーンが普及したことで、「corn on the cob」と呼び分けるようになった。",
+      "usage": "アメリカではバーベキューや夏の料理として定番で、バターと塩をつけて食べることが多い。"
+    },
+    "tags": ["食"],
+    "language": "en",
+    "period": "20世紀",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Corn on the cob",
+        "url": "https://en.wikipedia.org/wiki/Corn_on_the_cob"
+      }
+    ]
+  },
+  {
+    "id": "english-muffin",
+    "name": "English muffin",
+    "originalName": "Muffin",
+    "trigger": "American muffin",
+    "description": "アメリカで甘いカップケーキ型のマフィンが広まったことで、イギリス由来の平たいパンを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "イーストで発酵させた生地を鉄板で焼いた、平たく丸いパンのこと。横に割ってトーストして食べる。",
+      "history": "イングランド南部ではもともと単に「muffin」と呼ばれていた。一方アメリカでは、ベーキングパウダーで膨らませたカップケーキのような甘いマフィンが「muffin」として定着したため、イギリス式のものを「English muffin」と呼んで区別するようになった。",
+      "usage": "アメリカで広まった言い方で、エッグ・ベネディクトなどの料理に使われる。現在ではイギリスでもアメリカ式マフィンが普及したため、区別のためにこの呼び方が使われることがある。"
+    },
+    "tags": ["食"],
+    "language": "en",
+    "period": "19世紀後半以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - English muffin",
+        "url": "https://en.wikipedia.org/wiki/English_muffin"
+      }
+    ]
+  },
+  {
+    "id": "linear-television",
+    "name": "Linear television",
+    "originalName": "Television",
+    "trigger": "Video on demand / streaming",
+    "description": "動画配信やオンデマンド視聴が広まったことで、決まった時間に番組を流す従来のテレビ放送を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "放送局が決めた編成表に従って番組を順番に流し、視聴者がその時間に合わせて見る形式のテレビのこと。",
+      "history": "ビデオ・オン・デマンドや動画共有サイト、ストリーミング配信、録画機器が普及する前は、テレビを見るには地上波・ケーブル・衛星のチャンネルで流れている番組を見るしかなかった。見たいときに見たい番組を選べる視聴方法が広まったことで、従来の放送を「linear television」と呼ぶようになった。",
+      "usage": "メディア業界の文脈で、配信サービスとの視聴時間や広告収入の比較などに使われる。"
+    },
+    "tags": ["テレビ", "放送", "映像"],
+    "language": "en",
+    "period": "2000年代以降",
+    "status": "confirmed",
+    "relatedIds": ["terrestrial-television"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Linear television",
+        "url": "https://en.wikipedia.org/wiki/Linear_television"
+      }
+    ]
+  },
+  {
+    "id": "procedural-programming",
+    "name": "Procedural programming",
+    "originalName": "Programming",
+    "trigger": "Object-oriented programming",
+    "description": "オブジェクト指向プログラミングが広まったことで、手続きを順に記述する従来のプログラミングを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "処理の手順を、手続き（関数やサブルーチン）の呼び出しとして順番に記述していくプログラミングのスタイルのこと。",
+      "history": "初期のプログラミングは、命令を順に並べて手続きを呼び出す書き方が当たり前で、特に名前は必要なかった。1980年代にオブジェクト指向プログラミングが広まると、従来のスタイルを「procedural programming」と呼んで対比するようになった。",
+      "usage": "C言語やPascal、FORTRANなどが手続き型言語の代表とされる。プログラミングパラダイムを比較する文脈で使われる。"
+    },
+    "tags": ["コンピューター", "ソフトウェア"],
+    "language": "en",
+    "period": "1980年代以降",
+    "status": "confirmed",
+    "relatedIds": ["cisc"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Procedural programming",
+        "url": "https://en.wikipedia.org/wiki/Procedural_programming"
+      }
+    ]
+  },
+  {
+    "id": "cisc",
+    "name": "Complex instruction set computer",
+    "originalName": "Computer",
+    "trigger": "Reduced instruction set computer (RISC)",
+    "description": "命令を単純化したRISCという設計思想が登場したことで、従来の複雑な命令セットを持つコンピューターを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "一つの命令で複雑な処理を行える、多様で高機能な命令セットを持つプロセッサ、またはその設計思想のこと。CISCと略す。",
+      "history": "初期のプロセッサは、プログラムを書きやすくするために高機能な命令を次々と追加していった。1980年代に、命令を単純にして高速化を図るRISC（Reduced Instruction Set Computer）という考え方が提唱されると、従来の設計を「CISC」と呼んで対比するようになった。",
+      "usage": "x86などがCISCの代表とされ、ARMなどのRISCと比較する文脈で使われる。"
+    },
+    "tags": ["コンピューター", "テクノロジー"],
+    "language": "en",
+    "period": "1980年代以降",
+    "status": "confirmed",
+    "relatedIds": ["procedural-programming"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Complex instruction set computer",
+        "url": "https://en.wikipedia.org/wiki/Complex_instruction_set_computer"
+      }
+    ]
+  },
+  {
+    "id": "old-world",
+    "name": "Old World",
+    "originalName": "World",
+    "trigger": "New World",
+    "description": "コロンブスがアメリカ大陸に到達し「新世界」と呼ばれるようになったことで、それまでに知られていた世界を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "ヨーロッパ、アジア、アフリカのこと。旧世界、旧大陸とも言う。",
+      "history": "1492年にコロンブスがアメリカ大陸に到達し、この大陸が「New World（新世界）」と呼ばれるようになると、ヨーロッパ人にとってそれまでの世界だったヨーロッパ・アジア・アフリカを「Old World」と呼んで区別するようになった。",
+      "usage": "歴史や地理、生物学の文脈で使われ、「Old World monkeys（旧世界ザル）」のように動植物の分類名にも使われる。ワインの世界でもヨーロッパ産を「Old World wine」と呼ぶ。"
+    },
+    "tags": ["歴史", "地理"],
+    "language": "en",
+    "period": "16世紀以降",
+    "status": "confirmed",
+    "relatedIds": ["contiguous-united-states"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Old World",
+        "url": "https://en.wikipedia.org/wiki/Old_World"
+      }
+    ]
+  },
+  {
+    "id": "middle-ages",
+    "name": "Middle Ages",
+    "originalName": "Modern times",
+    "trigger": "Renaissance humanism",
+    "description": "当時の人々にとっては「今の時代」でしかなかった時期を、ルネサンス以降に古代と近代の間の時代として後から名付けたヨーロッパ史の時代区分。",
+    "details": {
+      "meaning": "ヨーロッパ史で、およそ5世紀の西ローマ帝国の滅亡から15世紀までの時代のこと。中世とも言う。",
+      "history": "この時代の人々は自分たちを「中間の時代」にいるとは考えていなかった。ルネサンス期の人文主義者たちが、古代の文化を再生しようとする自分たちの時代と古代との間の時期をそう呼ぶようになり、英語では1604年に「Middle Ages」の記録がある。",
+      "usage": "歴史の時代区分として一般的に使われる。「medieval（中世の）」という形容詞もある。"
+    },
+    "tags": ["歴史"],
+    "language": "en",
+    "period": "17世紀",
+    "status": "confirmed",
+    "relatedIds": ["byzantine-empire"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Middle Ages",
+        "url": "https://en.wikipedia.org/wiki/Middle_Ages"
+      }
+    ]
+  },
+  {
+    "id": "aztec-empire",
+    "name": "Aztec Empire",
+    "originalName": "Mexican Empire",
+    "trigger": "Post-conquest Mexican Empire",
+    "description": "スペインによる征服後にメキシコ帝国が成立したことで、征服以前の国家を区別するために後から付けられた名称。",
+    "details": {
+      "meaning": "14世紀から16世紀にかけてメキシコ中央部を支配した、テノチティトランを中心とする国家のこと。アステカ帝国とも言う。",
+      "history": "この名称は、19世紀初めにドイツの博物学者アレクサンダー・フォン・フンボルトが、征服前の「メキシコの帝国」と、当時新たに成立したメキシコの帝国とを区別するために用いた。後者はさらに、1864年にマクシミリアン1世が即位して第二帝政が始まると「第一メキシコ帝国」と呼ばれるようになった。",
+      "usage": "当時の人々は自らをメシカと呼んでいたため、歴史学では「Mexica」や「Triple Alliance」という言い方も使われる。"
+    },
+    "tags": ["歴史"],
+    "language": "en",
+    "period": "19世紀以降",
+    "status": "confirmed",
+    "relatedIds": ["byzantine-empire"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Aztec Empire",
+        "url": "https://en.wikipedia.org/wiki/Aztec_Empire"
+      }
+    ]
+  },
+  {
+    "id": "weimar-republic",
+    "name": "Weimar Republic",
+    "originalName": "German Reich",
+    "trigger": "Nazi Germany",
+    "description": "ナチス政権の成立後に、それ以前の民主的なドイツ国家を区別するために後から付けられた名称。",
+    "details": {
+      "meaning": "1918年から1933年までのドイツの国家体制のこと。憲法制定会議がワイマールで開かれたことにちなむ。ヴァイマル共和政とも言う。",
+      "history": "この時期のドイツの正式な国名は「ドイツ国（Deutsches Reich）」で、ナチス政権下でも同じ国名が使われ続けた。そのため、ナチスが政権を握る前の民主的な共和政の時代を区別する呼び名として、「Weimar Republic」が使われるようになった。",
+      "usage": "歴史の時代区分として使われる。当時の国民自身はこの名前で自国を呼んではいなかった。"
+    },
+    "tags": ["歴史"],
+    "language": "en",
+    "period": "1930年代以降",
+    "status": "confirmed",
+    "relatedIds": ["world-war-one"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Weimar Republic",
+        "url": "https://en.wikipedia.org/wiki/Weimar_Republic"
+      }
+    ]
+  },
+  {
+    "id": "classic-mac-os",
+    "name": "Classic Mac OS",
+    "originalName": "Mac OS",
+    "trigger": "Mac OS X",
+    "description": "NeXTSTEPを基にしたMac OS Xが登場したことで、それ以前のMacintosh用OSを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "1984年の初代Macintoshから使われたシステム1からMac OS 9.2.2までのOSのこと。",
+      "history": "最初は「System Software」と呼ばれ、後に「Mac OS」と名付けられた。Appleが1997年にNeXTを買収し、NeXTSTEPをもとにしたMac OS X（後のOS X、macOS）を投入すると、それ以前のバージョンを「Classic」と呼んで区別するようになった。",
+      "usage": "Mac OS Xには旧OS用のアプリを動かす「Classic環境」が搭載されていた。レトロコンピューティングの文脈で使われる。"
+    },
+    "tags": ["コンピューター", "ソフトウェア"],
+    "language": "en",
+    "period": "2000年代以降",
+    "status": "confirmed",
+    "relatedIds": ["apple-i"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Classic Mac OS",
+        "url": "https://en.wikipedia.org/wiki/Classic_Mac_OS"
+      }
+    ]
+  },
+  {
+    "id": "apple-i",
+    "name": "Apple I",
+    "originalName": "Apple Computer",
+    "trigger": "Apple II",
+    "description": "Apple IIが発売されたことで、Appleの最初のコンピューターを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "1976年にスティーブ・ウォズニアックが設計し、Apple Computerが最初に販売したコンピューターのこと。",
+      "history": "発売当初は単に「Apple Computer」という名前だった。翌1977年に後継機のApple IIが発売されて大ヒットすると、最初の機種を「Apple I」と呼んで区別するようになった。",
+      "usage": "現存数が少なく、オークションで高額で取引されるコレクターアイテムとして知られる。"
+    },
+    "tags": ["コンピューター", "テクノロジー"],
+    "language": "en",
+    "period": "1970年代以降",
+    "status": "confirmed",
+    "relatedIds": ["classic-mac-os", "playstation-1"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Apple I",
+        "url": "https://en.wikipedia.org/wiki/Apple_I"
+      }
+    ]
+  },
+  {
+    "id": "star-trek-tos",
+    "name": "Star Trek: The Original Series",
+    "originalName": "Star Trek",
+    "trigger": "Star Trek spin-offs",
+    "description": "数多くの続編シリーズが作られたことで、最初のテレビシリーズを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "1966年から1969年にかけてアメリカで放送された、カーク船長やスポックが登場する最初の『スタートレック』のテレビシリーズのこと。TOSと略す。",
+      "history": "放送時のタイトルは単に「Star Trek」だった。1987年に始まった『新スタートレック（The Next Generation）』をはじめ多くの続編シリーズが作られ、「Star Trek」がシリーズ全体を指す名前になったため、最初の作品を「The Original Series」と呼んで区別するようになった。",
+      "usage": "ファンの間ではTOSと略して呼ばれる。日本では『宇宙大作戦』の邦題で放送された。"
+    },
+    "tags": ["テレビ", "エンターテインメント"],
+    "language": "en",
+    "period": "1980年代以降",
+    "status": "confirmed",
+    "relatedIds": ["star-wars-episode-4"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Star Trek: The Original Series",
+        "url": "https://en.wikipedia.org/wiki/Star_Trek:_The_Original_Series"
+      }
+    ]
+  },
+  {
+    "id": "narrow-body-aircraft",
+    "name": "Narrow-body aircraft",
+    "originalName": "Aircraft",
+    "trigger": "Wide-body aircraft",
+    "description": "通路が2本あるワイドボディ機が登場したことで、通路が1本の従来の旅客機を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "客室の中央に通路が1本だけあり、横に最大6席程度が並ぶ旅客機のこと。単通路機とも言う。",
+      "history": "1970年代初めにボーイング747などの通路が2本ある大型のワイドボディ機が登場するまで、旅客機はすべて通路が1本だったので、単に「aircraft」と呼ばれていた。ワイドボディ機の登場によって、従来の機体を「narrow-body」と呼ぶようになった。",
+      "usage": "航空業界で機材を分類するときに使われる。ボーイング737やエアバスA320などが代表的なナローボディ機。"
+    },
+    "tags": ["交通", "技術"],
+    "language": "en",
+    "period": "1970年代以降",
+    "status": "confirmed",
+    "relatedIds": ["prop-airplane"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Narrow-body aircraft",
+        "url": "https://en.wikipedia.org/wiki/Narrow-body_aircraft"
+      }
+    ]
+  },
+  {
+    "id": "prop-airplane",
+    "name": "Prop airplane",
+    "originalName": "Airplane",
+    "trigger": "Jet aircraft",
+    "description": "ジェット機が旅客輸送の主流になったことで、プロペラで飛ぶ従来の飛行機を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "エンジンでプロペラを回して推進力を得る飛行機のこと。propeller aircraft とも言う。",
+      "history": "飛行機はもともとすべてプロペラで飛んでいた。20世紀後半にジェット機が旅客輸送の主役になると、従来のプロペラ機を「prop plane」「prop airplane」と略して呼び分けるようになった。",
+      "usage": "現在は小型機や地方路線、ターボプロップ機などを指して使われる。"
+    },
+    "tags": ["交通", "技術"],
+    "language": "en",
+    "period": "1950年代以降",
+    "status": "confirmed",
+    "relatedIds": ["narrow-body-aircraft"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Propeller (aeronautics)",
+        "url": "https://en.wikipedia.org/wiki/Propeller_(aeronautics)"
+      }
+    ]
+  },
+  {
+    "id": "pre-dreadnought",
+    "name": "Pre-dreadnought battleship",
+    "originalName": "Battleship",
+    "trigger": "HMS Dreadnought",
+    "description": "画期的な戦艦ドレッドノートが就役したことで、それ以前に建造された戦艦を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "1906年のドレッドノート就役以前に建造された、中口径砲を多く組み合わせた旧式の戦艦のこと。前弩級戦艦とも言う。",
+      "history": "1906年にイギリス海軍が完成させたドレッドノートは、大口径の主砲を統一して多数搭載し、蒸気タービンで高速を実現した画期的な戦艦だった。その登場によって既存の戦艦は一気に旧式化し、それまで単に「battleship」と呼ばれていたものが「pre-dreadnought」と呼ばれるようになった。",
+      "usage": "軍事史や艦船の分類で使われる。日本語の「弩級」「超弩級」という言葉もドレッドノートに由来する。"
+    },
+    "tags": ["軍事", "歴史"],
+    "language": "en",
+    "period": "20世紀前半",
+    "status": "confirmed",
+    "relatedIds": ["conventional-weapon"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Pre-dreadnought battleship",
+        "url": "https://en.wikipedia.org/wiki/Pre-dreadnought_battleship"
+      }
+    ]
+  },
+  {
+    "id": "red-panda",
+    "name": "Red panda",
+    "originalName": "Panda",
+    "trigger": "Giant panda",
+    "description": "ジャイアントパンダが西洋に知られるようになったことで、もともと「パンダ」と呼ばれていた動物を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "ヒマラヤから中国南西部の森林にすむ、赤茶色の毛と縞模様の尾を持つ小型の哺乳類のこと。lesser panda とも言う。",
+      "history": "英語ではもともとこの動物が「panda」と呼ばれていた。1869年にジャイアントパンダが西洋の科学者に知られるようになり、やがてそちらが「panda」として有名になったため、もとの動物を「red panda」「lesser panda」と呼ぶようになった。",
+      "usage": "動物園などで使われる。日本語でも「レッサーパンダ」と呼ばれ、元の名前を新しい動物に奪われた例として知られる。"
+    },
+    "tags": ["科学", "言語"],
+    "language": "en",
+    "period": "19世紀後半以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Red panda",
+        "url": "https://en.wikipedia.org/wiki/Red_panda"
+      }
+    ]
+  },
+  {
+    "id": "scripted-series",
+    "name": "Scripted series",
+    "originalName": "Television series",
+    "trigger": "Reality television",
+    "description": "リアリティ番組が成功したことで、脚本家のいる従来のテレビシリーズを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "脚本家が書いた台本にもとづいて制作されるテレビシリーズのこと。ドラマやコメディなどのフィクションのほか、ノンフィクションも含む。",
+      "history": "2000年代にリアリティ番組が人気を集めると、テレビ業界で従来のシリーズを「scripted」と呼んで区別するようになった。ただし、リアリティ番組も完全な即興であることはほとんどなく、何らかの構成や台本があることが多いため、誤解を招く言い方ともいわれる。",
+      "usage": "テレビ業界や配信サービスの文脈で「scripted series」「unscripted series」のように番組を分類するときに使われる。"
+    },
+    "tags": ["テレビ", "エンターテインメント"],
+    "language": "en",
+    "period": "2000年代以降",
+    "status": "confirmed",
+    "relatedIds": ["live-action"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Reality television",
+        "url": "https://en.wikipedia.org/wiki/Reality_television"
+      }
+    ]
+  },
+  {
+    "id": "contiguous-united-states",
+    "name": "Contiguous United States",
+    "originalName": "United States",
+    "trigger": "Alaska and Hawaii statehood",
+    "description": "アラスカとハワイが州になったことで、それ以外のひと続きの本土の州を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "北アメリカ大陸にあるアメリカ合衆国の48州とワシントンD.C.のこと。「contiguous」は「隣接した、ひと続きの」という意味。Lower 48 とも言う。",
+      "history": "1959年にアラスカとハワイが州に昇格するまで、アメリカの州はすべて北アメリカ大陸でつながっていたので、単に「United States」と呼べばよかった。本土から離れた2州が加わったことで、本土の48州を区別する呼び名が必要になった。",
+      "usage": "地図や統計、配送条件などで使われる。「Lower 48」はアラスカの人々がよく使う言い方。"
+    },
+    "tags": ["地理", "歴史"],
+    "language": "en",
+    "period": "1950年代以降",
+    "status": "confirmed",
+    "relatedIds": ["old-world"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Contiguous United States",
+        "url": "https://en.wikipedia.org/wiki/Contiguous_United_States"
+      }
+    ]
+  },
+  {
+    "id": "artistic-gymnastics",
+    "name": "Artistic gymnastics",
+    "originalName": "Gymnastics",
+    "trigger": "Rhythmic gymnastics",
+    "description": "新体操がオリンピックの種目に加わったことで、器械を使う従来の体操競技を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "床、跳馬、鉄棒、平均台などの器械を使って技を競う体操競技のこと。器械体操とも言う。",
+      "history": "オリンピックではもともと単に「gymnastics」と呼ばれていた。1984年のロサンゼルスオリンピックで新体操（rhythmic gymnastics）が加わり、その後トランポリンも採用されたことで、従来の競技を「artistic gymnastics」と呼んで区別するようになった。",
+      "usage": "国際大会や競技団体の正式な種目名として使われる。"
+    },
+    "tags": ["スポーツ"],
+    "language": "en",
+    "period": "1980年代以降",
+    "status": "confirmed",
+    "relatedIds": ["indoor-volleyball"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Artistic gymnastics",
+        "url": "https://en.wikipedia.org/wiki/Artistic_gymnastics"
+      }
+    ]
+  },
+  {
+    "id": "dairy-milk",
+    "name": "Dairy milk",
+    "originalName": "Milk",
+    "trigger": "Plant milk",
+    "description": "豆乳やアーモンドミルクなどの植物性ミルクが普及したことで、動物から搾った本来の乳を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "牛などの哺乳類から搾った乳のこと。",
+      "history": "もともと「milk」といえば動物の乳のことだった。豆乳、ライスミルク、アーモンドミルク、ココナッツミルク、オーツミルクなどの植物性の飲料が「milk」として広く売られるようになったことで、動物の乳を「dairy milk」と呼んで区別するようになった。",
+      "usage": "カフェのメニューや食品表示などで使われる。植物性の飲料を「milk」と呼んでよいかをめぐって、各国で表示規制の議論も起きている。"
+    },
+    "tags": ["食"],
+    "language": "en",
+    "period": "2010年代以降",
+    "status": "confirmed",
+    "relatedIds": ["whole-milk", "raw-milk"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Milk",
+        "url": "https://en.wikipedia.org/wiki/Milk"
+      }
+    ]
+  },
+  {
+    "id": "strike-anywhere-match",
+    "name": "Strike-anywhere match",
+    "originalName": "Match",
+    "trigger": "Safety match",
+    "description": "安全マッチが開発されたことで、どこでこすっても火がつく従来のマッチを区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "頭薬に発火しやすい成分を含み、箱の側薬以外のざらざらした面でこすっても火がつくマッチのこと。",
+      "history": "19世紀前半に登場した初期の摩擦マッチは、どこでこすっても火がついた。19世紀半ばに、発火成分の一部を箱の側面に分けて、専用の面でこすらないと火がつかない安全マッチが開発されると、従来のマッチを「strike-anywhere match」と呼ぶようになった。",
+      "usage": "キャンプやアウトドア用品として売られていることが多い。"
+    },
+    "tags": ["科学", "日常生活"],
+    "language": "en",
+    "period": "19世紀後半以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Match",
+        "url": "https://en.wikipedia.org/wiki/Match"
+      }
+    ]
+  },
+  {
+    "id": "forward-slash",
+    "name": "Forward slash",
+    "originalName": "Slash",
+    "trigger": "Backslash",
+    "description": "バックスラッシュが使われるようになったことで、従来のスラッシュ記号を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "右上から左下へ向かう斜線の記号「/」のこと。",
+      "history": "ASCIIやコンピューターが登場する前、「/」は単に「slash」と呼ばれていた。1960年代にASCIIに逆向きの記号「\\」が加わり、「backslash」と呼ばれるようになったことで、もとの記号を「forward slash」と呼んで区別することがあるようになった。",
+      "usage": "URLやファイルパスを読み上げるときなどに使われる。MS-DOSやWindowsのパス区切りがバックスラッシュであることから、特に区別が必要な場面が多い。"
+    },
+    "tags": ["コンピューター", "文字"],
+    "language": "en",
+    "period": "1960年代以降",
+    "status": "confirmed",
+    "relatedIds": ["plain-text"],
+    "sources": [
+      {
+        "title": "Wikipedia - List of retronyms",
+        "url": "https://en.wikipedia.org/wiki/List_of_retronyms"
+      },
+      {
+        "title": "Wikipedia - Slash (punctuation)",
+        "url": "https://en.wikipedia.org/wiki/Slash_(punctuation)"
+      }
+    ]
   }
 ]
