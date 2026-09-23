@@ -69,6 +69,17 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
               {site.name}
             </Link>
             <Link
+              href="/about/"
+              style={{
+                color: theme.muted,
+                fontSize: ".8125rem",
+                letterSpacing: ".02em",
+                textDecoration: "none",
+              }}
+            >
+              レトロニムとは
+            </Link>
+            <Link
               href="/retronyms/"
               style={{
                 color: theme.muted,

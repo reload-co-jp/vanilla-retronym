@@ -28,6 +28,14 @@ const Page: FC = () => {
           電話 → 固定電話 / カメラ → フィルムカメラ / 携帯電話 →
           フィーチャーフォン
         </p>
+        <p>
+          <Link
+            href="/about/"
+            style={{ color: theme.accent, fontSize: ".875rem" }}
+          >
+            レトロニムについて詳しく →
+          </Link>
+        </p>
       </Section>
 
       <Section heading="新着">
