@@ -3641,5 +3641,167 @@
         "url": "https://fr.wikipedia.org/wiki/IPod_classic"
       }
     ]
+  },
+  {
+    "id": "pavo-real",
+    "name": "Pavo real",
+    "originalName": "Pavo",
+    "trigger": "Pavo (guajolote)",
+    "description": "アメリカ大陸から七面鳥が伝わり「pavo」と呼ばれるようになったことで、もともと「pavo」だったクジャクを区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "クジャクのこと。「real」はスペイン語で「王の」を意味する。",
+      "history": "「pavo」はラテン語の「pavo（クジャク）」に由来し、スペイン語でももともとクジャクを指した。16世紀に新大陸から七面鳥がもたらされると、姿の似たこの鳥も「pavo」と呼ばれるようになり、やがて「pavo」といえば七面鳥を指すのが一般的になった。そのため本来のクジャクは「pavo real」と呼び分けられるようになった。",
+      "usage": "現在のスペイン語では「pavo」は七面鳥（料理では特に）を、「pavo real」はクジャクを指す。メキシコなどでは七面鳥を「guajolote」とも呼ぶ。"
+    },
+    "tags": ["言語", "科学"],
+    "language": "es",
+    "period": "16世紀以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - Retrónimo",
+        "url": "https://es.wikipedia.org/wiki/Retr%C3%B3nimo"
+      },
+      {
+        "title": "Wikipedia - Pavo real",
+        "url": "https://es.wikipedia.org/wiki/Pavo_real"
+      }
+    ]
+  },
+  {
+    "id": "microscopio-optico",
+    "name": "Microscopio óptico",
+    "originalName": "Microscopio",
+    "trigger": "Microscopio electrónico",
+    "description": "電子顕微鏡が発明されたことで、それまでの光を使う顕微鏡を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "可視光とレンズを使って試料を拡大して観察する顕微鏡のこと。日本語の「光学顕微鏡」に相当する。",
+      "history": "17世紀以来、顕微鏡といえば光とレンズを使うものだけだった。1931年にドイツのエルンスト・ルスカらが電子線を使う電子顕微鏡を開発し、その後実用化が進むと、従来の顕微鏡は「microscopio óptico」と呼び分けられるようになった。",
+      "usage": "教育や研究の場で、電子顕微鏡（microscopio electrónico）と対比して使われる。"
+    },
+    "tags": ["科学", "技術"],
+    "language": "es",
+    "period": "1930年代以降",
+    "status": "confirmed",
+    "relatedIds": ["visible-light"],
+    "sources": [
+      {
+        "title": "Wikipedia - Retrónimo",
+        "url": "https://es.wikipedia.org/wiki/Retr%C3%B3nimo"
+      },
+      {
+        "title": "Wikipedia - Microscopio óptico",
+        "url": "https://es.wikipedia.org/wiki/Microscopio_%C3%B3ptico"
+      }
+    ]
+  },
+  {
+    "id": "cine-2d",
+    "name": "Cine 2D",
+    "originalName": "Cine",
+    "trigger": "Cine 3D",
+    "description": "3D映画が広く上映されるようになったことで、従来の平面の映画を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "立体視を伴わない、通常の平面映像で上映される映画のこと。",
+      "history": "3D映画は1950年代にも流行したが一時的なものだった。2009年の『アバター』のヒットをきっかけにデジタル3D上映が世界的に広まり、同じ作品が3D版と通常版で上映されるようになった。そのため通常版は「2D」と表記されるようになった。",
+      "usage": "映画館の上映スケジュールやチケット購入時に「2D」「3D」として使われる。"
+    },
+    "tags": ["映画", "映像"],
+    "language": "es",
+    "period": "2000年代以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - Retrónimo",
+        "url": "https://es.wikipedia.org/wiki/Retr%C3%B3nimo"
+      },
+      {
+        "title": "Wikipedia - Cine 3D",
+        "url": "https://es.wikipedia.org/wiki/Cine_3D"
+      }
+    ]
+  },
+  {
+    "id": "television-abierta",
+    "name": "Televisión abierta",
+    "originalName": "Televisión",
+    "trigger": "Televisión por cable / de pago",
+    "description": "ケーブルテレビや有料放送が普及したことで、誰でも無料で受信できる従来のテレビ放送を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "契約や料金なしで誰でも受信できる無料のテレビ放送のこと。「abierta」はスペイン語で「開かれた」を意味する。",
+      "history": "中南米やスペインでは、テレビといえば地上波で無料放送されるものだった。1980〜90年代にケーブルテレビや衛星放送などの有料放送が広まると、従来の放送は「televisión abierta」や「señal abierta」と呼ばれるようになった。",
+      "usage": "中南米で特によく使われ、「transmitido por televisión abierta（無料放送で中継）」のように言う。スポーツ中継の放映権をめぐる話題でも頻出する。"
+    },
+    "tags": ["テレビ", "放送"],
+    "language": "es",
+    "period": "1980年代以降",
+    "status": "confirmed",
+    "relatedIds": ["terrestrial-television"],
+    "sources": [
+      {
+        "title": "Wikipedia - Retrónimo",
+        "url": "https://es.wikipedia.org/wiki/Retr%C3%B3nimo"
+      },
+      {
+        "title": "Wikipedia - Televisión abierta",
+        "url": "https://es.wikipedia.org/wiki/Televisi%C3%B3n_abierta"
+      }
+    ]
+  },
+  {
+    "id": "gran-colombia",
+    "name": "Gran Colombia",
+    "originalName": "República de Colombia",
+    "trigger": "Colombia (Nueva Granada)",
+    "description": "現在のコロンビアと区別するため、1819年から1831年まで存在した「コロンビア共和国」を後から呼び直した名称。",
+    "details": {
+      "meaning": "シモン・ボリバルらが建国した、現在のコロンビア・ベネズエラ・エクアドル・パナマにまたがる国家のこと。",
+      "history": "この国家は当時「República de Colombia（コロンビア共和国）」と名乗っていた。1831年に解体してベネズエラ、エクアドル、ヌエバ・グラナダ（現在のコロンビアの前身）に分かれ、のちにヌエバ・グラナダが「コロンビア」を名乗るようになった。そのため歴史家は元の大きな国家を「Gran Colombia」と呼んで区別するようになった。",
+      "usage": "歴史の文脈で使われ、日本語でも「大コロンビア」と訳される。"
+    },
+    "tags": ["歴史", "地理"],
+    "language": "es",
+    "period": "19世紀後半以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - Retrónimo",
+        "url": "https://es.wikipedia.org/wiki/Retr%C3%B3nimo"
+      },
+      {
+        "title": "Wikipedia - Gran Colombia",
+        "url": "https://es.wikipedia.org/wiki/Gran_Colombia"
+      }
+    ]
+  },
+  {
+    "id": "liberalismo-clasico",
+    "name": "Liberalismo clásico",
+    "originalName": "Liberalismo",
+    "trigger": "Liberalismo social",
+    "description": "国家の介入を認める新しい自由主義が現れたことで、もともとの自由主義を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "個人の自由、私有財産、自由市場、国家権力の制限を重視する思想のこと。日本語の「古典的自由主義」に相当する。",
+      "history": "18〜19世紀の自由主義は、国家の介入を最小限にすることを重視していた。19世紀末から20世紀にかけて、福祉や社会保障のために国家の役割を認める「社会自由主義」が広まり、「自由主義」の意味が変化した。そのため元の考え方は「liberalismo clásico」と呼ばれるようになった。",
+      "usage": "政治思想や経済学の文脈で、社会自由主義や新自由主義と対比して使われる。"
+    },
+    "tags": ["社会", "歴史"],
+    "language": "es",
+    "period": "20世紀以降",
+    "status": "confirmed",
+    "relatedIds": [],
+    "sources": [
+      {
+        "title": "Wikipedia - Retrónimo",
+        "url": "https://es.wikipedia.org/wiki/Retr%C3%B3nimo"
+      },
+      {
+        "title": "Wikipedia - Liberalismo clásico",
+        "url": "https://es.wikipedia.org/wiki/Liberalismo_cl%C3%A1sico"
+      }
+    ]
   }
 ]
