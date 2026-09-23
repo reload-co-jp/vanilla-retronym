@@ -1,6 +1,7 @@
 import { Footer, Header, Main } from "@/components/elements/layout"
 import { openGraphBase, site } from "@/lib/site"
 import { theme } from "@/lib/theme"
+import { GoogleAnalytics } from "@next/third-parties/google"
 import type { Metadata } from "next"
 import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google"
 import Link from "next/link"
@@ -112,6 +113,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           </p>
         </Footer>
       </body>
+      <GoogleAnalytics gaId="G-QX44CQXJVG" />
     </html>
   )
 }
