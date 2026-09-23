@@ -1,3 +1,5 @@
+import { Breadcrumb } from "@/components/elements/breadcrumb"
+import { JsonLd } from "@/components/elements/json-ld"
 import { Section, Title } from "@/components/elements/layout"
 import { StatusBadge } from "@/components/retronym/status-badge"
 import {
@@ -6,6 +8,7 @@ import {
   RetronymStatus,
   retronyms,
 } from "@/lib/retronyms"
+import { site } from "@/lib/site"
 import { theme } from "@/lib/theme"
 import type { Metadata } from "next"
 import Link from "next/link"
@@ -179,6 +182,19 @@ const Steps: FC = () => {
 
 const Page: FC = () => (
   <article style={{ display: "grid", gap: "3rem" }}>
+    <JsonLd
+      data={{
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: "レトロニムとは",
+        description: metadata.description,
+        url: `${site.url}/about/`,
+        inLanguage: "ja",
+        publisher: { "@type": "Organization", name: "Reload" },
+        isPartOf: { "@type": "WebSite", name: site.name, url: site.url },
+      }}
+    />
+    <Breadcrumb items={[{ name: "レトロニムとは", href: "/about/" }]} />
     <section style={{ display: "grid", gap: ".625rem" }}>
       <Title style={{ fontSize: "2.25rem", lineHeight: 1.35 }}>
         レトロニムとは

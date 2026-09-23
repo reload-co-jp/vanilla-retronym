@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/elements/json-ld"
 import { Section, Title } from "@/components/elements/layout"
 import { RetronymCardList } from "@/components/retronym/card"
 import { TagLink, TagList } from "@/components/retronym/tag"
@@ -13,6 +14,17 @@ const Page: FC = () => {
 
   return (
     <div style={{ display: "grid", gap: "3rem" }}>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: site.name,
+          url: site.url,
+          description: site.description,
+          inLanguage: "ja",
+          publisher: { "@type": "Organization", name: "Reload" },
+        }}
+      />
       <section style={{ display: "grid", gap: ".625rem" }}>
         <Title style={{ fontSize: "2.25rem", lineHeight: 1.35 }}>
           {site.name}

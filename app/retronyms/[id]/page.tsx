@@ -1,3 +1,5 @@
+import { Breadcrumb } from "@/components/elements/breadcrumb"
+import { JsonLd } from "@/components/elements/json-ld"
 import { Section, Title } from "@/components/elements/layout"
 import { RetronymCardList } from "@/components/retronym/card"
 import { StatusBadge } from "@/components/retronym/status-badge"
@@ -77,11 +79,12 @@ const Page = async ({ params }: Params) => {
 
   return (
     <article style={{ display: "grid", gap: "2.25rem" }}>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
-        }}
+      <JsonLd data={jsonLd} />
+      <Breadcrumb
+        items={[
+          { name: "レトロニム一覧・検索", href: "/retronyms/" },
+          { name: retronym.name, href: `/retronyms/${retronym.id}/` },
+        ]}
       />
 
       <header style={{ display: "grid", gap: ".625rem" }}>
