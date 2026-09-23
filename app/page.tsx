@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const Page: FC = () => {
   const tags = getTags()
-  const newest = newestRetronyms(5)
+  const newest = newestRetronyms(6)
 
   return (
     <div style={{ display: "grid", gap: "3rem" }}>
@@ -34,6 +34,7 @@ const Page: FC = () => {
         <Title style={{ fontSize: "2.25rem", lineHeight: 1.35 }}>
           {site.name}
         </Title>
+        <p>{site.nameJa}</p>
         <p style={{ color: theme.muted }}>{site.description}</p>
       </section>
 

@@ -40,7 +40,10 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html lang="ja" className={`${notoSerifJP.variable} ${notoSansJP.variable}`}>
+    <html
+      lang="ja"
+      className={`${notoSerifJP.variable} ${notoSansJP.variable}`}
+    >
       <body>
         <Header>
           <nav
@@ -49,42 +52,55 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
               display: "flex",
               flexWrap: "wrap",
               gap: "1rem",
+              justifyContent: "space-between",
             }}
           >
-            <Link
-              href="/"
+            <div>
+              <Link
+                href="/"
+                style={{
+                  fontFamily: "var(--font-serif)",
+                  fontSize: "1.0625rem",
+                  fontWeight: 700,
+                  letterSpacing: ".01em",
+                  textDecoration: "none",
+                }}
+              >
+                {site.name}
+              </Link>
+            </div>
+            <div
               style={{
-                fontFamily: "var(--font-serif)",
-                fontSize: "1.0625rem",
-                fontWeight: 700,
-                letterSpacing: ".01em",
-                textDecoration: "none",
+                alignItems: "baseline",
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "1rem",
               }}
             >
-              {site.name}
-            </Link>
-            <Link
-              href="/about/"
-              style={{
-                color: theme.muted,
-                fontSize: ".8125rem",
-                letterSpacing: ".02em",
-                textDecoration: "none",
-              }}
-            >
-              レトロニムとは
-            </Link>
-            <Link
-              href="/retronyms/"
-              style={{
-                color: theme.muted,
-                fontSize: ".8125rem",
-                letterSpacing: ".02em",
-                textDecoration: "none",
-              }}
-            >
-              一覧・検索
-            </Link>
+              <Link
+                href="/about/"
+                style={{
+                  color: theme.muted,
+                  fontSize: ".8125rem",
+                  letterSpacing: ".02em",
+                  textDecoration: "none",
+                }}
+              >
+                レトロニムとは
+              </Link>
+
+              <Link
+                href="/retronyms/"
+                style={{
+                  color: theme.muted,
+                  fontSize: ".8125rem",
+                  letterSpacing: ".02em",
+                  textDecoration: "none",
+                }}
+              >
+                一覧・検索
+              </Link>
+            </div>
           </nav>
         </Header>
         <Main>{children}</Main>

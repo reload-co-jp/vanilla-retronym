@@ -11,41 +11,49 @@ export const RetronymCard: FC<{ retronym: Retronym }> = ({ retronym }) => (
       backgroundColor: theme.surface,
       border: `1px solid ${theme.border}`,
       borderRadius: ".125rem",
+      display: "flex",
+      flexDirection: "column",
+      gap: ".5rem",
+      justifyContent: "space-between",
+      maxWidth: "23.5rem",
       padding: "1.125rem 1.25rem",
+      width: "100%",
     }}
   >
-    <div
-      style={{
-        alignItems: "baseline",
-        display: "flex",
-        flexWrap: "wrap",
-        gap: ".5rem",
-      }}
-    >
-      <h3 style={{ fontSize: "1.125rem", margin: 0 }}>
-        <Link
-          href={`/retronyms/${retronym.id}/`}
-          style={{ textDecoration: "none" }}
-        >
-          {retronym.name}
-        </Link>
-      </h3>
-      {retronym.translation && (
-        <span style={{ color: theme.muted, fontSize: ".8125rem" }}>
-          {retronym.translation}
-        </span>
-      )}
-      <StatusBadge status={retronym.status} />
+    <div>
+      <div
+        style={{
+          alignItems: "baseline",
+          display: "flex",
+          flexWrap: "wrap",
+          gap: ".5rem",
+        }}
+      >
+        <h3 style={{ fontSize: "1.125rem", margin: 0 }}>
+          <Link
+            href={`/retronyms/${retronym.id}/`}
+            style={{ textDecoration: "none" }}
+          >
+            {retronym.name}
+          </Link>
+        </h3>
+        {retronym.translation && (
+          <span style={{ color: theme.muted, fontSize: ".8125rem" }}>
+            {retronym.translation}
+          </span>
+        )}
+        <StatusBadge status={retronym.status} />
+      </div>
+      <p
+        style={{
+          color: theme.muted,
+          fontSize: ".8125rem",
+          margin: ".25rem 0 .5rem",
+        }}
+      >
+        {retronym.originalName} → {retronym.name}（{retronym.trigger}の登場）
+      </p>
     </div>
-    <p
-      style={{
-        color: theme.muted,
-        fontSize: ".8125rem",
-        margin: ".25rem 0 .5rem",
-      }}
-    >
-      {retronym.originalName} → {retronym.name}（{retronym.trigger}の登場）
-    </p>
     <TagList>
       {retronym.tags.map((tag) => (
         <Tag key={tag}>{tag}</Tag>
@@ -57,7 +65,7 @@ export const RetronymCard: FC<{ retronym: Retronym }> = ({ retronym }) => (
 export const RetronymCardList: FC<{ retronyms: Retronym[] }> = ({
   retronyms,
 }) => (
-  <div style={{ display: "grid", gap: ".75rem" }}>
+  <div style={{ display: "flex", gap: ".75rem", flexWrap: "wrap" }}>
     {retronyms.map((retronym) => (
       <RetronymCard key={retronym.id} retronym={retronym} />
     ))}
