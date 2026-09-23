@@ -8,18 +8,22 @@ import {
   RetronymStatus,
   retronyms,
 } from "@/lib/retronyms"
-import { site } from "@/lib/site"
+import { openGraphBase, site } from "@/lib/site"
 import { theme } from "@/lib/theme"
 import type { Metadata } from "next"
 import Link from "next/link"
 import { FC, ReactNode } from "react"
 
+const description =
+  "レトロニム（retronym）の意味・語源・生まれる仕組み・パターンを、具体例とともに詳しく解説する。"
+
 export const metadata: Metadata = {
   title: "レトロニムとは",
-  description:
-    "レトロニム（retronym）の意味・語源・生まれる仕組み・パターンを、具体例とともに詳しく解説する。",
+  description,
   alternates: { canonical: "/about/" },
   openGraph: {
+    ...openGraphBase,
+    description,
     title: "レトロニムとは",
     url: "/about/",
   },
@@ -187,7 +191,7 @@ const Page: FC = () => (
         "@context": "https://schema.org",
         "@type": "Article",
         headline: "レトロニムとは",
-        description: metadata.description,
+        description,
         url: `${site.url}/about/`,
         inLanguage: "ja",
         publisher: { "@type": "Organization", name: "Reload" },

@@ -60,6 +60,12 @@ describe("data/retronyms.json", () => {
     }
   })
 
+  it("日本語以外の見出し語には翻訳がある", () => {
+    for (const retronym of retronyms) {
+      if (retronym.language !== "ja") expect(retronym.translation).toBeTruthy()
+    }
+  })
+
   it("idが一意", () => {
     const ids = retronyms.map(({ id }) => id)
     expect(new Set(ids).size).toBe(ids.length)

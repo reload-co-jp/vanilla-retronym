@@ -11,7 +11,7 @@ import {
   RetronymDetails,
   retronyms,
 } from "@/lib/retronyms"
-import { site } from "@/lib/site"
+import { openGraphBase, site } from "@/lib/site"
 import { theme } from "@/lib/theme"
 import type { Metadata } from "next"
 import Link from "next/link"
@@ -37,6 +37,7 @@ export const generateMetadata = async ({
     description,
     alternates: { canonical: url },
     openGraph: {
+      ...openGraphBase,
       type: "article",
       title: `${retronym.name} | ${site.name}`,
       description,
@@ -91,6 +92,11 @@ const Page = async ({ params }: Params) => {
         <Title style={{ fontSize: "2.25rem", lineHeight: 1.35 }}>
           {retronym.name}
         </Title>
+        {retronym.translation && (
+          <p style={{ color: theme.muted, fontSize: "1.125rem" }}>
+            {retronym.translation}
+          </p>
+        )}
         <p style={{ color: theme.muted }}>
           もともとは「{retronym.originalName}」と呼ばれていた。
         </p>

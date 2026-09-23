@@ -5,8 +5,13 @@ import { TagLink, TagList } from "@/components/retronym/tag"
 import { getTags, newestRetronyms, retronyms } from "@/lib/retronyms"
 import { site } from "@/lib/site"
 import { theme } from "@/lib/theme"
+import type { Metadata } from "next"
 import Link from "next/link"
 import { FC } from "react"
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+}
 
 const Page: FC = () => {
   const tags = getTags()

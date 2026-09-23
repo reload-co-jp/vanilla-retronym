@@ -1,5 +1,5 @@
 import { Footer, Header, Main } from "@/components/elements/layout"
-import { site } from "@/lib/site"
+import { openGraphBase, site } from "@/lib/site"
 import { theme } from "@/lib/theme"
 import type { Metadata } from "next"
 import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google"
@@ -28,18 +28,13 @@ export const metadata: Metadata = {
   },
   description: site.description,
   openGraph: {
-    type: "website",
-    siteName: site.name,
+    ...openGraphBase,
     title: `${site.name} - レトロニム図鑑`,
     description: site.description,
     url: site.url,
-    locale: "ja_JP",
   },
   twitter: {
     card: "summary_large_image",
-  },
-  alternates: {
-    canonical: "/",
   },
 }
 

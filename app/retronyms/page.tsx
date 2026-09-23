@@ -4,16 +4,20 @@ import { Title } from "@/components/elements/layout"
 import { RetronymCardList } from "@/components/retronym/card"
 import { RetronymSearch } from "@/components/retronym/search"
 import { retronyms, sortRetronyms } from "@/lib/retronyms"
-import { site } from "@/lib/site"
+import { openGraphBase, site } from "@/lib/site"
 import { theme } from "@/lib/theme"
 import type { Metadata } from "next"
 import { FC, Suspense } from "react"
 
+const description = `収録しているレトロニム全${retronyms.length}件を一覧・検索できる。名前・元の名称・きっかけ・説明・タグから絞り込める。`
+
 export const metadata: Metadata = {
   title: "レトロニム一覧・検索",
-  description: `収録しているレトロニム全${retronyms.length}件を一覧・検索できる。名前・元の名称・きっかけ・説明・タグから絞り込める。`,
+  description,
   alternates: { canonical: "/retronyms/" },
   openGraph: {
+    ...openGraphBase,
+    description,
     title: "レトロニム一覧・検索",
     url: "/retronyms/",
   },

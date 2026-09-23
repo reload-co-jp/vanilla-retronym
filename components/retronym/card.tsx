@@ -30,6 +30,11 @@ export const RetronymCard: FC<{ retronym: Retronym }> = ({ retronym }) => (
           {retronym.name}
         </Link>
       </h3>
+      {retronym.translation && (
+        <span style={{ color: theme.muted, fontSize: ".8125rem" }}>
+          {retronym.translation}
+        </span>
+      )}
       <StatusBadge status={retronym.status} />
     </div>
     <p

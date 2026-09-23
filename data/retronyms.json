@@ -614,6 +614,7 @@
   {
     "id": "snail-mail",
     "name": "Snail mail",
+    "translation": "カタツムリ郵便",
     "originalName": "Mail",
     "trigger": "Email",
     "description": "電子メールが普及したことで、配達に時間のかかる従来の郵便を、かたつむり（snail）に例えて区別するようになった英語圏の呼び方。",
@@ -1917,6 +1918,7 @@
   {
     "id": "sneakernet",
     "name": "Sneakernet",
+    "translation": "スニーカーネット",
     "originalName": "Data transfer",
     "trigger": "Computer network",
     "description": "ネットワークでのデータ転送が当たり前になったことで、記憶媒体を人が持ち歩いてデータを運ぶ方法を、スニーカーで歩くことにかけてこう呼ぶようになった英語圏の俗語。",
@@ -1944,6 +1946,7 @@
   {
     "id": "vanilla",
     "name": "Vanilla",
+    "translation": "バニラ",
     "originalName": "Plain",
     "trigger": "Flavored / customized versions",
     "description": "アイスクリームの基本の味から転じて、改造や拡張を加えていない素の状態を指すようになった言葉。ソフトウェアでは「バニラJavaScript」のようにフレームワークなどを使わない状態を表す。",
@@ -1971,6 +1974,7 @@
   {
     "id": "brown-rice",
     "name": "Brown rice",
+    "translation": "玄米",
     "originalName": "Rice",
     "trigger": "White rice",
     "description": "精米した白米が主流になったことで、ぬかを残したままの米を区別して呼ぶようになった名称。",
@@ -1998,6 +2002,7 @@
   {
     "id": "black-powder",
     "name": "Black powder",
+    "translation": "黒色火薬",
     "originalName": "Gunpowder",
     "trigger": "Smokeless powder",
     "description": "無煙火薬が登場したことで、それまで単に「gunpowder」と呼ばれていた黒色火薬を区別するために使われるようになった名称。",
@@ -2025,6 +2030,7 @@
   {
     "id": "hard-cider",
     "name": "Hard cider",
+    "translation": "ハードサイダー",
     "originalName": "Cider",
     "trigger": "Non-alcoholic apple cider",
     "description": "アメリカで「cider」が無濾過のりんごジュースを指すようになったため、発酵させたアルコール飲料のほうを区別して呼ぶ名称。",
@@ -2052,6 +2058,7 @@
   {
     "id": "hardcover-book",
     "name": "Hardcover book",
+    "translation": "ハードカバー本",
     "originalName": "Book",
     "trigger": "Paperback",
     "description": "ペーパーバックが普及したことで、硬い表紙で製本された従来の本を区別するために使われるようになった名称。",
@@ -2079,6 +2086,7 @@
   {
     "id": "hard-disk",
     "name": "Hard disk",
+    "translation": "ハードディスク",
     "originalName": "Disk",
     "trigger": "Floppy disk",
     "description": "フロッピーディスクが登場したことで、硬い円盤を使う従来の磁気ディスクを区別するために使われるようになった名称。",
@@ -2106,6 +2114,7 @@
   {
     "id": "hand-grenade",
     "name": "Hand grenade",
+    "translation": "手榴弾",
     "originalName": "Grenade",
     "trigger": "Rifle grenade / grenade launcher",
     "description": "銃で撃ち出す擲弾が登場したことで、手で投げる従来の手榴弾を区別するために使われるようになった名称。",
@@ -2133,6 +2142,7 @@
   {
     "id": "horse-cavalry",
     "name": "Horse cavalry",
+    "translation": "乗馬騎兵",
     "originalName": "Cavalry",
     "trigger": "Armored cavalry",
     "description": "戦車や装甲車の部隊も「騎兵」と呼ばれるようになったことで、馬に乗る本来の騎兵を区別するために使われるようになった名称。",
@@ -2160,6 +2170,7 @@
   {
     "id": "house-call",
     "name": "House call",
+    "translation": "往診",
     "originalName": "Doctor's visit",
     "trigger": "Office / hospital visits",
     "description": "患者が医院や病院へ通うのが普通になったことで、医師が患者の家を訪ねて診察することを区別して呼ぶようになった名称。",
@@ -2187,6 +2198,7 @@
   {
     "id": "human-computer",
     "name": "Human computer",
+    "translation": "計算手",
     "originalName": "Computer",
     "trigger": "Electronic computer",
     "description": "電子計算機が「computer」と呼ばれるようになったことで、計算を仕事にしていた人を区別するために使われるようになった名称。",
@@ -2214,6 +2226,7 @@
   {
     "id": "independent-bookstore",
     "name": "Independent bookstore",
+    "translation": "独立系書店",
     "originalName": "Bookstore",
     "trigger": "Bookstore chains",
     "description": "大型の書店チェーンが広まったことで、個人や小さな会社が経営する書店を区別するために使われるようになった名称。",
@@ -2241,6 +2254,7 @@
   {
     "id": "indoor-volleyball",
     "name": "Indoor volleyball",
+    "translation": "インドアバレーボール",
     "originalName": "Volleyball",
     "trigger": "Beach volleyball",
     "description": "ビーチバレーが広く知られるようになったことで、体育館で行う従来のバレーボールを区別するために使われるようになった名称。",
@@ -2268,6 +2282,7 @@
   {
     "id": "mainframe-computer",
     "name": "Mainframe computer",
+    "translation": "メインフレーム",
     "originalName": "Computer",
     "trigger": "Minicomputer",
     "description": "ミニコンピューターが登場したことで、大型の筐体に収められた従来のコンピューターを区別するために使われるようになった名称。",
@@ -2295,6 +2310,7 @@
   {
     "id": "meatspace",
     "name": "Meatspace",
+    "translation": "ミートスペース（現実世界）",
     "originalName": "Reality",
     "trigger": "Cyberspace",
     "description": "インターネット上の「サイバースペース」が生まれたことで、肉体のある現実の世界を区別して呼ぶようになった俗語。",
@@ -2322,6 +2338,7 @@
   {
     "id": "muzzleloader",
     "name": "Muzzleloader",
+    "translation": "前装銃",
     "originalName": "Firearm",
     "trigger": "Breech-loading firearms",
     "description": "銃身の後ろから弾を込める元込め式の銃が普及したことで、銃口から弾を込める従来の銃を区別するために使われるようになった名称。",
@@ -2349,6 +2366,7 @@
   {
     "id": "open-captions",
     "name": "Open captions",
+    "translation": "オープンキャプション",
     "originalName": "Captions",
     "trigger": "Closed captions",
     "description": "表示のオン・オフを切り替えられるクローズドキャプションが登場したことで、映像に焼き付けられた従来の字幕を区別するために使われるようになった名称。",
@@ -2376,6 +2394,7 @@
   {
     "id": "optical-zoom",
     "name": "Optical zoom",
+    "translation": "光学ズーム",
     "originalName": "Zoom",
     "trigger": "Digital zoom",
     "description": "画像を拡大処理するデジタルズームが登場したことで、レンズを動かして拡大する従来のズームを区別するために使われるようになった名称。",
@@ -2403,6 +2422,7 @@
   {
     "id": "over-the-board-chess",
     "name": "Over-the-board chess",
+    "translation": "盤上チェス",
     "originalName": "Chess",
     "trigger": "Computer chess / correspondence chess",
     "description": "コンピューターやネットでの対局、郵便での通信対局が広まったことで、盤を挟んで向かい合って指すチェスを区別するために使われるようになった名称。",
@@ -2430,6 +2450,7 @@
   {
     "id": "hard-copy",
     "name": "Hard copy",
+    "translation": "ハードコピー",
     "originalName": "Copy",
     "trigger": "Electronic files",
     "description": "文書を電子ファイルでやりとりするようになったことで、紙に印刷された文書を区別するために使われるようになった名称。",
@@ -2457,6 +2478,7 @@
   {
     "id": "raw-milk",
     "name": "Raw milk",
+    "translation": "生乳",
     "originalName": "Milk",
     "trigger": "Pasteurized milk",
     "description": "低温殺菌が標準になったことで、加熱処理をしていない牛乳を区別するために使われるようになった名称。",
@@ -2484,6 +2506,7 @@
   {
     "id": "real-tennis",
     "name": "Real tennis",
+    "translation": "リアルテニス",
     "originalName": "Tennis",
     "trigger": "Lawn tennis",
     "description": "芝生で行うローンテニスが考案されたことで、屋内の専用コートで行う元祖のテニスを区別するために使われるようになった名称。",
@@ -2511,6 +2534,7 @@
   {
     "id": "rugby-union",
     "name": "Rugby union",
+    "translation": "ラグビーユニオン",
     "originalName": "Rugby",
     "trigger": "Rugby league",
     "description": "ラグビーリーグが分かれて誕生したことで、もとのラグビーを区別するために使われるようになった名称。",
@@ -2538,6 +2562,7 @@
   {
     "id": "sit-down-restaurant",
     "name": "Sit-down restaurant",
+    "translation": "着席型レストラン",
     "originalName": "Restaurant",
     "trigger": "Fast food / take-out",
     "description": "ファストフード店や持ち帰りの店が増えたことで、席について給仕を受ける従来のレストランを区別するために使われるようになった名称。",
@@ -2565,6 +2590,7 @@
   {
     "id": "snow-skiing",
     "name": "Snow skiing",
+    "translation": "スノースキー",
     "originalName": "Skiing",
     "trigger": "Water skiing",
     "description": "水上スキーが登場したことで、雪の上で行う従来のスキーを区別するために使われるようになった名称。",
@@ -2592,6 +2618,7 @@
   {
     "id": "sourdough",
     "name": "Sourdough",
+    "translation": "サワー種",
     "originalName": "Bread dough",
     "trigger": "Commercial yeast",
     "description": "市販のパン酵母が普及したことで、自然の酵母と乳酸菌で発酵させる従来のパン種を区別するために使われるようになった名称。",
@@ -2619,6 +2646,7 @@
   {
     "id": "steam-train",
     "name": "Steam train",
+    "translation": "蒸気機関車",
     "originalName": "Train",
     "trigger": "Electric / diesel trains",
     "description": "電車やディーゼル機関車が登場したことで、蒸気機関車が引く列車を区別するために使われるようになった名称。",
@@ -2646,6 +2674,7 @@
   {
     "id": "surface-mail",
     "name": "Surface mail",
+    "translation": "船便",
     "originalName": "Mail",
     "trigger": "Airmail",
     "description": "航空郵便が登場したことで、陸路や船で運ぶ従来の郵便を区別するために使われるようになった名称。",
@@ -2673,6 +2702,7 @@
   {
     "id": "tube-amplifier",
     "name": "Tube amplifier",
+    "translation": "真空管アンプ",
     "originalName": "Amplifier",
     "trigger": "Transistor amplifier",
     "description": "トランジスタを使ったアンプが普及したことで、真空管を使う従来のアンプを区別するために使われるようになった名称。",
@@ -2700,6 +2730,7 @@
   {
     "id": "upright-bicycle",
     "name": "Upright bicycle",
+    "translation": "アップライト自転車",
     "originalName": "Bicycle",
     "trigger": "Recumbent bicycle",
     "description": "寝そべった姿勢で乗るリカンベント自転車が登場したことで、またがって乗る普通の自転車を区別するために使われるようになった名称。",
@@ -2727,6 +2758,7 @@
   {
     "id": "visible-light",
     "name": "Visible light",
+    "translation": "可視光",
     "originalName": "Light",
     "trigger": "Invisible electromagnetic radiation",
     "description": "赤外線や紫外線などの目に見えない光が発見されたことで、人の目に見える光を区別するために使われるようになった名称。",
@@ -2754,6 +2786,7 @@
   {
     "id": "corn-on-the-cob",
     "name": "Corn on the cob",
+    "translation": "軸付きトウモロコシ",
     "originalName": "Corn",
     "trigger": "Canned corn",
     "description": "缶詰のコーンが広く出回るようになったことで、芯についたままのトウモロコシを区別するために使われるようになった名称。",
@@ -2781,6 +2814,7 @@
   {
     "id": "english-muffin",
     "name": "English muffin",
+    "translation": "イングリッシュマフィン",
     "originalName": "Muffin",
     "trigger": "American muffin",
     "description": "アメリカで甘いカップケーキ型のマフィンが広まったことで、イギリス由来の平たいパンを区別するために使われるようになった名称。",
@@ -2808,6 +2842,7 @@
   {
     "id": "linear-television",
     "name": "Linear television",
+    "translation": "リニアテレビ",
     "originalName": "Television",
     "trigger": "Video on demand / streaming",
     "description": "動画配信やオンデマンド視聴が広まったことで、決まった時間に番組を流す従来のテレビ放送を区別するために使われるようになった名称。",
@@ -2835,6 +2870,7 @@
   {
     "id": "procedural-programming",
     "name": "Procedural programming",
+    "translation": "手続き型プログラミング",
     "originalName": "Programming",
     "trigger": "Object-oriented programming",
     "description": "オブジェクト指向プログラミングが広まったことで、手続きを順に記述する従来のプログラミングを区別するために使われるようになった名称。",
@@ -2862,6 +2898,7 @@
   {
     "id": "cisc",
     "name": "Complex instruction set computer",
+    "translation": "複合命令セットコンピューター",
     "originalName": "Computer",
     "trigger": "Reduced instruction set computer (RISC)",
     "description": "命令を単純化したRISCという設計思想が登場したことで、従来の複雑な命令セットを持つコンピューターを区別するために使われるようになった名称。",
@@ -2889,6 +2926,7 @@
   {
     "id": "old-world",
     "name": "Old World",
+    "translation": "旧世界",
     "originalName": "World",
     "trigger": "New World",
     "description": "コロンブスがアメリカ大陸に到達し「新世界」と呼ばれるようになったことで、それまでに知られていた世界を区別するために使われるようになった名称。",
@@ -2916,6 +2954,7 @@
   {
     "id": "middle-ages",
     "name": "Middle Ages",
+    "translation": "中世",
     "originalName": "Modern times",
     "trigger": "Renaissance humanism",
     "description": "当時の人々にとっては「今の時代」でしかなかった時期を、ルネサンス以降に古代と近代の間の時代として後から名付けたヨーロッパ史の時代区分。",
@@ -2943,6 +2982,7 @@
   {
     "id": "aztec-empire",
     "name": "Aztec Empire",
+    "translation": "アステカ帝国",
     "originalName": "Mexican Empire",
     "trigger": "Post-conquest Mexican Empire",
     "description": "スペインによる征服後にメキシコ帝国が成立したことで、征服以前の国家を区別するために後から付けられた名称。",
@@ -2970,6 +3010,7 @@
   {
     "id": "weimar-republic",
     "name": "Weimar Republic",
+    "translation": "ヴァイマル共和政",
     "originalName": "German Reich",
     "trigger": "Nazi Germany",
     "description": "ナチス政権の成立後に、それ以前の民主的なドイツ国家を区別するために後から付けられた名称。",
@@ -2997,6 +3038,7 @@
   {
     "id": "classic-mac-os",
     "name": "Classic Mac OS",
+    "translation": "クラシックMac OS",
     "originalName": "Mac OS",
     "trigger": "Mac OS X",
     "description": "NeXTSTEPを基にしたMac OS Xが登場したことで、それ以前のMacintosh用OSを区別するために使われるようになった名称。",
@@ -3024,6 +3066,7 @@
   {
     "id": "apple-i",
     "name": "Apple I",
+    "translation": "Apple I",
     "originalName": "Apple Computer",
     "trigger": "Apple II",
     "description": "Apple IIが発売されたことで、Appleの最初のコンピューターを区別するために使われるようになった名称。",
@@ -3051,6 +3094,7 @@
   {
     "id": "star-trek-tos",
     "name": "Star Trek: The Original Series",
+    "translation": "宇宙大作戦（スタートレック オリジナルシリーズ）",
     "originalName": "Star Trek",
     "trigger": "Star Trek spin-offs",
     "description": "数多くの続編シリーズが作られたことで、最初のテレビシリーズを区別するために使われるようになった名称。",
@@ -3078,6 +3122,7 @@
   {
     "id": "narrow-body-aircraft",
     "name": "Narrow-body aircraft",
+    "translation": "ナローボディ機",
     "originalName": "Aircraft",
     "trigger": "Wide-body aircraft",
     "description": "通路が2本あるワイドボディ機が登場したことで、通路が1本の従来の旅客機を区別するために使われるようになった名称。",
@@ -3105,6 +3150,7 @@
   {
     "id": "prop-airplane",
     "name": "Prop airplane",
+    "translation": "プロペラ機",
     "originalName": "Airplane",
     "trigger": "Jet aircraft",
     "description": "ジェット機が旅客輸送の主流になったことで、プロペラで飛ぶ従来の飛行機を区別するために使われるようになった名称。",
@@ -3132,6 +3178,7 @@
   {
     "id": "pre-dreadnought",
     "name": "Pre-dreadnought battleship",
+    "translation": "前弩級戦艦",
     "originalName": "Battleship",
     "trigger": "HMS Dreadnought",
     "description": "画期的な戦艦ドレッドノートが就役したことで、それ以前に建造された戦艦を区別するために使われるようになった名称。",
@@ -3159,6 +3206,7 @@
   {
     "id": "red-panda",
     "name": "Red panda",
+    "translation": "レッサーパンダ",
     "originalName": "Panda",
     "trigger": "Giant panda",
     "description": "ジャイアントパンダが西洋に知られるようになったことで、もともと「パンダ」と呼ばれていた動物を区別するために使われるようになった名称。",
@@ -3186,6 +3234,7 @@
   {
     "id": "scripted-series",
     "name": "Scripted series",
+    "translation": "脚本のあるドラマシリーズ",
     "originalName": "Television series",
     "trigger": "Reality television",
     "description": "リアリティ番組が成功したことで、脚本家のいる従来のテレビシリーズを区別するために使われるようになった名称。",
@@ -3213,6 +3262,7 @@
   {
     "id": "contiguous-united-states",
     "name": "Contiguous United States",
+    "translation": "アメリカ本土",
     "originalName": "United States",
     "trigger": "Alaska and Hawaii statehood",
     "description": "アラスカとハワイが州になったことで、それ以外のひと続きの本土の州を区別するために使われるようになった名称。",
@@ -3240,6 +3290,7 @@
   {
     "id": "artistic-gymnastics",
     "name": "Artistic gymnastics",
+    "translation": "体操競技",
     "originalName": "Gymnastics",
     "trigger": "Rhythmic gymnastics",
     "description": "新体操がオリンピックの種目に加わったことで、器械を使う従来の体操競技を区別するために使われるようになった名称。",
@@ -3267,6 +3318,7 @@
   {
     "id": "dairy-milk",
     "name": "Dairy milk",
+    "translation": "動物性ミルク",
     "originalName": "Milk",
     "trigger": "Plant milk",
     "description": "豆乳やアーモンドミルクなどの植物性ミルクが普及したことで、動物から搾った本来の乳を区別するために使われるようになった名称。",
@@ -3294,6 +3346,7 @@
   {
     "id": "strike-anywhere-match",
     "name": "Strike-anywhere match",
+    "translation": "摩擦マッチ",
     "originalName": "Match",
     "trigger": "Safety match",
     "description": "安全マッチが開発されたことで、どこでこすっても火がつく従来のマッチを区別するために使われるようになった名称。",
@@ -3321,6 +3374,7 @@
   {
     "id": "forward-slash",
     "name": "Forward slash",
+    "translation": "スラッシュ",
     "originalName": "Slash",
     "trigger": "Backslash",
     "description": "バックスラッシュが使われるようになったことで、従来のスラッシュ記号を区別するために使われるようになった名称。",
@@ -3348,6 +3402,7 @@
   {
     "id": "chocolat-chaud",
     "name": "Chocolat chaud",
+    "translation": "ホットチョコレート",
     "originalName": "Chocolat",
     "trigger": "Chocolat (solide)",
     "description": "板チョコなど固形のチョコレートが普及したことで、もともと「chocolat」と呼ばれていた飲み物を区別して呼ぶようになった名称。",
@@ -3375,6 +3430,7 @@
   {
     "id": "entre-deux-guerres",
     "name": "Entre-deux-guerres",
+    "translation": "戦間期",
     "originalName": "Après-guerre",
     "trigger": "Seconde Guerre mondiale",
     "description": "第二次世界大戦が起きたことで、それまで「戦後（après-guerre）」と呼ばれていた時代を「二つの大戦のあいだ」と呼び直した名称。",
@@ -3402,6 +3458,7 @@
   {
     "id": "franc-francais",
     "name": "Franc français",
+    "translation": "フランス・フラン",
     "originalName": "Franc",
     "trigger": "Franc belge, franc suisse, franc CFA など",
     "description": "ベルギーやスイスなどでも「franc」という通貨が使われるようになったことで、フランスの通貨を区別して呼ぶ名称。",
@@ -3429,6 +3486,7 @@
   {
     "id": "lave-linge",
     "name": "Lave-linge",
+    "translation": "洗濯機",
     "originalName": "Machine à laver",
     "trigger": "Lave-vaisselle",
     "description": "食器洗い機（lave-vaisselle）が家庭に広まったことで、「洗う機械（machine à laver）」を衣類用と明示して呼ぶようになった名称。",
@@ -3456,6 +3514,7 @@
   {
     "id": "montre-de-poche",
     "name": "Montre de poche",
+    "translation": "懐中時計",
     "originalName": "Montre",
     "trigger": "Montre-bracelet",
     "description": "腕時計が普及したことで、それまで単に「montre」と呼ばれていた懐中時計を区別して呼ぶようになった名称。",
@@ -3483,6 +3542,7 @@
   {
     "id": "velo-musculaire",
     "name": "Vélo musculaire",
+    "translation": "人力自転車",
     "originalName": "Vélo",
     "trigger": "Vélo électrique",
     "description": "電動アシスト自転車が広まったことで、人の力だけでこぐ普通の自転車を区別して呼ぶようになった名称。",
@@ -3510,6 +3570,7 @@
   {
     "id": "ordinateur-portable",
     "name": "Ordinateur portable",
+    "translation": "ノートパソコン",
     "originalName": "Portable",
     "trigger": "Téléphone portable",
     "description": "携帯電話が「portable」と呼ばれるようになったことで、持ち運べるコンピューターを「ordinateur portable」と明示して呼ぶようになった名称。",
@@ -3537,6 +3598,7 @@
   {
     "id": "four-traditionnel",
     "name": "Four traditionnel",
+    "translation": "従来型オーブン",
     "originalName": "Four",
     "trigger": "Four à micro-ondes",
     "description": "電子レンジが家庭に広まったことで、熱で焼く従来のオーブンを区別して呼ぶようになった名称。",
@@ -3564,6 +3626,7 @@
   {
     "id": "tour-conventionnel",
     "name": "Tour conventionnel",
+    "translation": "汎用旋盤",
     "originalName": "Tour",
     "trigger": "Tour à commande numérique",
     "description": "数値制御（CNC）旋盤が普及したことで、人が手で操作する従来の旋盤を区別して呼ぶようになった名称。",
@@ -3591,6 +3654,7 @@
   {
     "id": "dumas-pere",
     "name": "Alexandre Dumas père",
+    "translation": "大デュマ",
     "originalName": "Alexandre Dumas",
     "trigger": "Alexandre Dumas fils",
     "description": "同名の息子も作家として有名になったことで、『三銃士』の作者である父を区別して呼ぶようになった名称。",
@@ -3618,6 +3682,7 @@
   {
     "id": "ipod-classic",
     "name": "iPod classic",
+    "translation": "iPod classic",
     "originalName": "iPod",
     "trigger": "iPod mini、iPod nano、iPod touch",
     "description": "iPodに多くの派生モデルが登場したことで、元のハードディスク搭載モデルに「classic」を付けて呼ぶようになった名称。",
@@ -3645,6 +3710,7 @@
   {
     "id": "pavo-real",
     "name": "Pavo real",
+    "translation": "クジャク",
     "originalName": "Pavo",
     "trigger": "Pavo (guajolote)",
     "description": "アメリカ大陸から七面鳥が伝わり「pavo」と呼ばれるようになったことで、もともと「pavo」だったクジャクを区別して呼ぶようになった名称。",
@@ -3672,6 +3738,7 @@
   {
     "id": "microscopio-optico",
     "name": "Microscopio óptico",
+    "translation": "光学顕微鏡",
     "originalName": "Microscopio",
     "trigger": "Microscopio electrónico",
     "description": "電子顕微鏡が発明されたことで、それまでの光を使う顕微鏡を区別して呼ぶようになった名称。",
@@ -3699,6 +3766,7 @@
   {
     "id": "cine-2d",
     "name": "Cine 2D",
+    "translation": "2D映画",
     "originalName": "Cine",
     "trigger": "Cine 3D",
     "description": "3D映画が広く上映されるようになったことで、従来の平面の映画を区別して呼ぶようになった名称。",
@@ -3726,6 +3794,7 @@
   {
     "id": "television-abierta",
     "name": "Televisión abierta",
+    "translation": "地上波無料放送",
     "originalName": "Televisión",
     "trigger": "Televisión por cable / de pago",
     "description": "ケーブルテレビや有料放送が普及したことで、誰でも無料で受信できる従来のテレビ放送を区別して呼ぶようになった名称。",
@@ -3753,6 +3822,7 @@
   {
     "id": "gran-colombia",
     "name": "Gran Colombia",
+    "translation": "大コロンビア",
     "originalName": "República de Colombia",
     "trigger": "Colombia (Nueva Granada)",
     "description": "現在のコロンビアと区別するため、1819年から1831年まで存在した「コロンビア共和国」を後から呼び直した名称。",
@@ -3780,6 +3850,7 @@
   {
     "id": "liberalismo-clasico",
     "name": "Liberalismo clásico",
+    "translation": "古典的自由主義",
     "originalName": "Liberalismo",
     "trigger": "Liberalismo social",
     "description": "国家の介入を認める新しい自由主義が現れたことで、もともとの自由主義を区別して呼ぶようになった名称。",
@@ -3807,6 +3878,7 @@
   {
     "id": "2d-drucker",
     "name": "2D-Drucker",
+    "translation": "2Dプリンター",
     "originalName": "Drucker",
     "trigger": "3D-Drucker",
     "description": "3Dプリンターが普及したことで、紙に印刷する従来のプリンターを区別して呼ぶようになった名称。",
@@ -3834,6 +3906,7 @@
   {
     "id": "erste-internationale",
     "name": "Erste Internationale",
+    "translation": "第一インターナショナル",
     "originalName": "Internationale Arbeiterassoziation",
     "trigger": "Zweite Internationale",
     "description": "第二インターナショナルが結成されたことで、それ以前の国際労働者協会を区別して呼ぶようになった名称。",
@@ -3861,6 +3934,7 @@
   {
     "id": "hoerfunk",
     "name": "Hörfunk",
+    "translation": "ラジオ放送",
     "originalName": "Rundfunk",
     "trigger": "Fernsehfunk（テレビ放送）",
     "description": "テレビ放送が始まったことで、音声だけの放送を区別して呼ぶようになった名称。",
@@ -3888,6 +3962,7 @@
   {
     "id": "impulswahlverfahren",
     "name": "Impulswählverfahren",
+    "translation": "パルスダイヤル方式",
     "originalName": "Wählverfahren",
     "trigger": "Mehrfrequenzwahlverfahren（トーン信号）",
     "description": "トーン信号によるダイヤル方式が導入されたことで、従来のパルス信号によるダイヤル方式を区別して呼ぶようになった名称。",
@@ -3915,6 +3990,7 @@
   {
     "id": "lateinamerika",
     "name": "Lateinamerika",
+    "translation": "ラテンアメリカ",
     "originalName": "Amerika",
     "trigger": "Amerika（アメリカ合衆国の意味）",
     "description": "「Amerika」がアメリカ合衆国を指す言葉として定着したことで、スペイン語・ポルトガル語圏の国々を区別して呼ぶようになったとされる名称。",
@@ -3942,6 +4018,7 @@
   {
     "id": "planfilm",
     "name": "Planfilm",
+    "translation": "シートフィルム",
     "originalName": "Film",
     "trigger": "Rollfilm",
     "description": "ロールフィルムが登場したことで、1枚ずつのシート状のフィルムを区別して呼ぶようになった名称。",
@@ -3969,6 +4046,7 @@
   {
     "id": "parallel-ata",
     "name": "Parallel ATA",
+    "translation": "パラレルATA",
     "originalName": "ATA",
     "trigger": "Serial ATA",
     "description": "シリアルATAが登場したことで、従来のパラレル伝送のATAを区別して呼ぶようになった名称。",
@@ -3996,6 +4074,7 @@
   {
     "id": "batterieelektrisches-fahrzeug",
     "name": "Batterieelektrisches Fahrzeug",
+    "translation": "バッテリー式電気自動車",
     "originalName": "Elektrofahrzeug",
     "trigger": "Brennstoffzellenfahrzeug",
     "description": "燃料電池車など蓄電池以外から電気を得る電動車が登場したことで、バッテリーで走る電気自動車を区別して呼ぶようになった名称。",
