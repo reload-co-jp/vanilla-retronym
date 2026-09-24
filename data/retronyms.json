@@ -1916,6 +1916,606 @@
     ]
   },
   {
+    "id": "jun-kissa",
+    "name": "純喫茶",
+    "originalName": "喫茶店",
+    "trigger": "カフェー（特殊喫茶）",
+    "description": "女給が接客し酒類も出す「カフェー（特殊喫茶）」が流行したことで、酒類を扱わない本来の喫茶店を区別するために昭和初期ごろに生まれた名称。",
+    "details": {
+      "meaning": "酒類を出さず、女性による接待も伴わない、純粋に喫茶を目的とした喫茶店のこと。「純」は余計な要素を含まないことを表す。",
+      "history": "明治末期に登場したカフェーは、もともとコーヒーを中心に出す店だった。やがて女給を置いて夜は酒類を出し、客がチップを払う業態へと変わり、関東大震災以降に隆盛した。1929年の「カフェバー等取締要項」や1933年の「特殊飲食店取締規則」で規制の対象となると、酒類と接待を主とする店を「特殊喫茶」、接待を伴わない喫茶店を「純喫茶」と区別するようになった。",
+      "usage": "現在は昭和の雰囲気を残す老舗の喫茶店を指す言葉として使われ、「純喫茶巡り」のように、チェーン店のカフェと対比して懐かしさやレトロさを表現する場面が多い。"
+    },
+    "tags": ["食", "日常生活", "歴史"],
+    "language": "ja",
+    "period": "昭和初期",
+    "status": "confirmed",
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム一覧",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム一覧"
+      },
+      {
+        "title": "Wikipedia - 純喫茶",
+        "url": "https://ja.wikipedia.org/wiki/純喫茶"
+      }
+    ]
+  },
+  {
+    "id": "regular-employee",
+    "name": "正社員",
+    "originalName": "社員",
+    "trigger": "契約社員・派遣社員",
+    "description": "契約社員や派遣社員、パートタイマーなど多様な雇用形態が広がったことで、従来の「社員」を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "期間の定めのない雇用契約を結び、フルタイムで直接雇用されている従業員のこと。法律上の定義はなく、非正規雇用と対比するための呼び名。",
+      "history": "終身雇用が一般的だった時代には、会社に雇われている人は単に「社員」と呼ばれていた。1985年の労働者派遣法の制定や、1990年代以降の雇用の流動化により非正規雇用が増えると、従来型の雇用形態を「正社員」と呼び分けるのが一般的になった。",
+      "usage": "求人情報や雇用統計で「正社員登用」「正社員求人」のように使われる。非正規雇用と対比して「正規雇用」「正規社員」とも言う。"
+    },
+    "tags": ["社会", "日常生活"],
+    "language": "ja",
+    "period": "1980年代以降",
+    "status": "confirmed",
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム"
+      },
+      {
+        "title": "Wikipedia - 正社員",
+        "url": "https://ja.wikipedia.org/wiki/正社員"
+      }
+    ]
+  },
+  {
+    "id": "kampo-medicine",
+    "name": "漢方医学",
+    "originalName": "医学（医方）",
+    "trigger": "蘭方（西洋医学）",
+    "description": "江戸時代にオランダ経由で西洋医学（蘭方）が伝わったことで、それまでの中国由来の医学を区別するために「漢方」と呼ぶようになった。",
+    "details": {
+      "meaning": "古代中国の医学を起源とし、日本で独自に発展した伝統医学のこと。「漢方」の「漢」は中国を、「方」は処方・医術を表す。",
+      "history": "日本の医学は長く中国医学を基礎としており、特別な呼び名は必要なかった。江戸時代中期以降、蘭学を通じてオランダの医学が伝わり「蘭方」と呼ばれるようになると、従来の医学はこれと対比して「漢方」と呼ばれるようになった。明治時代に西洋医学が正式な医学として採用されてからも、伝統医学の呼び名として定着した。",
+      "usage": "「漢方薬」「漢方医」のように使い、現代医学（西洋医学）と対比して用いられる。中国本土の伝統医学は「中医学」と呼ばれ、日本の漢方とは区別される。"
+    },
+    "tags": ["歴史", "科学", "言語"],
+    "language": "ja",
+    "period": "18世紀以降",
+    "status": "confirmed",
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム"
+      },
+      {
+        "title": "Wikipedia - 漢方医学",
+        "url": "https://ja.wikipedia.org/wiki/漢方医学"
+      }
+    ]
+  },
+  {
+    "id": "conventional-line",
+    "name": "在来線",
+    "originalName": "鉄道（線）",
+    "trigger": "新幹線",
+    "description": "1964年に東海道新幹線が開業したことで、それまでの鉄道路線を新幹線と区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "新幹線以外の、以前から存在する鉄道路線のこと。「在来」は以前からあることを表す。",
+      "history": "東海道新幹線の開業により、同じ区間を並行して走る従来の東海道本線などを呼び分ける必要が生じた。以後、新幹線の整備が進むにつれて「在来線」という呼び方が定着した。",
+      "usage": "「在来線に乗り換える」「在来線特急」のように使う。主にJRの路線について用いられ、新幹線と対比する文脈で使われる。"
+    },
+    "tags": ["交通", "技術"],
+    "language": "ja",
+    "period": "1960年代以降",
+    "status": "confirmed",
+    "relatedIds": ["local-train", "steam-locomotive"],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム一覧",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム一覧"
+      },
+      {
+        "title": "Wikipedia - 在来線",
+        "url": "https://ja.wikipedia.org/wiki/在来線"
+      }
+    ]
+  },
+  {
+    "id": "local-train",
+    "name": "鈍行",
+    "originalName": "列車",
+    "trigger": "急行列車・特急列車",
+    "description": "急行や特急など通過駅のある列車が登場したことで、各駅に停車する従来の列車を区別するために使われるようになった俗称。",
+    "details": {
+      "meaning": "各駅に停車する普通列車のこと。「鈍」は動きが遅いことを表し、急行と対比して足の遅さを強調した言い方。",
+      "history": "鉄道開業当初の列車は各駅に停車するのが当たり前で、特別な呼び名は必要なかった。一部の駅を通過する急行列車や特別急行列車が運行されるようになると、従来の列車は「普通列車」「各駅停車」と呼び分けられ、俗に「のろのろ行く列車」という意味で「鈍行」とも呼ばれるようになった。",
+      "usage": "「鈍行で行く」「鈍行の旅」のように、口語的に使われる。正式な鉄道用語ではなく、JRでは「普通列車」、私鉄や地下鉄では「各駅停車」が正式な種別名として使われる。"
+    },
+    "tags": ["交通", "言語"],
+    "language": "ja",
+    "period": "19世紀末以降",
+    "status": "confirmed",
+    "relatedIds": ["conventional-line", "steam-locomotive"],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム一覧",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム一覧"
+      },
+      {
+        "title": "Wikipedia - 普通列車",
+        "url": "https://ja.wikipedia.org/wiki/普通列車"
+      },
+      {
+        "title": "コトバンク - 鈍行",
+        "url": "https://kotobank.jp/word/鈍行-586668"
+      }
+    ]
+  },
+  {
+    "id": "steam-locomotive",
+    "name": "蒸気機関車",
+    "originalName": "機関車（汽車）",
+    "trigger": "電気機関車・ディーゼル機関車",
+    "description": "電気機関車やディーゼル機関車が登場したことで、それまで単に機関車や汽車と呼ばれていた車両を区別するために使われるようになった名称。SLとも呼ばれる。",
+    "details": {
+      "meaning": "石炭などを燃やして得た蒸気の力で走る機関車のこと。英語の「Steam Locomotive」の略で「SL」とも呼ばれる。",
+      "history": "1872年に日本初の鉄道が開業して以来、機関車といえば蒸気機関車だった。1912年に碓氷峠で電気機関車が導入され、その後ディーゼル機関車も普及すると、動力方式による呼び分けが必要になった。1975年に国鉄の営業運転から蒸気機関車が引退した後は、観光列車として運行されている。",
+      "usage": "「SL」の略称で広く親しまれ、観光列車や保存車両を指して使われることが多い。「汽車」という言葉も本来は蒸気機関車が牽く列車を指した。"
+    },
+    "tags": ["交通", "技術", "歴史"],
+    "language": "ja",
+    "period": "20世紀前半以降",
+    "status": "confirmed",
+    "relatedIds": ["steam-train", "conventional-line"],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム一覧",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム一覧"
+      },
+      {
+        "title": "Wikipedia - 蒸気機関車",
+        "url": "https://ja.wikipedia.org/wiki/蒸気機関車"
+      }
+    ]
+  },
+  {
+    "id": "incandescent-bulb",
+    "name": "白熱電球",
+    "originalName": "電球",
+    "trigger": "蛍光灯・LED電球",
+    "description": "蛍光灯やLED電球が普及したことで、フィラメントを発光させる従来の電球を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "電流を流したフィラメントが高温になって光る「白熱」の原理を使った電球のこと。",
+      "history": "電球は長く照明の中心だったが、20世紀中頃から蛍光灯が普及し、2010年代にはLED電球への置き換えが進んだ。これにより、フィラメントを光らせる従来の電球を「白熱電球」と呼び分けるのが一般的になった。日本では2008年、経済産業大臣が2012年末までに白熱電球の生産・販売を自主的にやめるよう電機メーカーなどに要請する方針を表明した。",
+      "usage": "「白熱電球からLED電球に交換する」のように、省エネや照明の比較の文脈で使われる。"
+    },
+    "tags": ["技術", "日常生活"],
+    "language": "ja",
+    "period": "20世紀中頃以降",
+    "status": "confirmed",
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム一覧",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム一覧"
+      },
+      {
+        "title": "Wikipedia - 白熱電球",
+        "url": "https://ja.wikipedia.org/wiki/白熱電球"
+      }
+    ]
+  },
+  {
+    "id": "heterosexuality",
+    "name": "異性愛",
+    "originalName": "恋愛",
+    "trigger": "同性愛",
+    "description": "同性愛という概念が名付けられたことで、それと対比して異性に向かう恋愛・性愛を指す言葉として作られた名称。",
+    "details": {
+      "meaning": "異性に対して恋愛感情や性的欲求を抱くこと。英語の「heterosexuality」の訳語。",
+      "history": "「heterosexual」は、1869年にカール＝マリア・ケルトベニが「homosexual」とともに作った造語とされる。異性に向かう恋愛は当然のものとして特別な名前を持たなかったが、同性愛が概念として名付けられたことで、その対となる言葉が必要になった。日本語の「異性愛」も、これらの訳語として近代に定着した。",
+      "usage": "性的指向を説明する文脈で、同性愛・両性愛などと並べて使われる。"
+    },
+    "tags": ["社会", "言語"],
+    "language": "ja",
+    "period": "19世紀後半以降",
+    "status": "confirmed",
+    "relatedIds": ["opposite-sex-marriage"],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム"
+      },
+      {
+        "title": "Wikipedia - 異性愛",
+        "url": "https://ja.wikipedia.org/wiki/異性愛"
+      },
+      {
+        "title": "Wikipedia - Heterosexuality",
+        "url": "https://en.wikipedia.org/wiki/Heterosexuality"
+      }
+    ]
+  },
+  {
+    "id": "hard-yatsuhashi",
+    "name": "堅焼き八ツ橋",
+    "originalName": "八ツ橋",
+    "trigger": "生八ツ橋",
+    "description": "焼かずに作る生八ツ橋が人気になり、単に「八ツ橋」と言えば生八ツ橋を指すことも増えたため、本来の焼き菓子である八ツ橋を区別して呼ぶようになった名称。焼き八ツ橋とも呼ばれる。",
+    "details": {
+      "meaning": "米粉・砂糖・ニッキ（シナモン）を混ぜた生地を薄く伸ばし、琴の形に焼き上げた堅い煎餅状の京菓子のこと。",
+      "history": "八ツ橋は江戸時代から京都の名物として知られる焼き菓子だった。1960年代頃から、焼く前の生地を使った「生八ツ橋」や、それで餡を包んだ菓子が販売されて人気となり、京都土産の定番になった。これにより、本来の焼いた八ツ橋を「堅焼き八ツ橋」「焼き八ツ橋」と呼び分けるようになった。",
+      "usage": "土産物店や製造元の商品名として使われる。単に「八ツ橋」と言うと生八ツ橋を思い浮かべる人も多く、元の名前が新しいものに移りつつある例といえる。"
+    },
+    "tags": ["食", "歴史"],
+    "language": "ja",
+    "period": "1960年代以降",
+    "status": "confirmed",
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム一覧",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム一覧"
+      },
+      {
+        "title": "Wikipedia - 八ツ橋",
+        "url": "https://ja.wikipedia.org/wiki/八ツ橋"
+      }
+    ]
+  },
+  {
+    "id": "hot-coffee",
+    "name": "ホットコーヒー",
+    "originalName": "コーヒー",
+    "trigger": "アイスコーヒー",
+    "description": "アイスコーヒーが定着したことで、温かい従来のコーヒーを区別して呼ぶようになった名称。喫茶店では略して「ホット」とも言う。",
+    "details": {
+      "meaning": "温かい状態で提供されるコーヒーのこと。「ホット」は英語の hot（熱い）に由来する和製の言い方。",
+      "history": "コーヒーはもともと温かい飲み物だった。日本では明治期にコーヒーを冷やして飲み始めたのが発祥とされ、アイスコーヒーが夏の定番になると、注文時に温かいものを「ホットコーヒー」「ホット」と呼び分けるようになった。",
+      "usage": "喫茶店やコンビニでの注文時に「ホットで」「ホットコーヒーのS」のように使う。英語圏では単に coffee と言うのが普通で、ホットと断るのは日本的な用法といえる。"
+    },
+    "tags": ["食", "日常生活"],
+    "language": "ja",
+    "period": "20世紀以降",
+    "status": "confirmed",
+    "relatedIds": ["jun-kissa"],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム"
+      },
+      {
+        "title": "Wikipedia - アイスコーヒー",
+        "url": "https://ja.wikipedia.org/wiki/アイスコーヒー"
+      }
+    ]
+  },
+  {
+    "id": "shokupan",
+    "name": "食パン",
+    "originalName": "パン",
+    "trigger": "菓子パン",
+    "description": "あんパンなどの菓子パンが普及したことで、主食として食べるパンを区別するために使われるようになった名称とされる。食パンは菓子パンの対義語とされる。",
+    "details": {
+      "meaning": "型に入れて四角く焼いた、主食用の白いパンのこと。スライスしてトーストやサンドイッチにして食べる。",
+      "history": "日本では1875年（明治8年）に木村屋總本店があんパンを売り出して大ヒットとなるなど、菓子パンが独自に発展した。これと区別して、欧米風の主食用のパンを「食パン」と呼ぶようになったとされる。ただし語源には、木炭デッサンで消し具として使うパンと区別して「食べるパン」と呼んだという説など諸説ある。",
+      "usage": "「食パン1斤」「6枚切りの食パン」のように使う。菓子パン・惣菜パンと対比される。"
+    },
+    "tags": ["食", "日常生活", "歴史"],
+    "language": "ja",
+    "period": "明治以降",
+    "status": "disputed",
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム"
+      },
+      {
+        "title": "Wikipedia - 食パン",
+        "url": "https://ja.wikipedia.org/wiki/食パン"
+      },
+      {
+        "title": "Wikipedia - 菓子パン",
+        "url": "https://ja.wikipedia.org/wiki/菓子パン"
+      }
+    ]
+  },
+  {
+    "id": "monochrome-photograph",
+    "name": "モノクロ写真",
+    "originalName": "写真",
+    "trigger": "カラー写真",
+    "description": "カラー写真が普及したことで、それまで単に写真と呼ばれていた白黒の写真を区別するために使われるようになった名称。白黒写真とも呼ばれる。",
+    "details": {
+      "meaning": "色を持たず、白・黒・灰色の濃淡だけで像を表した写真のこと。「モノクロ」は英語の monochrome（単色）の略。",
+      "history": "写真は19世紀の発明以来、長く白黒のものだった。20世紀にカラーフィルムが登場し、やがてカラー写真が一般に普及すると、従来の写真を「白黒写真」「モノクロ写真」と呼び分けるようになった。",
+      "usage": "現在ではカラーが当たり前になり、モノクロは表現上の効果として選ばれる。デジタルカメラやスマートフォンでも「モノクロモード」として使われる。"
+    },
+    "tags": ["写真", "アナログ", "技術"],
+    "language": "ja",
+    "period": "20世紀中頃以降",
+    "status": "confirmed",
+    "relatedIds": ["black-and-white-tv", "film-camera"],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム一覧",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム一覧"
+      },
+      {
+        "title": "Wikipedia - モノクローム",
+        "url": "https://ja.wikipedia.org/wiki/モノクローム"
+      }
+    ]
+  },
+  {
+    "id": "long-umbrella",
+    "name": "長傘",
+    "originalName": "傘",
+    "trigger": "折りたたみ傘",
+    "description": "折りたたみ傘が普及したことで、たたまずに持ち歩く従来の傘を区別するために使われるようになった名称。",
+    "details": {
+      "meaning": "骨を折りたためない、柄の長い傘のこと。「長」は折りたたみ傘と比べて長さがあることを表す。",
+      "history": "折りたたみ傘は20世紀前半にドイツで実用化され、日本でも戦後に普及した。持ち運びやすい折りたたみ傘が広まると、従来の傘を「長傘」と呼び分けるようになった。",
+      "usage": "傘売り場や傘立ての案内で「長傘」「折りたたみ傘」と区分けして使われる。日常会話では単に「傘」と言うことが多い。"
+    },
+    "tags": ["日常生活"],
+    "language": "ja",
+    "period": "20世紀後半以降",
+    "status": "confirmed",
+    "relatedIds": ["rain-umbrella"],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム一覧",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム一覧"
+      },
+      {
+        "title": "Wikipedia - 傘",
+        "url": "https://ja.wikipedia.org/wiki/傘"
+      }
+    ]
+  },
+  {
+    "id": "rain-umbrella",
+    "name": "雨傘",
+    "originalName": "傘",
+    "trigger": "日傘",
+    "description": "日差しを避ける日傘と区別するために、雨を防ぐための傘を特に雨傘と呼ぶ。",
+    "details": {
+      "meaning": "雨を防ぐために使う傘のこと。防水性のある生地を張ってある。",
+      "history": "傘は古代から日よけや権威の象徴として使われてきた。日本でも百済から伝来した当初は主に日射を避ける「日傘」として用いられ、その後、雨に対して使うことが多くなっていった。日傘と雨傘がそれぞれ用途別に使われるようになり、雨用のものを「雨傘」と呼び分けるようになった。近年は晴雨兼用傘も広まっている。",
+      "usage": "日傘や晴雨兼用傘と対比する文脈で使われる。日常会話では単に「傘」と言えば雨傘を指すことが多い。"
+    },
+    "tags": ["日常生活"],
+    "language": "ja",
+    "status": "disputed",
+    "relatedIds": ["long-umbrella"],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム"
+      },
+      {
+        "title": "Wikipedia - 傘",
+        "url": "https://ja.wikipedia.org/wiki/傘"
+      }
+    ]
+  },
+  {
+    "id": "common-metal",
+    "name": "コモンメタル",
+    "originalName": "金属",
+    "trigger": "レアメタル",
+    "description": "産業に欠かせない希少な金属がレアメタルとして区別されるようになったことで、鉄や銅など大量に使われる金属を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "鉄・銅・亜鉛・アルミニウム・鉛など、産出量や使用量が多く、広く流通している金属のこと。ベースメタルとも呼ばれる。",
+      "history": "鉄・銅・アルミニウムなどは、特定の鉱石に高い割合で含まれるため、昔から簡単な精錬方法で利用されてきた。電子材料や合金への添加材として使われる希少な非鉄金属が「レアメタル」と呼ばれるようになると、これと対比して従来から大量に使われてきた金属を「コモンメタル」「ベースメタル」「メジャーメタル」と呼ぶようになった。",
+      "usage": "資源・素材産業の文脈で、レアメタルや貴金属と対比して使われる。"
+    },
+    "tags": ["素材", "科学", "技術"],
+    "language": "ja",
+    "period": "20世紀後半以降",
+    "status": "confirmed",
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム"
+      },
+      {
+        "title": "Wikipedia - レアメタル",
+        "url": "https://ja.wikipedia.org/wiki/レアメタル"
+      }
+    ]
+  },
+  {
+    "id": "classical-music",
+    "name": "クラシック音楽",
+    "originalName": "音楽",
+    "trigger": "ポピュラー音楽",
+    "description": "ポピュラー音楽やジャズなどが広まったことで、西洋の伝統的な芸術音楽を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "中世から現代までの西洋の芸術音楽の総称。「クラシック」は英語の classical（古典の、規範的な）に由来する。",
+      "history": "「クラシック音楽（classical music）」という用語は、早くとも19世紀まで使われていなかった。19世紀のヨーロッパでは、バッハやモーツァルトなど過去の作曲家の作品を規範として演奏する習慣が広まった。20世紀にレコードやラジオを通じてジャズやポピュラー音楽が大衆に広まると、従来の芸術音楽を指す呼び名として定着した。",
+      "usage": "「クラシックを聴く」のように略して使われる。音楽史上の「古典派」とは意味が異なり、古典派以外の時代の作品も含む。"
+    },
+    "tags": ["音楽", "エンターテインメント", "歴史"],
+    "language": "ja",
+    "period": "19世紀以降",
+    "status": "disputed",
+    "relatedIds": ["acoustic-piano", "pipe-organ"],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム一覧",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム一覧"
+      },
+      {
+        "title": "Wikipedia - クラシック音楽",
+        "url": "https://ja.wikipedia.org/wiki/クラシック音楽"
+      }
+    ]
+  },
+  {
+    "id": "retro-game",
+    "name": "レトロゲーム",
+    "originalName": "ゲーム（テレビゲーム）",
+    "trigger": "新世代のゲーム機",
+    "description": "ゲーム機の世代交代が進んだことで、ファミコンなど過去の世代のゲーム機やソフトをまとめて区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "発売から年月が経った古い世代のゲーム機やゲームソフトのこと。「レトロ」は英語の retro（懐古的な）に由来する。",
+      "history": "ファミリーコンピュータなどのゲームは、発売当時は単に「ゲーム」「テレビゲーム」と呼ばれていた。過去の作品を指す言葉としては先に「オールドゲーム」があり、1986年には『ゲーメスト』が名作を振り返るコーナーで「OLDゲーム」という表現を使っている。その後「レトロゲーム」が一般的になり、2005年の『広技苑』付録の用語辞典では「今のところはスーパーファミコン以前のタイトルか、プレイヤーが子供のころに発売されたタイトルを指すことが多い」と説明された。",
+      "usage": "「レトロゲームを収集する」「レトロゲーム専門店」のように使う。どの世代からをレトロと呼ぶかに明確な基準はなく、年月とともに対象が広がっていく。"
+    },
+    "tags": ["ゲーム", "エンターテインメント", "コンピューター"],
+    "language": "ja",
+    "period": "1990年代以降",
+    "status": "disputed",
+    "relatedIds": ["playstation-1", "tabletop-game"],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム"
+      },
+      {
+        "title": "Wikipedia - レトロゲーム",
+        "url": "https://ja.wikipedia.org/wiki/レトロゲーム"
+      }
+    ]
+  },
+  {
+    "id": "legacy-code",
+    "name": "レガシーコード",
+    "originalName": "コード（ソースコード）",
+    "trigger": "新しい技術・設計で書かれたコード",
+    "description": "新しい言語や設計手法が登場したことで、古い技術で書かれ保守が難しくなった既存のソースコードを区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "過去から引き継がれ、現在も稼働しているが、改修や保守が難しくなったソースコードのこと。「レガシー」は英語の legacy（遺産）に由来する。",
+      "history": "ソフトウェアは書かれた時点では単に「コード」だが、技術の進歩とともに古い言語や設計が時代遅れになる。こうした既存資産を新しいコードと区別して「レガシーコード」「レガシーシステム」と呼ぶようになった。2004年にはマイケル・フェザーズが著書『レガシーコード改善ガイド』（原題 Working Effectively with Legacy Code）で、レガシーコードを「テストのないコード」と定義した。",
+      "usage": "「レガシーコードをリファクタリングする」のように、ソフトウェア開発の現場で使われる。否定的な意味合いを含むことが多い。"
+    },
+    "tags": ["ソフトウェア", "コンピューター", "テクノロジー"],
+    "language": "ja",
+    "period": "1990年代以降",
+    "status": "disputed",
+    "relatedIds": ["native-app"],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム"
+      },
+      {
+        "title": "Wikipedia - Legacy system",
+        "url": "https://en.wikipedia.org/wiki/Legacy_system"
+      }
+    ]
+  },
+  {
+    "id": "traditional-tattoo",
+    "name": "トラディショナルタトゥー",
+    "originalName": "タトゥー",
+    "trigger": "ニュースクール",
+    "description": "ニュースクールなど新しい作風のタトゥーが登場したことで、太い輪郭線と限られた色で描く従来のアメリカ式タトゥーを区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "太く黒い輪郭線と、赤・緑・黄などの限られた色でくっきり塗り分けたアメリカ式のタトゥーのこと。錨・ツバメ・バラ・ハートなどの図柄が代表的。「アメリカントラディショナル」「オールドスクール」とも呼ばれる。",
+      "history": "20世紀前半のアメリカで、船乗りや軍人などの間に広まった作風で、セーラー・ジェリーの名で知られるノーマン・コリンズらが確立した。1980年代に、より多くの色や陰影、幅広い題材を使う「ニュースクール」が登場すると、従来の作風を「トラディショナル」「オールドスクール」と呼び分けるようになった。",
+      "usage": "タトゥーのスタイル名として、ニュースクールやリアリズムなどと対比して使われる。日本の伝統的な刺青は「和彫り」と呼ばれ、区別される。"
+    },
+    "tags": ["ファッション", "歴史"],
+    "language": "ja",
+    "period": "1980年代以降",
+    "status": "confirmed",
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム一覧",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム一覧"
+      },
+      {
+        "title": "Wikipedia - American traditional",
+        "url": "https://en.wikipedia.org/wiki/American_traditional"
+      }
+    ]
+  },
+  {
+    "id": "authentic-ska",
+    "name": "オーセンティックスカ",
+    "originalName": "スカ",
+    "trigger": "2トーン・スカパンク",
+    "description": "イギリスの2トーンやアメリカのスカパンクなど後発のスカが登場したことで、ジャマイカで生まれた本来のスカを区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "1950年代末から1960年代にジャマイカで生まれ流行した、オリジナルのスカのこと。「オーセンティック」は英語の authentic（本物の）に由来する。",
+      "history": "スカはジャマイカで生まれ、スカタライツなどが代表的な担い手となった。1970年代末にイギリスでザ・スペシャルズらによる「2トーン」がブームとなり、1990年代にはアメリカでスカパンクが流行した。こうした後の世代のスカと区別するため、ジャマイカの元祖のスカを「オーセンティックスカ」と呼ぶようになった。",
+      "usage": "音楽ジャンル名として、2トーンやスカパンクと対比して使われる。英語圏では「traditional ska」や「first wave ska」とも言う。"
+    },
+    "tags": ["音楽", "エンターテインメント"],
+    "language": "ja",
+    "period": "1980年代以降",
+    "status": "confirmed",
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム"
+      },
+      {
+        "title": "Wikipedia - スカ",
+        "url": "https://ja.wikipedia.org/wiki/スカ"
+      }
+    ]
+  },
+  {
+    "id": "classic-car",
+    "name": "クラシックカー",
+    "originalName": "自動車",
+    "trigger": "現代の自動車",
+    "description": "自動車の技術やデザインが移り変わったことで、製造から長い年月が経った古い自動車を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "年式の古い自動車のこと。旧車（きゅうしゃ）、ヒストリックカーとも呼ばれる。",
+      "history": "製造された当時はどれも単に「自動車」だったが、時代が進むにつれて古い車は現行の車と区別されるようになった。どの程度古い車を対象とするかに統一の基準はなく、国際的な団体であるFIVA（国際古自動車連盟）は「生産されてから25年以上経ったもの」を基準としている。",
+      "usage": "「クラシックカーのラリー」「クラシックカーを保存する」のように、愛好家やイベントの文脈で使われる。"
+    },
+    "tags": ["自動車", "交通", "歴史"],
+    "language": "ja",
+    "period": "20世紀中頃以降",
+    "status": "disputed",
+    "relatedIds": ["gasoline-car", "manual-transmission-car"],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム一覧",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム一覧"
+      },
+      {
+        "title": "Wikipedia - 旧車",
+        "url": "https://ja.wikipedia.org/wiki/旧車"
+      }
+    ]
+  },
+  {
+    "id": "old-tokaido",
+    "name": "旧東海道",
+    "originalName": "東海道",
+    "trigger": "国道1号",
+    "description": "近代以降、東海道に沿って国道などの新しい道路が整備されたことで、江戸時代の街道筋を区別して呼ぶようになった名称。",
+    "details": {
+      "meaning": "江戸時代に五街道の一つとして整備された、江戸の日本橋から京都の三条大橋を結ぶ街道の道筋のこと。「旧」は新しい道路と区別して古い道筋であることを表す。",
+      "history": "東海道は江戸時代に宿場町が整えられ、東西を結ぶ幹線道路となった。1876年（明治9年）に道路が国道・県道・里道に分類されると、東海道は最初の国道網の骨格となり、のちの国道1号へとつながった。道幅の拡張やバイパスの建設によって新しい道路が元の道筋から外れていくと、江戸時代の道筋を「旧東海道」と呼び分けるようになった。",
+      "usage": "「旧東海道を歩く」のように、街道歩きや観光の文脈で使われる。同様に「旧中山道」「旧日光街道」などの呼び方もある。"
+    },
+    "tags": ["交通", "歴史", "地理"],
+    "language": "ja",
+    "period": "20世紀以降",
+    "status": "confirmed",
+    "relatedIds": ["conventional-line"],
+    "sources": [
+      {
+        "title": "Wikipedia - レトロニム一覧",
+        "url": "https://ja.wikipedia.org/wiki/レトロニム一覧"
+      },
+      {
+        "title": "Wikipedia - 東海道",
+        "url": "https://ja.wikipedia.org/wiki/東海道"
+      },
+      {
+        "title": "国土交通省 静岡国道事務所 - 東海道、国道1号、国道1号バイパスの歴史",
+        "url": "https://www.cbr.mlit.go.jp/shizukoku/tokaido/index.html"
+      }
+    ]
+  },
+  {
     "id": "sneakernet",
     "name": "Sneakernet",
     "translation": "スニーカーネット",
