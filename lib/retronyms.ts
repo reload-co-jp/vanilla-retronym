@@ -51,6 +51,17 @@ export const statusSymbols: Record<RetronymStatus, string> = {
   candidate: "？",
 }
 
+export const languageLabels: Record<string, string> = {
+  ja: "日本語",
+  en: "英語",
+  fr: "フランス語",
+  de: "ドイツ語",
+  es: "スペイン語",
+}
+
+export const languageLabel = (language: string): string =>
+  languageLabels[language] ?? language
+
 /** JSONの記載順を「登録順」とみなし、後ろにあるものほど新しい。 */
 export const retronyms: Retronym[] = data as Retronym[]
 
@@ -95,12 +106,38 @@ export const matchesQuery = (retronym: Retronym, query: string): boolean => {
 export const matchesTags = (retronym: Retronym, tags: string[]): boolean =>
   tags.every((tag) => retronym.tags.includes(tag))
 
+/** 言語の出現回数が多い順に並べる。 */
+export const getLanguages = (
+  items: Retronym[] = retronyms
+): { language: string; count: number }[] => {
+  const counts = new Map<string, number>()
+  for (const { language } of items) {
+    counts.set(language, (counts.get(language) ?? 0) + 1)
+  }
+  return [...counts.entries()]
+    .map(([language, count]) => ({ language, count }))
+    .sort((a, b) => b.count - a.count || a.language.localeCompare(b.language))
+}
+
+/** 言語が未指定ならすべて残す。 */
+export const matchesLanguage = (
+  retronym: Retronym,
+  language: string | null
+): boolean => language === null || retronym.language === language
+
 export const filterRetronyms = (
   items: Retronym[],
-  { query = "", tags = [] }: { query?: string; tags?: string[] }
+  {
+    query = "",
+    tags = [],
+    language = null,
+  }: { query?: string; tags?: string[]; language?: string | null }
 ): Retronym[] =>
   items.filter(
-    (retronym) => matchesQuery(retronym, query) && matchesTags(retronym, tags)
+    (retronym) =>
+      matchesQuery(retronym, query) &&
+      matchesTags(retronym, tags) &&
+      matchesLanguage(retronym, language)
   )
 
 export type SortOrder = "name" | "newest"

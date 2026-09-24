@@ -4,7 +4,9 @@ import { RetronymCardList } from "@/components/retronym/card"
 import { TagList, TagToggle } from "@/components/retronym/tag"
 import {
   filterRetronyms,
+  getLanguages,
   getTags,
+  languageLabel,
   Retronym,
   SortOrder,
   sortOrderLabels,
@@ -22,6 +24,7 @@ export const RetronymSearch: FC<{ retronyms: Retronym[] }> = ({
   const [query, setQuery] = useState("")
   // 未操作のうちは /retronyms/?tag=写真 のようなクエリをタグ選択として引き継ぐ。
   const [pickedTags, setPickedTags] = useState<string[] | null>(null)
+  const [language, setLanguage] = useState<string | null>(null)
   const [order, setOrder] = useState<SortOrder>("name")
 
   const tagParam = useSearchParams().get("tag")
@@ -31,14 +34,15 @@ export const RetronymSearch: FC<{ retronyms: Retronym[] }> = ({
   )
 
   const tags = useMemo(() => getTags(retronyms), [retronyms])
+  const languages = useMemo(() => getLanguages(retronyms), [retronyms])
 
   const results = useMemo(
     () =>
       sortRetronyms(
-        filterRetronyms(retronyms, { query, tags: selectedTags }),
+        filterRetronyms(retronyms, { query, tags: selectedTags, language }),
         order
       ),
-    [retronyms, query, selectedTags, order]
+    [retronyms, query, selectedTags, language, order]
   )
 
   const toggleTag = (tag: string) =>
@@ -88,6 +92,29 @@ export const RetronymSearch: FC<{ retronyms: Retronym[] }> = ({
           </TagList>
         </div>
 
+        <div style={{ display: "grid", gap: ".35rem" }}>
+          <span style={{ fontSize: ".8125rem", color: theme.muted }}>
+            言語で絞り込む
+          </span>
+          <TagList>
+            <TagToggle
+              selected={language === null}
+              onClick={() => setLanguage(null)}
+            >
+              すべて
+            </TagToggle>
+            {languages.map(({ language: code, count }) => (
+              <TagToggle
+                key={code}
+                selected={language === code}
+                onClick={() => setLanguage(language === code ? null : code)}
+              >
+                {languageLabel(code)} {count}
+              </TagToggle>
+            ))}
+          </TagList>
+        </div>
+
         <div
           style={{
             alignItems: "center",
@@ -113,13 +140,18 @@ export const RetronymSearch: FC<{ retronyms: Retronym[] }> = ({
 
       <p style={{ color: theme.muted, fontSize: ".8125rem" }}>
         {results.length}件
-        {selectedTags.length > 0 && `（${selectedTags.join(" / ")}）`}
-        {(query !== "" || selectedTags.length > 0) && (
+        {(selectedTags.length > 0 || language !== null) &&
+          `（${[
+            ...(language !== null ? [languageLabel(language)] : []),
+            ...selectedTags,
+          ].join(" / ")}）`}
+        {(query !== "" || selectedTags.length > 0 || language !== null) && (
           <button
             type="button"
             onClick={() => {
               setQuery("")
               setPickedTags([])
+              setLanguage(null)
             }}
             style={{
               background: "none",

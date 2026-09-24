@@ -1,8 +1,10 @@
 import {
   filterRetronyms,
   getRelated,
+  getLanguages,
   getRetronym,
   getTags,
+  languageLabel,
   matchesQuery,
   matchesTags,
   newestRetronyms,
@@ -110,6 +112,30 @@ describe("filterRetronyms", () => {
       tags: ["アナログ"],
     })
     expect(result.map(({ id }) => id)).toEqual(["b"])
+  })
+
+  it("言語で絞り込む", () => {
+    const withEnglish = [...sample, { ...sample[0], id: "d", language: "en" }]
+    expect(
+      filterRetronyms(withEnglish, { language: "en" }).map(({ id }) => id)
+    ).toEqual(["d"])
+    expect(filterRetronyms(withEnglish, { language: null })).toHaveLength(4)
+  })
+})
+
+describe("getLanguages", () => {
+  it("出現回数の多い順に集計する", () => {
+    const withEnglish = [...sample, { ...sample[0], id: "d", language: "en" }]
+    expect(getLanguages(withEnglish)).toEqual([
+      { language: "ja", count: 3 },
+      { language: "en", count: 1 },
+    ])
+  })
+
+  it("データの全言語に日本語名がある", () => {
+    for (const { language } of getLanguages()) {
+      expect(languageLabel(language)).not.toBe(language)
+    }
   })
 })
 
