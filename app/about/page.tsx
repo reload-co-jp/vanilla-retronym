@@ -270,6 +270,14 @@ const Page: FC = () => (
           </section>
         ))}
       </div>
+      <p>
+        <Link
+          href="/modifiers/"
+          style={{ color: theme.accent, fontSize: ".875rem" }}
+        >
+          レトロニムに付く言葉の一覧 →
+        </Link>
+      </p>
     </Section>
 
     <Section heading="似ている言葉との違い">

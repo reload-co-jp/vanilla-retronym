@@ -31,6 +31,8 @@ export type Retronym = {
   /** 日本語以外の見出し語の日本語訳 */
   translation?: string
   originalName: string
+  /** 付け足された言葉。省略時は name と originalName から抽出する */
+  modifier?: string
   trigger: string
   description: string
   details?: RetronymDetails

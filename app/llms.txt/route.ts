@@ -21,6 +21,7 @@ const body = `# ${site.name}（${site.nameJa}）
 - [トップ](${site.url}/): サイトのトップページ
 - [レトロニム一覧](${site.url}/retronyms/): 収録しているレトロニムの一覧
 - [このサイトについて](${site.url}/about/): サイトの趣旨・レトロニムの説明
+- [レトロニムに付く言葉](${site.url}/modifiers/): レトロニムを作る接頭語・修飾語の分類
 
 ## レトロニム
 

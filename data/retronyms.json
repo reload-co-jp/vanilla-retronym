@@ -392,6 +392,7 @@
     "id": "manual-transmission-car",
     "name": "マニュアル車",
     "originalName": "自動車",
+    "modifier": "マニュアル",
     "trigger": "オートマチック車（AT車）",
     "description": "自動変速機を備えたAT車が主流になったことで、運転者が変速操作を行う従来の自動車を区別して呼ぶようになった名称。MT車とも表記する。",
     "details": {
@@ -419,6 +420,7 @@
     "id": "gasoline-car",
     "name": "ガソリン車",
     "originalName": "自動車",
+    "modifier": "ガソリン",
     "trigger": "電気自動車（EV）",
     "description": "電気自動車やハイブリッド車が広まったことで、ガソリンエンジンで走る従来の自動車を区別して呼ぶようになった名称。内燃機関車とも呼ばれる。",
     "details": {
@@ -442,6 +444,7 @@
     "id": "physical-store",
     "name": "実店舗",
     "originalName": "店",
+    "modifier": "実",
     "trigger": "オンラインショップ",
     "description": "ネット通販が一般化したことで、建物を構えて対面で販売する従来の店舗を区別して呼ぶようになった名称。リアル店舗とも呼ばれる。",
     "details": {
@@ -764,6 +767,7 @@
     "id": "traditional-animation",
     "name": "手描きアニメ",
     "originalName": "アニメーション",
+    "modifier": "手描き",
     "trigger": "3DCGアニメーション",
     "description": "コンピューターグラフィックスによるアニメーションが一般化したことで、セル画など手で描いた絵によるアニメーションを手描きアニメと呼ぶようになった。",
     "details": {
@@ -853,6 +857,7 @@
     "id": "mechanical-watch",
     "name": "機械式時計",
     "originalName": "腕時計",
+    "modifier": "機械式",
     "trigger": "クオーツ時計",
     "description": "クオーツ時計が登場するまで、腕時計はゼンマイと歯車で動くのが当たり前だった。クオーツ式と区別して機械式時計と呼ぶようになった。",
     "details": {
@@ -1839,6 +1844,7 @@
     "id": "whole-wheat-flour",
     "name": "全粒粉",
     "originalName": "小麦粉",
+    "modifier": "全粒",
     "trigger": "精製小麦粉",
     "description": "製粉技術の発達で胚芽やふすまを取り除いた白い小麦粉が主流になり、丸ごと挽いた従来の粉を全粒粉と呼ぶようになった。",
     "details": {
@@ -1920,6 +1926,7 @@
     "id": "jun-kissa",
     "name": "純喫茶",
     "originalName": "喫茶店",
+    "modifier": "純",
     "trigger": "カフェー（特殊喫茶）",
     "description": "女給が接客し酒類も出す「カフェー（特殊喫茶）」が流行したことで、酒類を扱わない本来の喫茶店を区別するために昭和初期ごろに生まれた名称。",
     "details": {
@@ -1998,6 +2005,7 @@
     "id": "conventional-line",
     "name": "在来線",
     "originalName": "鉄道（線）",
+    "modifier": "在来",
     "trigger": "新幹線",
     "description": "1964年に東海道新幹線が開業したことで、それまでの鉄道路線を新幹線と区別するために使われるようになった名称。",
     "details": {
@@ -2462,6 +2470,7 @@
     "id": "classic-car",
     "name": "クラシックカー",
     "originalName": "自動車",
+    "modifier": "クラシック",
     "trigger": "現代の自動車",
     "description": "自動車の技術やデザインが移り変わったことで、製造から長い年月が経った古い自動車を区別して呼ぶようになった名称。",
     "details": {
@@ -4906,6 +4915,7 @@
     "id": "real-store",
     "name": "リアル店舗",
     "originalName": "店",
+    "modifier": "リアル",
     "trigger": "ネットショップ（EC）",
     "description": "インターネット通販が普及したことで、実際に足を運んで買い物をする従来の店を区別するようになった名称。「実店舗」とほぼ同義。",
     "details": {
@@ -4950,6 +4960,7 @@
     "id": "real-money",
     "name": "リアルマネー",
     "originalName": "お金",
+    "modifier": "リアル",
     "trigger": "ゲーム内通貨・仮想通貨",
     "description": "オンラインゲームの通貨や電子的な仮想通貨が広まったことで、現実世界で使われる法定通貨を区別するようになった名称。",
     "details": {
@@ -4973,6 +4984,7 @@
     "id": "riatomo",
     "name": "リア友",
     "originalName": "友達",
+    "modifier": "リア",
     "trigger": "ネット上の友達（ネッ友）",
     "description": "SNSやオンラインゲームを通じてネット上だけで知り合う友達が増えたことで、現実の生活で知り合った友達を区別するようになった名称。",
     "details": {

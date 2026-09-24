@@ -94,6 +94,7 @@
 | `id`           | string   |    ○ | URLに使用する一意なID                  |
 | `name`         | string   |    ○ | レトロニム                             |
 | `originalName` | string   |    ○ | 元々使われていた名称                   |
+| `modifier`     | string   |    - | 付け足された言葉。省略時は自動抽出     |
 | `trigger`      | string   |    ○ | 新しく登場した概念・製品など           |
 | `description`  | string   |    ○ | レトロニムになった経緯                 |
 | `details`      | Details  |    - | 概要の本文（意味・歴史・経緯・用法）   |
