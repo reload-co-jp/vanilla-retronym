@@ -135,14 +135,15 @@ const Page = async ({ params }: Params) => {
           <p>{retronym.description}</p>
           {retronym.details &&
             (Object.keys(detailLabels) as (keyof RetronymDetails)[]).map(
-              (key) => (
-                <section key={key} style={{ display: "grid", gap: ".25rem" }}>
-                  <h3 style={{ fontSize: ".875rem", margin: 0 }}>
-                    {detailLabels[key]}
-                  </h3>
-                  <p>{retronym.details?.[key]}</p>
-                </section>
-              )
+              (key) =>
+                retronym.details?.[key] && (
+                  <section key={key} style={{ display: "grid", gap: ".25rem" }}>
+                    <h3 style={{ fontSize: ".875rem", margin: 0 }}>
+                      {detailLabels[key]}
+                    </h3>
+                    <p>{retronym.details?.[key]}</p>
+                  </section>
+                )
             )}
         </div>
       </Section>
