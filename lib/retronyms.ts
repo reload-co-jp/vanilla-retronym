@@ -28,6 +28,8 @@ export const detailLabels: Record<keyof RetronymDetails, string> = {
 export type Retronym = {
   id: string
   name: string
+  /** 同じものを指す別名 */
+  aliases?: string[]
   /** 日本語以外の見出し語の日本語訳 */
   translation?: string
   originalName: string
@@ -93,12 +95,13 @@ export const getTags = (
     .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, "ja"))
 }
 
-/** name / translation / originalName / trigger / description / tags を部分一致で検索する。 */
+/** name / aliases / translation / originalName / trigger / description / tags を部分一致で検索する。 */
 export const matchesQuery = (retronym: Retronym, query: string): boolean => {
   const keyword = query.trim().toLowerCase()
   if (keyword === "") return true
   return [
     retronym.name,
+    ...(retronym.aliases ?? []),
     retronym.translation ?? "",
     retronym.originalName,
     retronym.trigger,

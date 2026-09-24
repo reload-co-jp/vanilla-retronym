@@ -97,6 +97,11 @@ const Page = async ({ params }: Params) => {
             {retronym.translation}
           </p>
         )}
+        {retronym.aliases && retronym.aliases.length > 0 && (
+          <p style={{ color: theme.muted }}>
+            別名：{retronym.aliases.join("、")}
+          </p>
+        )}
         <p style={{ color: theme.muted }}>
           もともとは「{retronym.originalName}」と呼ばれていた。
         </p>

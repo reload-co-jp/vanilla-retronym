@@ -95,6 +95,11 @@ describe("matchesQuery", () => {
     expect(matchesQuery(sample[0], "通信")).toBe(true)
     expect(matchesQuery(sample[0], "写真")).toBe(false)
   })
+
+  it("aliases も検索する", () => {
+    const withAlias = { ...sample[0], aliases: ["イエデン"] }
+    expect(matchesQuery(withAlias, "イエデン")).toBe(true)
+  })
 })
 
 describe("matchesTags", () => {
