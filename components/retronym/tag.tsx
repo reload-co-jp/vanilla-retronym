@@ -1,3 +1,4 @@
+import { tagPath } from "@/lib/retronyms"
 import { theme } from "@/lib/theme"
 import Link from "next/link"
 import { ComponentProps, FC, ReactNode } from "react"
@@ -39,13 +40,13 @@ export const Tag: FC<ComponentProps<"span"> & { selected?: boolean }> = ({
   </span>
 )
 
-/** 一覧・検索ページをそのタグで絞り込んだ状態で開く。 */
+/** タグ別ページを開く。 */
 export const TagLink: FC<{ tag: string; children?: ReactNode }> = ({
   tag,
   children = tag,
 }) => (
   <Link
-    href={`/retronyms/?tag=${encodeURIComponent(tag)}`}
+    href={tagPath(tag)}
     style={{ textDecoration: "none" }}
   >
     <Tag>{children}</Tag>

@@ -1,4 +1,4 @@
-import { retronyms } from "@/lib/retronyms"
+import { getTags, retronyms, tagPath } from "@/lib/retronyms"
 import { site } from "@/lib/site"
 import type { MetadataRoute } from "next"
 
@@ -29,6 +29,11 @@ const sitemap = (): MetadataRoute.Sitemap => [
     url: `${site.url}/retronyms/${id}/`,
     changeFrequency: "monthly" as const,
     priority: 0.6,
+  })),
+  ...getTags().map(({ name }) => ({
+    url: `${site.url}${tagPath(name)}`,
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
   })),
 ]
 

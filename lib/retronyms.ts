@@ -170,3 +170,9 @@ export const sortRetronyms = (
 
 export const newestRetronyms = (count: number): Retronym[] =>
   [...retronyms].reverse().slice(0, count)
+
+export const tagPath = (tag: string): string =>
+  `/tags/${encodeURIComponent(tag)}/`
+
+export const getRetronymsByTag = (tag: string): Retronym[] =>
+  retronyms.filter((retronym) => retronym.tags.includes(tag))

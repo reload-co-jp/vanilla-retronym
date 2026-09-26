@@ -33,7 +33,7 @@ export const generateMetadata = async ({
   const url = `/retronyms/${retronym.id}/`
 
   return {
-    title: retronym.name,
+    title: `${retronym.name}とは？元の呼び方は「${retronym.originalName}」`,
     description,
     alternates: { canonical: url },
     openGraph: {
@@ -66,6 +66,11 @@ const Page = async ({ params }: Params) => {
     "@context": "https://schema.org",
     "@type": "DefinedTerm",
     name: retronym.name,
+    alternateName: [
+      ...(retronym.aliases ?? []),
+      ...(retronym.translation ? [retronym.translation] : []),
+      retronym.originalName,
+    ],
     description: retronym.description,
     inDefinedTermSet: {
       "@type": "DefinedTermSet",
@@ -135,7 +140,7 @@ const Page = async ({ params }: Params) => {
         </TagList>
       </Section>
 
-      <Section compact heading="概要">
+      <Section compact heading={`${retronym.name}とは`}>
         <div style={{ display: "grid", gap: ".875rem", lineHeight: 1.9 }}>
           <p>{retronym.description}</p>
           {retronym.details &&
@@ -144,7 +149,7 @@ const Page = async ({ params }: Params) => {
                 retronym.details?.[key] && (
                   <section key={key} style={{ display: "grid", gap: ".25rem" }}>
                     <h3 style={{ fontSize: ".875rem", margin: 0 }}>
-                      {detailLabels[key]}
+                      {retronym.name}の{detailLabels[key]}
                     </h3>
                     <p>{retronym.details?.[key]}</p>
                   </section>
@@ -154,7 +159,7 @@ const Page = async ({ params }: Params) => {
       </Section>
 
       {related.length > 0 && (
-        <Section compact heading="関連するレトロニム">
+        <Section compact heading={`${retronym.name}に関連するレトロニム`}>
           <RetronymCardList retronyms={related} />
         </Section>
       )}
