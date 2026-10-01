@@ -176,3 +176,59 @@ export const tagPath = (tag: string): string =>
 
 export const getRetronymsByTag = (tag: string): Retronym[] =>
   retronyms.filter((retronym) => retronym.tags.includes(tag))
+
+export const retronymPath = (id: string): string => `/retronyms/${id}/`
+
+/** 個別ページの title。名前は一意なので title も一意になる。 */
+export const retronymTitle = (retronym: Retronym): string =>
+  `${retronym.name}とは？意味・${retronym.details?.etymology ? "語源・" : ""}呼ばれるようになった理由`
+
+/** 個別ページの meta description。 */
+export const retronymDescription = (retronym: Retronym): string =>
+  `${retronym.name}は、${retronym.trigger}の登場により、それまで「${retronym.originalName}」と呼ばれていたものを区別するために生まれた呼び名（レトロニム）。${retronym.description}`
+
+export type RelatedRetronym = { retronym: Retronym; reason: string }
+
+/**
+ * 関連するレトロニムを関連理由付きで返す。
+ * relatedIds → 同じ元の名称 → 同じきっかけ → 共通タグの多い順 で埋める。
+ */
+export const getRelatedWithReason = (
+  retronym: Retronym,
+  limit = 8
+): RelatedRetronym[] => {
+  const result: RelatedRetronym[] = []
+  const seen = new Set([retronym.id])
+  const add = (item: Retronym, reason: string) => {
+    if (seen.has(item.id) || result.length >= limit) return
+    seen.add(item.id)
+    result.push({ retronym: item, reason })
+  }
+
+  for (const item of getRelated(retronym)) add(item, "関連する項目")
+  for (const item of retronyms) {
+    if (item.originalName === retronym.originalName)
+      add(item, `同じ「${retronym.originalName}」から生まれた呼び名`)
+  }
+  for (const item of retronyms) {
+    if (item.trigger === retronym.trigger)
+      add(item, `同じく「${retronym.trigger}」の登場で生まれた呼び名`)
+  }
+  retronyms
+    .map((item) => ({
+      item,
+      shared: item.tags.filter((tag) => retronym.tags.includes(tag)),
+    }))
+    .filter(({ shared }) => shared.length > 0)
+    .sort((a, b) => b.shared.length - a.shared.length)
+    .forEach(({ item, shared }) => add(item, `同じ「${shared[0]}」タグ`))
+
+  return result
+}
+
+/** 同じ項目に付くことが多いタグを、共起数の多い順に返す。 */
+export const getRelatedTags = (tag: string, limit = 6): string[] =>
+  getTags(getRetronymsByTag(tag))
+    .filter(({ name }) => name !== tag)
+    .slice(0, limit)
+    .map(({ name }) => name)

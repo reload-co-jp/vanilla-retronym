@@ -25,6 +25,11 @@ const sitemap = (): MetadataRoute.Sitemap => [
     changeFrequency: "weekly",
     priority: 0.8,
   },
+  {
+    url: `${site.url}/retronyms/examples/`,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
   ...retronyms.map(({ id }) => ({
     url: `${site.url}/retronyms/${id}/`,
     changeFrequency: "monthly" as const,

@@ -1,6 +1,7 @@
 import {
   filterRetronyms,
   getRelated,
+  getRelatedWithReason,
   getLanguages,
   getRetronym,
   getTags,
@@ -9,7 +10,9 @@ import {
   matchesTags,
   newestRetronyms,
   Retronym,
+  retronymDescription,
   retronyms,
+  retronymTitle,
   sortRetronyms,
 } from "@/lib/retronyms"
 import { describe, expect, it } from "vitest"
@@ -189,5 +192,30 @@ describe("newestRetronyms", () => {
     const result = newestRetronyms(3)
     expect(result).toHaveLength(3)
     expect(result[0].id).toBe(retronyms[retronyms.length - 1].id)
+  })
+})
+
+describe("SEO metadata", () => {
+  it("全ページで title と description が一意", () => {
+    expect(new Set(retronyms.map(retronymTitle)).size).toBe(retronyms.length)
+    expect(new Set(retronyms.map(retronymDescription)).size).toBe(
+      retronyms.length
+    )
+  })
+
+  it("examples は個別ページの id と衝突しない", () => {
+    expect(getRetronym("examples")).toBeUndefined()
+  })
+})
+
+describe("getRelatedWithReason", () => {
+  it("自身を含まず、重複せず、実在する項目だけを返す", () => {
+    for (const retronym of retronyms) {
+      const ids = getRelatedWithReason(retronym).map((r) => r.retronym.id)
+      expect(ids).not.toContain(retronym.id)
+      expect(new Set(ids).size).toBe(ids.length)
+      expect(ids.length).toBeGreaterThan(0)
+      ids.forEach((id) => expect(getRetronym(id)).toBeDefined())
+    }
   })
 })

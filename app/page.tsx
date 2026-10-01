@@ -54,6 +54,14 @@ const Page: FC = () => {
             レトロニムについて詳しく →
           </Link>
         </p>
+        <p>
+          <Link
+            href="/retronyms/examples/"
+            style={{ color: theme.accent, fontSize: ".875rem" }}
+          >
+            レトロニムの具体例・代表例一覧 →
+          </Link>
+        </p>
       </Section>
 
       <Section heading="新着">

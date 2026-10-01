@@ -1,10 +1,11 @@
 import { Breadcrumb } from "@/components/elements/breadcrumb"
 import { JsonLd } from "@/components/elements/json-ld"
 import { Section, Title } from "@/components/elements/layout"
+import { FlowList, patterns, pick } from "@/components/retronym/flow"
 import { StatusBadge } from "@/components/retronym/status-badge"
+import { TagLink, TagList } from "@/components/retronym/tag"
 import {
-  getRetronym,
-  Retronym,
+  getTags,
   RetronymStatus,
   retronyms,
   statusLabels,
@@ -15,55 +16,21 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { FC, ReactNode } from "react"
 
+const title = "レトロニムとは？意味・語源・具体例をわかりやすく解説"
 const description =
-  "レトロニム（retronym）の意味・語源・生まれる仕組み・パターンを、具体例とともに詳しく解説する。"
+  "レトロニム（retronym）の意味・語源・生まれる仕組み・パターンを、固定電話やアナログ時計などの具体例とともにわかりやすく解説する。"
 
 export const metadata: Metadata = {
-  title: "レトロニムとは",
+  title,
   description,
   alternates: { canonical: "/about/" },
   openGraph: {
     ...openGraphBase,
     description,
-    title: "レトロニムとは",
+    title,
     url: "/about/",
   },
 }
-
-const pick = (ids: string[]): Retronym[] =>
-  ids.map(getRetronym).filter((r): r is Retronym => r !== undefined)
-
-const patterns: {
-  heading: string
-  body: string
-  ids: string[]
-}[] = [
-  {
-    heading: "性質を表す言葉を足す",
-    body: "最も多い型。新しいものとの違いになる性質（アナログ・固定・有線・紙の など）を前に付けて区別する。",
-    ids: ["fixed-phone", "analog-clock", "wired-earphone", "paper-book"],
-  },
-  {
-    heading: "「本来の」「自然の」と言い直す",
-    body: "人工物・派生物が登場したことで、元のものを「自然」「生」「対面」などと呼び直す型。",
-    ids: ["natural-language", "live-music", "in-person-meeting", "whole-milk"],
-  },
-  {
-    heading: "番号を振る",
-    body: "続編や二番目が現れて初めて、最初のものに「第一」「1」が付く型。",
-    ids: ["world-war-one", "star-wars-episode-4", "playstation-1", "web-1-0"],
-  },
-  {
-    heading: "後世の視点で名付ける",
-    body: "当時の人は別の名前で呼んでいたものに、歴史学などが区別のため後から名前を与えた型。",
-    ids: ["byzantine-empire", "old-testament", "traditional-chinese"],
-  },
-  {
-    heading: "新しい言葉に置き換える",
-    body: "修飾語を足すのではなく、新旧を対比する別の単語が作られる型。",
-    ids: ["feature-phone", "snail-mail", "day-game"],
-  },
-]
 
 const statusDescriptions: Record<RetronymStatus, string> = {
   confirmed: "辞書や文献などで、レトロニムとして一般に認められているもの。",
@@ -73,6 +40,40 @@ const statusDescriptions: Record<RetronymStatus, string> = {
     "レトロニムとしての用法が見られるものの、まだ定着しているとは言い切れないもの。",
 }
 
+// FAQPage のリッチリザルトは 2023 年以降、政府・医療系の権威あるサイトに限定されたため構造化データは付けない。
+const faqs: { question: string; answer: string }[] = [
+  {
+    question: "レトロニムとは何ですか？",
+    answer:
+      "新しいものが登場したことで、それまで単独の名前で呼ばれていたものを区別するために、後から付けられた名前のこと。",
+  },
+  {
+    question: "レトロニムの具体例は？",
+    answer:
+      "携帯電話の普及で生まれた「固定電話」、デジタル時計の登場で生まれた「アナログ時計」、電子書籍の登場で生まれた「紙の本」などがある。",
+  },
+  {
+    question: "レトロニムと新語の違いは？",
+    answer:
+      "新語は新しく作られた言葉全般を指す。レトロニムも新語の一種ですが、指す対象が昔からあるものである点が特徴。「携帯電話」は新語、「固定電話」はレトロニム。",
+  },
+  {
+    question: "なぜレトロニムが生まれるのですか？",
+    answer:
+      "新しいものが普及して「普通」になると、元の名前だけではどちらを指すのか曖昧になるため。そこで元のものを言い分けるための名前が必要になる。",
+  },
+  {
+    question: "レトロニムと対義語の違いは？",
+    answer:
+      "対義語は意味が反対の関係にある言葉。レトロニムは新しいものと区別するために、元からあるものを呼び直した名前で、指しているもの自体は変わっていない。",
+  },
+  {
+    question: "英語ではレトロニムを何と呼びますか？",
+    answer:
+      "英語では retronym という。「さかのぼって」を意味する retro- と「名前」を意味する -onym を組み合わせた語。",
+  },
+]
+
 const Paragraphs: FC<{ children: ReactNode }> = ({ children }) => (
   <div style={{ display: "grid", gap: ".875rem", lineHeight: 1.9 }}>
     {children}
@@ -81,61 +82,6 @@ const Paragraphs: FC<{ children: ReactNode }> = ({ children }) => (
 
 const Muted: FC<{ children: ReactNode }> = ({ children }) => (
   <p style={{ color: theme.muted, fontSize: ".875rem" }}>{children}</p>
-)
-
-const Flow: FC<{ retronym: Retronym }> = ({ retronym }) => (
-  <li>
-    <Link
-      href={`/retronyms/${retronym.id}/`}
-      style={{
-        alignItems: "center",
-        backgroundColor: theme.surface,
-        border: `1px solid ${theme.border}`,
-        borderRadius: ".375rem",
-        display: "flex",
-        flexWrap: "wrap",
-        fontSize: ".875rem",
-        gap: ".375rem .625rem",
-        padding: ".625rem .875rem",
-        textDecoration: "none",
-      }}
-    >
-      <span style={{ color: theme.muted }}>{retronym.originalName}</span>
-      <span aria-hidden style={{ color: theme.muted }}>
-        →
-      </span>
-      <span
-        style={{
-          backgroundColor: theme.tag,
-          borderRadius: ".25rem",
-          fontSize: ".8125rem",
-          padding: ".0625rem .5rem",
-        }}
-      >
-        {retronym.trigger} の登場
-      </span>
-      <span aria-hidden style={{ color: theme.muted }}>
-        →
-      </span>
-      <strong style={{ color: theme.accent }}>{retronym.name}</strong>
-    </Link>
-  </li>
-)
-
-const FlowList: FC<{ retronyms: Retronym[] }> = ({ retronyms }) => (
-  <ul
-    style={{
-      display: "grid",
-      gap: ".5rem",
-      listStyle: "none",
-      margin: 0,
-      padding: 0,
-    }}
-  >
-    {retronyms.map((r) => (
-      <Flow key={r.id} retronym={r} />
-    ))}
-  </ul>
 )
 
 const Steps: FC = () => {
@@ -191,7 +137,7 @@ const Page: FC = () => (
       data={{
         "@context": "https://schema.org",
         "@type": "Article",
-        headline: "レトロニムとは",
+        headline: title,
         description,
         url: `${site.url}/about/`,
         inLanguage: "ja",
@@ -202,14 +148,14 @@ const Page: FC = () => (
     <Breadcrumb items={[{ name: "レトロニムとは", href: "/about/" }]} />
     <section style={{ display: "grid", gap: ".625rem" }}>
       <Title style={{ fontSize: "2.25rem", lineHeight: 1.35 }}>
-        レトロニムとは
+        レトロニムとは？
       </Title>
       <p style={{ color: theme.muted }}>
         レトロニム（retronym）の意味・語源・生まれる仕組みを、具体例とともに解説する。
       </p>
     </section>
 
-    <Section heading="意味">
+    <Section heading="レトロニムの意味">
       <Paragraphs>
         <p>
           <strong>レトロニム</strong>
@@ -227,7 +173,7 @@ const Page: FC = () => (
       </Paragraphs>
     </Section>
 
-    <Section heading="語源">
+    <Section heading="レトロニムの語源">
       <Paragraphs>
         <p>
           英語の <em>retronym</em> は、「後ろへ・さかのぼって」を意味する接頭辞{" "}
@@ -243,7 +189,7 @@ const Page: FC = () => (
       </Paragraphs>
     </Section>
 
-    <Section heading="生まれる仕組み">
+    <Section heading="レトロニムの生まれる仕組み">
       <Paragraphs>
         <p>
           レトロニムは、おおむね次の流れで生まれる。新しいものが「例外」だった間は元の名前のままで困らないが、新しいものが普及して「普通」になるにつれて、元のものを言い分ける必要が出てくる。
@@ -280,7 +226,7 @@ const Page: FC = () => (
       </p>
     </Section>
 
-    <Section heading="似ている言葉との違い">
+    <Section heading="レトロニムと似た言葉">
       <dl style={{ display: "grid", gap: "1rem", margin: 0 }}>
         {[
           {
@@ -299,6 +245,60 @@ const Page: FC = () => (
           <div key={term} style={{ display: "grid", gap: ".25rem" }}>
             <dt style={{ fontWeight: 700 }}>{term}</dt>
             <dd style={{ margin: 0 }}>{text}</dd>
+          </div>
+        ))}
+      </dl>
+    </Section>
+
+    <Section heading="レトロニムの具体例">
+      <Paragraphs>
+        <p>
+          代表的なレトロニムを、作られ方のパターン別・分野別にまとめている。
+        </p>
+      </Paragraphs>
+      <FlowList
+        retronyms={pick(["fixed-phone", "analog-clock", "paper-book"])}
+      />
+      <p>
+        <Link
+          href="/retronyms/examples/"
+          style={{ color: theme.accent, fontSize: ".875rem" }}
+        >
+          レトロニムの具体例・代表例一覧 →
+        </Link>
+      </p>
+    </Section>
+
+    <Section heading="レトロニムの一覧">
+      <Paragraphs>
+        <p>
+          本図鑑には{retronyms.length}
+          件のレトロニムを収録している。名前・元の名称・きっかけから検索したり、分野ごとに見たりできる。
+        </p>
+      </Paragraphs>
+      <TagList>
+        {getTags()
+          .slice(0, 10)
+          .map(({ name }) => (
+            <TagLink key={name} tag={name} />
+          ))}
+      </TagList>
+      <p>
+        <Link
+          href="/retronyms/"
+          style={{ color: theme.accent, fontSize: ".875rem" }}
+        >
+          レトロニム一覧・検索 →
+        </Link>
+      </p>
+    </Section>
+
+    <Section heading="よくある質問">
+      <dl style={{ display: "grid", gap: "1.25rem", margin: 0 }}>
+        {faqs.map(({ question, answer }) => (
+          <div key={question} style={{ display: "grid", gap: ".25rem" }}>
+            <dt style={{ fontWeight: 700 }}>{question}</dt>
+            <dd style={{ lineHeight: 1.9, margin: 0 }}>{answer}</dd>
           </div>
         ))}
       </dl>

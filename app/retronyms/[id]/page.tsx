@@ -1,15 +1,20 @@
 import { Breadcrumb } from "@/components/elements/breadcrumb"
 import { JsonLd } from "@/components/elements/json-ld"
 import { Section, Title } from "@/components/elements/layout"
-import { RetronymCardList } from "@/components/retronym/card"
 import { StatusBadge } from "@/components/retronym/status-badge"
 import { TagLink, TagList } from "@/components/retronym/tag"
+import { getModifier } from "@/lib/modifiers"
 import {
-  detailLabels,
-  getRelated,
+  getRelatedWithReason,
   getRetronym,
-  RetronymDetails,
+  languageLabel,
+  Retronym,
+  retronymDescription,
+  retronymPath,
   retronyms,
+  retronymTitle,
+  statusLabels,
+  tagPath,
 } from "@/lib/retronyms"
 import { openGraphBase, site } from "@/lib/site"
 import { theme } from "@/lib/theme"
@@ -20,6 +25,8 @@ import { FC, ReactNode } from "react"
 
 type Params = { params: Promise<{ id: string }> }
 
+export const dynamicParams = false
+
 export const generateStaticParams = () => retronyms.map(({ id }) => ({ id }))
 
 export const generateMetadata = async ({
@@ -29,17 +36,18 @@ export const generateMetadata = async ({
   const retronym = getRetronym(id)
   if (!retronym) return {}
 
-  const description = `「${retronym.originalName}」は${retronym.trigger}の登場により「${retronym.name}」と呼ばれるようになった。${retronym.description}`
-  const url = `/retronyms/${retronym.id}/`
+  const title = retronymTitle(retronym)
+  const description = retronymDescription(retronym)
+  const url = retronymPath(retronym.id)
 
   return {
-    title: `${retronym.name}とは？元の呼び方は「${retronym.originalName}」`,
+    title,
     description,
     alternates: { canonical: url },
     openGraph: {
       ...openGraphBase,
       type: "article",
-      title: `${retronym.name} | ${site.name}`,
+      title: `${title} | ${site.name}`,
       description,
       url,
     },
@@ -56,20 +64,85 @@ const Field: FC<{ label: string; children: ReactNode }> = ({
   </div>
 )
 
+const Paragraphs: FC<{ children: ReactNode }> = ({ children }) => (
+  <div style={{ display: "grid", gap: ".875rem", lineHeight: 1.9 }}>
+    {children}
+  </div>
+)
+
+/** 元の名称 → きっかけ → 呼び分け → レトロニム の流れを示す。 */
+const NamingFlow: FC<{ retronym: Retronym }> = ({ retronym }) => {
+  const steps: { label: string; text: ReactNode }[] = [
+    { label: "元の名称", text: `「${retronym.originalName}」` },
+    { label: "新しく登場したもの", text: retronym.trigger },
+    {
+      label: "呼び分けの必要",
+      text: `元の「${retronym.originalName}」を区別する必要が生まれる`,
+    },
+    {
+      label: "レトロニム",
+      text: (
+        <strong style={{ color: theme.accent }}>「{retronym.name}」</strong>
+      ),
+    },
+  ]
+  return (
+    <ol
+      aria-label={`${retronym.name}が生まれた流れ`}
+      style={{
+        backgroundColor: theme.surface,
+        border: `1px solid ${theme.border}`,
+        borderRadius: ".375rem",
+        display: "grid",
+        gap: ".25rem",
+        listStyle: "none",
+        margin: 0,
+        padding: ".875rem 1rem",
+      }}
+    >
+      {steps.map(({ label, text }, index) => (
+        <li key={label} style={{ display: "grid", gap: ".25rem" }}>
+          {index > 0 && (
+            <span aria-hidden style={{ color: theme.muted }}>
+              ↓
+            </span>
+          )}
+          <span>
+            <span
+              style={{
+                color: theme.muted,
+                display: "block",
+                fontSize: ".75rem",
+              }}
+            >
+              {label}
+            </span>
+            {text}
+          </span>
+        </li>
+      ))}
+    </ol>
+  )
+}
+
 const Page = async ({ params }: Params) => {
   const { id } = await params
   const retronym = getRetronym(id)
   if (!retronym) notFound()
 
-  const related = getRelated(retronym)
+  const { name, originalName, trigger, details } = retronym
+  const url = retronymPath(retronym.id)
+  const related = getRelatedWithReason(retronym)
+  const modifier = getModifier(retronym)
+  const [mainTag] = retronym.tags
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "DefinedTerm",
-    name: retronym.name,
+    name,
     alternateName: [
       ...(retronym.aliases ?? []),
       ...(retronym.translation ? [retronym.translation] : []),
-      retronym.originalName,
+      originalName,
     ],
     description: retronym.description,
     inDefinedTermSet: {
@@ -77,7 +150,7 @@ const Page = async ({ params }: Params) => {
       name: site.name,
       url: `${site.url}/retronyms/`,
     },
-    url: `${site.url}/retronyms/${retronym.id}/`,
+    url: `${site.url}${url}`,
     inLanguage: retronym.language,
     termCode: retronym.id,
     keywords: retronym.tags.join(", "),
@@ -89,50 +162,120 @@ const Page = async ({ params }: Params) => {
       <Breadcrumb
         items={[
           { name: "レトロニム一覧・検索", href: "/retronyms/" },
-          { name: retronym.name, href: `/retronyms/${retronym.id}/` },
+          ...(mainTag ? [{ name: mainTag, href: tagPath(mainTag) }] : []),
+          { name, href: url },
         ]}
       />
 
       <header style={{ display: "grid", gap: ".625rem" }}>
         <Title style={{ fontSize: "2.25rem", lineHeight: 1.35 }}>
-          {retronym.name}
+          {name}とは？
+          <span
+            style={{
+              color: theme.muted,
+              display: "block",
+              fontSize: "1rem",
+              fontWeight: 500,
+            }}
+          >
+            意味・{details?.etymology ? "語源・" : ""}「{name}
+            」と呼ばれるようになった理由
+          </span>
         </Title>
         {retronym.translation && (
           <p style={{ color: theme.muted, fontSize: "1.125rem" }}>
             {retronym.translation}
           </p>
         )}
-        {retronym.aliases && retronym.aliases.length > 0 && (
-          <p style={{ color: theme.muted }}>
-            別名：{retronym.aliases.join("、")}
-          </p>
-        )}
-        <p style={{ color: theme.muted }}>
-          もともとは「{retronym.originalName}」と呼ばれていた。
-        </p>
         <div>
           <StatusBadge status={retronym.status} />
         </div>
       </header>
 
-      <dl
-        style={{
-          borderBottom: `1px solid ${theme.border}`,
-          borderTop: `1px solid ${theme.border}`,
-          display: "grid",
-          gap: "1rem",
-          gridTemplateColumns: "repeat(auto-fit, minmax(10rem, 1fr))",
-          margin: 0,
-          padding: "1rem 0",
-        }}
-      >
-        <Field label="新しく登場したもの">{retronym.trigger}</Field>
-        <Field label="元の名称">{retronym.originalName}</Field>
-        {retronym.period && <Field label="成立時期">{retronym.period}</Field>}
-        <Field label="主に使われる言語">{retronym.language}</Field>
-      </dl>
+      <Section compact heading="概要">
+        <NamingFlow retronym={retronym} />
+        <Paragraphs>
+          <p>{retronym.description}</p>
+        </Paragraphs>
+      </Section>
 
-      <Section compact heading="タグ">
+      {details?.meaning && (
+        <Section compact heading={`${name}とは`}>
+          <Paragraphs>
+            <p>{details.meaning}</p>
+          </Paragraphs>
+        </Section>
+      )}
+
+      <Section compact heading={`なぜ「${name}」と呼ばれるようになった？`}>
+        <Paragraphs>
+          <p>
+            「{trigger}」が登場したことで、それまでの「{originalName}
+            」と区別する必要が生まれ、
+            {modifier
+              ? `「${modifier.label}」を付けた「${name}」`
+              : `「${name}」`}
+            という呼び名が使われるようになった。
+          </p>
+          {details?.etymology && <p>{details.etymology}</p>}
+        </Paragraphs>
+      </Section>
+
+      <Section compact heading="元々は何と呼ばれていた？">
+        <Paragraphs>
+          <p>
+            {trigger}が登場する前は、単に「{originalName}」と呼ばれていた。
+          </p>
+          {retronym.aliases && retronym.aliases.length > 0 && (
+            <p>
+              「{name}」のほか、
+              {retronym.aliases.map((alias) => `「${alias}」`).join("")}
+              と呼ばれることもある。
+            </p>
+          )}
+        </Paragraphs>
+      </Section>
+
+      {details?.history && (
+        <Section compact heading={`${name}が必要になった背景`}>
+          <Paragraphs>
+            <p>{details.history}</p>
+          </Paragraphs>
+        </Section>
+      )}
+
+      {details?.usage && (
+        <Section compact heading={`${name}の具体例・使われ方`}>
+          <Paragraphs>
+            <p>{details.usage}</p>
+          </Paragraphs>
+        </Section>
+      )}
+
+      <Section compact heading="レトロニムとしての特徴">
+        <dl
+          style={{
+            display: "grid",
+            gap: "1rem",
+            gridTemplateColumns: "repeat(auto-fit, minmax(10rem, 1fr))",
+            margin: 0,
+          }}
+        >
+          <Field label="元の名称">{originalName}</Field>
+          <Field label="新しく登場したもの">{trigger}</Field>
+          {modifier && (
+            <Field label="付け足された言葉">
+              <Link href="/modifiers/" style={{ color: theme.accent }}>
+                {modifier.label}
+              </Link>
+            </Field>
+          )}
+          {retronym.period && <Field label="成立時期">{retronym.period}</Field>}
+          <Field label="主に使われる言語">
+            {languageLabel(retronym.language)}
+          </Field>
+          <Field label="ステータス">{statusLabels[retronym.status]}</Field>
+        </dl>
         <TagList>
           {retronym.tags.map((tag) => (
             <TagLink key={tag} tag={tag} />
@@ -140,27 +283,24 @@ const Page = async ({ params }: Params) => {
         </TagList>
       </Section>
 
-      <Section compact heading={`${retronym.name}とは`}>
-        <div style={{ display: "grid", gap: ".875rem", lineHeight: 1.9 }}>
-          <p>{retronym.description}</p>
-          {retronym.details &&
-            (Object.keys(detailLabels) as (keyof RetronymDetails)[]).map(
-              (key) =>
-                retronym.details?.[key] && (
-                  <section key={key} style={{ display: "grid", gap: ".25rem" }}>
-                    <h3 style={{ fontSize: ".875rem", margin: 0 }}>
-                      {retronym.name}の{detailLabels[key]}
-                    </h3>
-                    <p>{retronym.details?.[key]}</p>
-                  </section>
-                )
-            )}
-        </div>
-      </Section>
-
       {related.length > 0 && (
-        <Section compact heading={`${retronym.name}に関連するレトロニム`}>
-          <RetronymCardList retronyms={related} />
+        <Section compact heading="関連するレトロニム">
+          <ul style={{ display: "grid", gap: ".5rem", lineHeight: 1.6 }}>
+            {related.map(({ retronym: item, reason }) => (
+              <li key={item.id}>
+                <Link
+                  href={retronymPath(item.id)}
+                  style={{ color: theme.accent }}
+                >
+                  {item.name}
+                </Link>
+                <span style={{ color: theme.muted, fontSize: ".8125rem" }}>
+                  {" "}
+                  — {item.originalName} → {item.name}／{reason}
+                </span>
+              </li>
+            ))}
+          </ul>
         </Section>
       )}
 
@@ -178,9 +318,12 @@ const Page = async ({ params }: Params) => {
         </Section>
       )}
 
-      <p>
+      <p style={{ display: "flex", flexWrap: "wrap", gap: "1rem" }}>
         <Link href="/retronyms/" style={{ color: theme.accent }}>
           ← レトロニム一覧・検索へ
+        </Link>
+        <Link href="/about/" style={{ color: theme.accent }}>
+          レトロニムとは →
         </Link>
       </p>
     </article>
