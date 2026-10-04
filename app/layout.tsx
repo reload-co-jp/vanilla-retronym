@@ -110,6 +110,8 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           <p>
             {site.name} — 後から名前が付いたものを集める図鑑。
             <br />
+            <Link href="/about-site/">このサイトについて</Link>
+            <br />
             &copy; Reload
           </p>
         </Footer>

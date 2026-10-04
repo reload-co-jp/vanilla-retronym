@@ -20,7 +20,8 @@ const body = `# ${site.name}（${site.nameJa}）
 
 - [トップ](${site.url}/): サイトのトップページ
 - [レトロニム一覧](${site.url}/retronyms/): 収録しているレトロニムの一覧
-- [このサイトについて](${site.url}/about/): サイトの趣旨・レトロニムの説明
+- [レトロニムとは](${site.url}/about/): レトロニムの意味・語源・具体例の解説
+- [このサイトについて](${site.url}/about-site/): サイトの趣旨
 - [レトロニムに付く言葉](${site.url}/modifiers/): レトロニムを作る接頭語・修飾語の分類
 
 ## レトロニム
