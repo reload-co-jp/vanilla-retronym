@@ -66,6 +66,16 @@ const Page: FC = () => (
         <p>そんな体験を届けられればと思っています。</p>
       </Paragraphs>
     </Section>
+
+    <Section heading="運営会社">
+      <Paragraphs>
+        <p>
+          <a href="https://reload.co.jp" target="_blank" rel="noopener">
+            株式会社リロード
+          </a>
+        </p>
+      </Paragraphs>
+    </Section>
   </article>
 )
 

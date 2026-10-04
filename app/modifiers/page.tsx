@@ -101,7 +101,11 @@ const Page: FC = () => (
         description,
         url: `${site.url}/modifiers/`,
         inLanguage: "ja",
-        publisher: { "@type": "Organization", name: "Reload" },
+        publisher: {
+          "@type": "Organization",
+          name: "Reload",
+          url: "https://reload.co.jp",
+        },
         isPartOf: { "@type": "WebSite", name: site.name, url: site.url },
       }}
     />

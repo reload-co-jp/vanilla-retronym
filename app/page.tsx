@@ -27,7 +27,11 @@ const Page: FC = () => {
           url: site.url,
           description: site.description,
           inLanguage: "ja",
-          publisher: { "@type": "Organization", name: "Reload" },
+          publisher: {
+            "@type": "Organization",
+            name: "Reload",
+            url: "https://reload.co.jp",
+          },
         }}
       />
       <section style={{ display: "grid", gap: ".625rem" }}>
