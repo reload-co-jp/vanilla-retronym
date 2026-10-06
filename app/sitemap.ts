@@ -40,11 +40,13 @@ const sitemap = (): MetadataRoute.Sitemap => [
     changeFrequency: "monthly" as const,
     priority: 0.6,
   })),
-  ...getTags().map(({ name }) => ({
-    url: `${site.url}${tagPath(name)}`,
-    changeFrequency: "monthly" as const,
-    priority: 0.5,
-  })),
+  ...getTags()
+    .filter(({ count }) => count >= 2)
+    .map(({ name }) => ({
+      url: `${site.url}${tagPath(name)}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    })),
 ]
 
 export default sitemap

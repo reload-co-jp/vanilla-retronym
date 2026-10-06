@@ -45,6 +45,8 @@ export const generateMetadata = async ({
     title,
     description,
     alternates: { canonical: url },
+    // 1件だけのタグは個別ページと内容が重複する薄いページになるため索引させない
+    ...(items.length < 2 && { robots: { index: false, follow: true } }),
     openGraph: { ...openGraphBase, title, description, url },
   }
 }

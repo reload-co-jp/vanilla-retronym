@@ -70,7 +70,7 @@ const Page: FC = () => (
     <Section heading="運営会社">
       <Paragraphs>
         <p>
-          <a href="https://reload.co.jp" target="_blank" rel="noopener">
+          <a href="https://reload.co.jp" target="_blank" rel="noopener noreferrer">
             株式会社リロード
           </a>
         </p>

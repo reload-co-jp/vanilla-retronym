@@ -26,7 +26,8 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
     default: `${site.name} - レトロニム図鑑`,
-    template: `%s | ${site.name}`,
+    // 「〇〇 レトロニム」検索に合わせ、カタカナ表記を全ページのタイトルに含める
+    template: `%s | ${site.nameJa}`,
   },
   description: site.description,
   openGraph: {
