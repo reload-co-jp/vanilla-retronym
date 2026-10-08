@@ -25,14 +25,14 @@ const notoSansJP = Noto_Sans_JP({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} - レトロニム図鑑`,
+    default: `レトロニム図鑑 - ${site.name}`,
     // 「〇〇 レトロニム」検索に合わせ、カタカナ表記を全ページのタイトルに含める
     template: `%s | ${site.nameJa}`,
   },
   description: site.description,
   openGraph: {
     ...openGraphBase,
-    title: `${site.name} - レトロニム図鑑`,
+    title: `レトロニム図鑑 - ${site.name}`,
     description: site.description,
     url: site.url,
   },

@@ -24,6 +24,7 @@ const Page: FC = () => {
           "@context": "https://schema.org",
           "@type": "WebSite",
           name: site.name,
+          alternateName: [site.nameJa, "レトロニム図鑑"],
           url: site.url,
           description: site.description,
           inLanguage: "ja",
