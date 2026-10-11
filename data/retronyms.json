@@ -9616,6 +9616,10 @@
       {
         "title": "Wikipedia - Cloud storage",
         "url": "https://en.wikipedia.org/wiki/Cloud_storage"
+      },
+      {
+        "title": "MDN Web Docs - Window: localStorage プロパティ",
+        "url": "https://developer.mozilla.org/ja/docs/Web/API/Window/localStorage"
       }
     ]
   }

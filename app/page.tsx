@@ -3,14 +3,21 @@ import { Section, Title } from "@/components/elements/layout"
 import { RetronymCardList } from "@/components/retronym/card"
 import { TagLink, TagList } from "@/components/retronym/tag"
 import { getTags, newestRetronyms, retronyms } from "@/lib/retronyms"
-import { site } from "@/lib/site"
+import { openGraphBase, site } from "@/lib/site"
 import { theme } from "@/lib/theme"
 import type { Metadata } from "next"
 import Link from "next/link"
 import { FC } from "react"
 
+// 一覧・検索できる図鑑であることを検索結果で伝える。件数はデータから生成する
+const title = `レトロニム図鑑｜後から名前が付いた言葉の一覧・検索 - ${site.name}`
+const description = `${site.description}固定電話・フィルムカメラなど全${retronyms.length}件を、タグやキーワードで一覧・検索できる。`
+
 export const metadata: Metadata = {
+  title: { absolute: title },
+  description,
   alternates: { canonical: "/" },
+  openGraph: { ...openGraphBase, title, description, url: "/" },
 }
 
 const Page: FC = () => {
@@ -38,8 +45,21 @@ const Page: FC = () => {
       <section style={{ display: "grid", gap: ".625rem" }}>
         <Title style={{ fontSize: "2.25rem", lineHeight: 1.35 }}>
           {site.name}
+          {/* 日本語の検索意図に合わせ、見出しに「レトロニム図鑑」を含める */}
+          <span
+            style={{
+              display: "block",
+              fontFamily: "var(--font-sans)",
+              fontSize: "1rem",
+              fontWeight: 400,
+              letterSpacing: "normal",
+              lineHeight: 1.8,
+              marginTop: ".625rem",
+            }}
+          >
+            {site.nameJa}｜レトロニム図鑑
+          </span>
         </Title>
-        <p>{site.nameJa}</p>
         <p style={{ color: theme.muted }}>{site.description}</p>
       </section>
 
