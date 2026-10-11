@@ -53,11 +53,19 @@ export const RetronymSearch: FC<{ retronyms: Retronym[] }> = ({
     )
 
   return (
-    <div style={{ display: "grid", gap: "1.25rem" }}>
-      <div style={{ display: "grid", gap: ".75rem" }}>
-        <label style={{ display: "grid", gap: ".25rem" }}>
-          <span style={{ fontSize: ".8125rem", color: theme.muted }}>
-            レトロニムを検索
+    <div style={{ display: "grid", gap: "1.5rem" }}>
+      <div
+        style={{
+          background: theme.surface,
+          border: `1px solid ${theme.border}`,
+          display: "grid",
+          gap: "1rem",
+          padding: "clamp(1rem, 3vw, 1.75rem)",
+        }}
+      >
+        <label style={{ display: "grid", gap: ".375rem" }}>
+          <span className="en-label" style={{ color: theme.muted }}>
+            Search — レトロニムを検索
           </span>
           <input
             type="search"
@@ -65,11 +73,13 @@ export const RetronymSearch: FC<{ retronyms: Retronym[] }> = ({
             onChange={(event) => setQuery(event.target.value)}
             placeholder="名前・元の名称・きっかけ・説明・タグ"
             style={{
-              backgroundColor: theme.surface,
-              border: `1px solid ${theme.border}`,
-              borderRadius: ".125rem",
-              fontSize: "1rem",
-              padding: ".55rem .75rem",
+              backgroundColor: "transparent",
+              border: "none",
+              borderBottom: `2px solid ${theme.text}`,
+              borderRadius: 0,
+              fontFamily: "var(--serif-ja)",
+              fontSize: "1.375rem",
+              padding: ".375rem 0",
               width: "100%",
             }}
           />

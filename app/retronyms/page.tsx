@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 }
 
 const Page: FC = () => (
-  <div style={{ display: "grid", gap: "2rem" }}>
+  <div className="wide" style={{ display: "grid", gap: "2.5rem" }}>
     <JsonLd
       data={{
         "@context": "https://schema.org",
@@ -46,20 +46,28 @@ const Page: FC = () => (
     <Breadcrumb
       items={[{ name: "レトロニム一覧・検索", href: "/retronyms/" }]}
     />
-    <section style={{ display: "grid", gap: ".375rem" }}>
-      <Title style={{ fontSize: "1.875rem" }}>レトロニム一覧・検索</Title>
-      <p style={{ color: theme.muted, fontSize: ".875rem" }}>
-        全{retronyms.length}件。検索と絞り込みはブラウザ上で処理する。
+    <section className="pagehead">
+      <p className="en-label" style={{ color: theme.accent }}>
+        Retronyms — Index
+      </p>
+      <Title className="pagehead__title" style={{ fontSize: undefined }}>
+        レトロニム一覧・検索
+      </Title>
+      <p className="pagehead__lead">
+        後から名前が付いた言葉、全{retronyms.length}
+        件。キーワード・タグ・言語で絞り込み、気になる言葉から変化の背景を読む。
       </p>
     </section>
-    {/* 静的HTMLには全件を出力し、ハイドレート後に検索UIへ差し替える。 */}
-    <Suspense
-      fallback={
-        <RetronymCardList retronyms={sortRetronyms(retronyms, "name")} />
-      }
-    >
-      <RetronymSearch retronyms={retronyms} />
-    </Suspense>
+    <div id="search" style={{ scrollMarginTop: "1.5rem" }}>
+      {/* 静的HTMLには全件を出力し、ハイドレート後に検索UIへ差し替える。 */}
+      <Suspense
+        fallback={
+          <RetronymCardList retronyms={sortRetronyms(retronyms, "name")} />
+        }
+      >
+        <RetronymSearch retronyms={retronyms} />
+      </Suspense>
+    </div>
   </div>
 )
 

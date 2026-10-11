@@ -1,71 +1,37 @@
 import { StatusBadge } from "@/components/retronym/status-badge"
 import { Tag, TagList } from "@/components/retronym/tag"
-import { Retronym } from "@/lib/retronyms"
-import { theme } from "@/lib/theme"
+import { Retronym, retronymPath } from "@/lib/retronyms"
 import Link from "next/link"
 import { FC } from "react"
 
 export const RetronymCard: FC<{ retronym: Retronym }> = ({ retronym }) => (
-  <article
-    style={{
-      backgroundColor: theme.surface,
-      border: `1px solid ${theme.border}`,
-      borderRadius: ".125rem",
-      display: "flex",
-      flexDirection: "column",
-      gap: ".5rem",
-      justifyContent: "space-between",
-      maxWidth: "23.5rem",
-      padding: "1.125rem 1.25rem",
-      width: "100%",
-    }}
-  >
-    <div>
-      <div
-        style={{
-          alignItems: "baseline",
-          display: "flex",
-          flexWrap: "wrap",
-          gap: ".5rem",
-        }}
-      >
-        <h3 style={{ fontSize: "1.125rem", margin: 0 }}>
-          <Link
-            href={`/retronyms/${retronym.id}/`}
-            style={{ textDecoration: "none" }}
-          >
-            {retronym.name}
-          </Link>
-        </h3>
-        {retronym.translation && (
-          <span style={{ color: theme.muted, fontSize: ".8125rem" }}>
-            {retronym.translation}
-          </span>
-        )}
-        <StatusBadge status={retronym.status} />
-      </div>
-      <p
-        style={{
-          color: theme.muted,
-          fontSize: ".8125rem",
-          margin: ".25rem 0 .5rem",
-        }}
-      >
-        {retronym.originalName} → {retronym.name}（{retronym.trigger}の登場）
-      </p>
+  <article className="linkcard rcard">
+    <h3>
+      <Link href={retronymPath(retronym.id)}>{retronym.name}</Link>
+      <span className="arrow" aria-hidden>
+        →
+      </span>
+    </h3>
+    <p className="rcard__from">
+      {retronym.translation && <>{retronym.translation}／</>}
+      {retronym.originalName} → {retronym.name}（{retronym.trigger}の登場）{" "}
+      <StatusBadge status={retronym.status} />
+    </p>
+    <p className="rcard__desc">{retronym.description}</p>
+    <div className="tags">
+      <TagList>
+        {retronym.tags.map((tag) => (
+          <Tag key={tag}>{tag}</Tag>
+        ))}
+      </TagList>
     </div>
-    <TagList>
-      {retronym.tags.map((tag) => (
-        <Tag key={tag}>{tag}</Tag>
-      ))}
-    </TagList>
   </article>
 )
 
 export const RetronymCardList: FC<{ retronyms: Retronym[] }> = ({
   retronyms,
 }) => (
-  <div style={{ display: "flex", gap: ".75rem", flexWrap: "wrap" }}>
+  <div className="rgrid">
     {retronyms.map((retronym) => (
       <RetronymCard key={retronym.id} retronym={retronym} />
     ))}

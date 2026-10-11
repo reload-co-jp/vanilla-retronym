@@ -4,9 +4,9 @@ import Link from "next/link"
 import { ComponentProps, FC, ReactNode } from "react"
 
 const baseStyle = {
-  backgroundColor: theme.tag,
+  backgroundColor: "transparent",
   border: `1px solid ${theme.border}`,
-  borderRadius: ".125rem",
+  borderRadius: 0,
   color: theme.muted,
   display: "inline-block",
   fontSize: ".75rem",
@@ -27,9 +27,9 @@ export const Tag: FC<ComponentProps<"span"> & { selected?: boolean }> = ({
       ...baseStyle,
       ...(selected
         ? {
-            backgroundColor: theme.accentSoft,
+            backgroundColor: theme.accent,
             borderColor: theme.accent,
-            color: theme.accent,
+            color: "#fff",
           }
         : {}),
       ...style,
@@ -45,10 +45,7 @@ export const TagLink: FC<{ tag: string; children?: ReactNode }> = ({
   tag,
   children = tag,
 }) => (
-  <Link
-    href={tagPath(tag)}
-    style={{ textDecoration: "none" }}
-  >
+  <Link href={tagPath(tag)} style={{ textDecoration: "none" }}>
     <Tag>{children}</Tag>
   </Link>
 )

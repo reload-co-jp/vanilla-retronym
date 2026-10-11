@@ -1,6 +1,7 @@
 import { Breadcrumb } from "@/components/elements/breadcrumb"
 import { JsonLd } from "@/components/elements/json-ld"
 import { Section, Title } from "@/components/elements/layout"
+import { Plate } from "@/components/retronym/plate"
 import { StatusBadge } from "@/components/retronym/status-badge"
 import { TagLink, TagList } from "@/components/retronym/tag"
 import { getModifier } from "@/lib/modifiers"
@@ -65,9 +66,7 @@ const Field: FC<{ label: string; children: ReactNode }> = ({
 )
 
 const Paragraphs: FC<{ children: ReactNode }> = ({ children }) => (
-  <div style={{ display: "grid", gap: ".875rem", lineHeight: 1.9 }}>
-    {children}
-  </div>
+  <div className="prose">{children}</div>
 )
 
 /** 元の名称 → きっかけ → 呼び分け → レトロニム の流れを示す。 */
@@ -92,7 +91,7 @@ const NamingFlow: FC<{ retronym: Retronym }> = ({ retronym }) => {
       style={{
         backgroundColor: theme.surface,
         border: `1px solid ${theme.border}`,
-        borderRadius: ".375rem",
+        borderLeft: `3px solid ${theme.accent}`,
         display: "grid",
         gap: ".25rem",
         listStyle: "none",
@@ -157,7 +156,7 @@ const Page = async ({ params }: Params) => {
   }
 
   return (
-    <article style={{ display: "grid", gap: "2.25rem" }}>
+    <article style={{ display: "grid", gap: "3rem" }}>
       <JsonLd data={jsonLd} />
       <Breadcrumb
         items={[
@@ -167,17 +166,13 @@ const Page = async ({ params }: Params) => {
         ]}
       />
 
-      <header style={{ display: "grid", gap: ".625rem" }}>
-        <Title style={{ fontSize: "2.25rem", lineHeight: 1.35 }}>
+      <header className="detail-head" style={{ display: "grid", gap: "1rem" }}>
+        <p className="en-label" style={{ color: theme.accent }}>
+          Retronym — {retronym.id.replaceAll("-", " ")}
+        </p>
+        <Title className="detail-title" style={{ fontSize: undefined }}>
           {name}とは？
-          <span
-            style={{
-              color: theme.muted,
-              display: "block",
-              fontSize: "1rem",
-              fontWeight: 500,
-            }}
-          >
+          <span className="detail-sub">
             意味・{details?.etymology ? "語源・" : ""}「{name}
             」と呼ばれるようになった理由
           </span>
@@ -190,6 +185,7 @@ const Page = async ({ params }: Params) => {
         <div>
           <StatusBadge status={retronym.status} />
         </div>
+        <Plate retronym={retronym} tone="cobalt" />
       </header>
 
       <Section compact heading="概要">
@@ -285,19 +281,22 @@ const Page = async ({ params }: Params) => {
 
       {related.length > 0 && (
         <Section compact heading="関連するレトロニム">
-          <ul style={{ display: "grid", gap: ".5rem", lineHeight: 1.6 }}>
+          <ul className="related">
             {related.map(({ retronym: item, reason }) => (
-              <li key={item.id}>
-                <Link
-                  href={retronymPath(item.id)}
-                  style={{ color: theme.accent }}
-                >
-                  {item.name}
-                </Link>
-                <span style={{ color: theme.muted, fontSize: ".8125rem" }}>
-                  {" "}
-                  — {item.originalName} → {item.name}／{reason}
-                </span>
+              <li key={item.id} className="linkcard">
+                <h3>
+                  <Link href={retronymPath(item.id)}>{item.name}</Link>
+                  <span
+                    className="arrow"
+                    aria-hidden
+                    style={{ color: theme.accent }}
+                  >
+                    →
+                  </span>
+                </h3>
+                <p>
+                  {item.originalName} → {item.name}／{reason}
+                </p>
               </li>
             ))}
           </ul>
@@ -319,11 +318,11 @@ const Page = async ({ params }: Params) => {
       )}
 
       <p style={{ display: "flex", flexWrap: "wrap", gap: "1rem" }}>
-        <Link href="/retronyms/" style={{ color: theme.accent }}>
+        <Link href="/retronyms/" className="textlink">
           ← レトロニム一覧・検索へ
         </Link>
-        <Link href="/about/" style={{ color: theme.accent }}>
-          レトロニムとは →
+        <Link href="/about/" className="textlink">
+          レトロニムとは <span className="arrow">→</span>
         </Link>
       </p>
     </article>

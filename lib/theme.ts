@@ -1,17 +1,18 @@
+// 値は app/reset.css の CSS 変数と揃える
 export const theme = {
-  background: "#faf9f5",
-  surface: "#ffffff",
-  border: "#d9d4c7",
-  text: "#1e2530",
-  muted: "#5c6270",
-  accent: "#7a2e35",
-  accentSoft: "#f6ecea",
-  tag: "#f1efe6",
+  background: "#f7f5ef",
+  surface: "#fbfaf6",
+  border: "#d6d2c7",
+  text: "#171717",
+  muted: "#5a5750",
+  accent: "#2f4f8f",
+  accentSoft: "#e6eaf2",
+  tag: "#ece8dd",
   maxWidth: "48rem",
 } as const
 
 export const statusColors = {
-  confirmed: { background: "#e6ede4", color: "#2f5233" },
-  disputed: { background: "#f2e9dc", color: "#7a5a26" },
-  candidate: { background: "#e6e9ee", color: "#3d4a5c" },
+  confirmed: { background: "#e3e9df", color: "#2c4d30" },
+  disputed: { background: "#efe6d6", color: "#6e5020" },
+  candidate: { background: "#e3e6ec", color: "#38455a" },
 } as const
