@@ -18,7 +18,7 @@ description: data/retronyms.json にレトロニムを追加する。「レト�
 4. **追加**: 配列末尾に追記。既存項目と同じフィールド順・2スペースインデント。
    - `id`: 英語 kebab-case か ローマ字（例 `silent-film`, `hirushoku`）。一意。
    - `language` が `ja` 以外なら `translation` 必須。
-   - `tags` は既存タグを優先（下の「既存タグ集計」で確認）。
+   - `tags` は既存タグを優先（下の「既存タグ集計」で確認）。`技術`→`テクノロジー`、`書籍`→`出版` に統合済み。`カメラ` は `写真` で代用。
    - 関連項目があれば `relatedIds` を相互に張る（相手側にも追加）。
 5. **検証**: `pnpm prettier --write data/retronyms.json && pnpm test`。
 6. **報告**: 追加した語・status・出典数を1行ずつ。コミットは頼まれた時だけ（メッセージは `Add retronym`）。

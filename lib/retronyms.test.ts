@@ -203,6 +203,12 @@ describe("SEO metadata", () => {
     )
   })
 
+  it("統合・廃止したタグを使わない", () => {
+    const retired = ["技術", "書籍", "カメラ", "数学", "育児"]
+    const used = getTags().map(({ name }) => name)
+    expect(used.filter((tag) => retired.includes(tag))).toEqual([])
+  })
+
   it("examples は個別ページの id と衝突しない", () => {
     expect(getRetronym("examples")).toBeUndefined()
   })
