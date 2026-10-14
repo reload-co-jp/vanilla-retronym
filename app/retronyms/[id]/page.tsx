@@ -4,6 +4,7 @@ import { Section, Title } from "@/components/elements/layout"
 import { Plate } from "@/components/retronym/plate"
 import { StatusBadge } from "@/components/retronym/status-badge"
 import { TagLink, TagList } from "@/components/retronym/tag"
+import { articlePath, getArticlesFor } from "@/lib/articles"
 import { getModifier } from "@/lib/modifiers"
 import {
   getRelatedWithReason,
@@ -132,6 +133,7 @@ const Page = async ({ params }: Params) => {
   const { name, originalName, trigger, details } = retronym
   const url = retronymPath(retronym.id)
   const related = getRelatedWithReason(retronym)
+  const relatedArticles = getArticlesFor(retronym.id)
   const modifier = getModifier(retronym)
   const [mainTag] = retronym.tags
   const jsonLd = {
@@ -297,6 +299,20 @@ const Page = async ({ params }: Params) => {
                 <p>
                   {item.originalName} → {item.name}／{reason}
                 </p>
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
+
+      {relatedArticles.length > 0 && (
+        <Section compact heading="この言葉が登場する記事">
+          <ul style={{ display: "grid", gap: ".25rem" }}>
+            {relatedArticles.map((article) => (
+              <li key={article.slug}>
+                <Link href={articlePath(article.slug)} className="textlink">
+                  {article.title} <span className="arrow">→</span>
+                </Link>
               </li>
             ))}
           </ul>

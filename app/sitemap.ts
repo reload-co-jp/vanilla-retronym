@@ -1,3 +1,4 @@
+import { articlePath, articles } from "@/lib/articles"
 import { getTags, retronyms, tagPath } from "@/lib/retronyms"
 import { site } from "@/lib/site"
 import type { MetadataRoute } from "next"
@@ -35,6 +36,16 @@ const sitemap = (): MetadataRoute.Sitemap => [
     changeFrequency: "monthly",
     priority: 0.8,
   },
+  {
+    url: `${site.url}/articles/`,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  },
+  ...articles.map(({ slug }) => ({
+    url: `${site.url}${articlePath(slug)}`,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  })),
   ...retronyms.map(({ id }) => ({
     url: `${site.url}/retronyms/${id}/`,
     changeFrequency: "monthly" as const,

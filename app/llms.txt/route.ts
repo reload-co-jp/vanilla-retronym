@@ -1,3 +1,4 @@
+import { articlePath, articles } from "@/lib/articles"
 import { retronyms, statusLabels, statusSymbols } from "@/lib/retronyms"
 import { site } from "@/lib/site"
 
@@ -23,6 +24,12 @@ const body = `# ${site.name}（${site.nameJa}）
 - [レトロニムとは](${site.url}/about/): レトロニムの意味・語源・具体例の解説
 - [このサイトについて](${site.url}/about-site/): サイトの趣旨
 - [レトロニムに付く言葉](${site.url}/modifiers/): レトロニムを作る接頭語・修飾語の分類
+${articles
+  .map(
+    ({ slug, title, description }) =>
+      `- [${title}](${site.url}${articlePath(slug)}): ${description}`,
+  )
+  .join("\n")}
 
 ## レトロニム
 

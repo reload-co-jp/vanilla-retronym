@@ -1,5 +1,6 @@
 import { Footer, Header, Main } from "@/components/elements/layout"
 import { openGraphBase, site } from "@/lib/site"
+import { articlePath, articles } from "@/lib/articles"
 import { getTags, tagPath } from "@/lib/retronyms"
 import { GoogleAnalytics } from "@next/third-parties/google"
 import type { Metadata } from "next"
@@ -142,6 +143,14 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
               <li>
                 <Link href="/retronyms/examples/">具体例・代表例</Link>
               </li>
+              <li>
+                <Link href="/articles/">記事一覧</Link>
+              </li>
+              {articles.map(({ slug, title }) => (
+                <li key={slug}>
+                  <Link href={articlePath(slug)}>{title.split("｜")[0]}</Link>
+                </li>
+              ))}
             </ul>
           </nav>
           <p className="site-footer__copy">&copy; Reload</p>
