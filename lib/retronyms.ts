@@ -183,9 +183,17 @@ export const retronymPath = (id: string): string => `/retronyms/${id}/`
 export const retronymTitle = (retronym: Retronym): string =>
   `${retronym.name}とは？意味・${retronym.details?.etymology ? "語源・" : ""}呼ばれるようになった理由`
 
-/** 個別ページの meta description。 */
-export const retronymDescription = (retronym: Retronym): string =>
-  `${retronym.name}は、${retronym.trigger}の登場により、それまで「${retronym.originalName}」と呼ばれていたものを区別するために生まれた呼び名（レトロニム）。${retronym.description}`
+/**
+ * 個別ページの meta description。
+ * 「〇〇とは」の検索意図に合わせ、意味の1文目を先頭に置いて検索結果の表示範囲に収める。
+ */
+export const retronymDescription = (retronym: Retronym): string => {
+  const { name, translation, trigger, originalName, details } = retronym
+  const reason = `${trigger}の登場により、それまでの「${originalName}」と区別するために生まれた呼び名（レトロニム）。`
+  if (!details?.meaning) return `${name}は、${reason}${retronym.description}`
+  const meaning = `${details.meaning.split("。")[0]}。`
+  return `${name}${translation ? `（${translation}）` : ""}とは、${meaning}${reason}`
+}
 
 export type RelatedRetronym = { retronym: Retronym; reason: string }
 
